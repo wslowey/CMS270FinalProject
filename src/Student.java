@@ -9,4 +9,8 @@ public class Student {
 		this.ID = id;
 		this.year = y;
 	}
+	
+	public String getName(int id) {
+		return this.Name;
+	}
 }

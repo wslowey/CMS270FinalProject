@@ -9,5 +9,9 @@ public class Professor {
 		this.ID = id;
 		this.department = d;
 	}
+	
+	public String getName(int id) {
+		return this.Name;
+	}
 
 }
