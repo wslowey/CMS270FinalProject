@@ -18,7 +18,7 @@ public class CatalogToCsv {
         Document doc = Jsoup.connect(url).get();
 
         FileWriter csv = new FileWriter("rollins_catalog_spring2026.csv");
-        csv.write("course,title,credits,instructor,location,day,start,end,type\n");
+        csv.write("Course,Title,Credits,Instructor,Location,Days,Start,End,Type\n");
 
         Elements rows = doc.select("table tr");
         for (Element row : rows) {
