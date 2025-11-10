@@ -18,7 +18,7 @@ public class CatalogToCsv {
         Document doc = Jsoup.connect(url).get();
 
         FileWriter csv = new FileWriter("rollins_catalog_spring2026.csv");
-        csv.write("code,title,credits,instructor,location,day,start,end,type\n");
+        csv.write("course,title,credits,instructor,location,day,start,end,type\n");
 
         Elements rows = doc.select("table tr");
         for (Element row : rows) {
@@ -43,13 +43,20 @@ public class CatalogToCsv {
                 end = parts[1].trim();
             }
 
+            // Determine course type
+            String type = "LECTURE";
+            if (title.toLowerCase().contains("lab")) {
+                type = "LAB";
+            }
+
             csv.write(escapeCsv(course) + "," + escapeCsv(title) + "," +
                       escapeCsv(credits) + "," + escapeCsv(instructor) + "," +
                       escapeCsv(location) + "," + escapeCsv(day) + "," +
-                      escapeCsv(start) + "," + escapeCsv(end) + ",LECTURE\n");
+                      escapeCsv(start) + "," + escapeCsv(end) + "," +
+                      escapeCsv(type) + "\n");
         }
 
         csv.close();
-        System.out.println("✅ rollins_catalog_spring2026.csv created!");
+        System.out.println("rollins_catalog_spring2026.csv created!");
     }
 }

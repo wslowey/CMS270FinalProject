@@ -1,614 +1,614 @@
-code,title,credits,instructor,location,day,start,end,type
-"16272 ARH 295 I1","Art in Orlando","2","M Ryan","","MTWRF","10:00","1 :30P",LECTURE
-"16210 ART 295 I1","Ceramic Sculpture","2","A Hope","CFAC 101","MTWRF","09:00","1 :00P",LECTURE
-"16215 INT 195 I1","Orange is the New Black","2","A McClure","CSS 134 CSS 134 CSS 134","MR TW F","09:00","12:00P 09:00",LECTURE
-"16226 INT 195 I2","The Plots of PIXAR","2","M Forsythe","BUSH 228 BUSH 228","MTWRF MTWRF","10:00","12:00P 12:30",LECTURE
-"16268 INT 195 I3","Body Count: Serial Killers C&M","2","A Zimmermann","","MTWR F MTWR","10:00","12:30P 10:00",LECTURE
-"16211 INT 295 I01","Field Ornithology","2","I Biazzo","BEAL 1","MTWRF","08:00","1 :00P",LECTURE
-"16212 INT 295 I02","Business Scandals","2","D Caban","FAIRBK 107","MTWRF","09:00","12:30P",LECTURE
-"16213 INT 295 I03","Dev Your Emotional Intelligenc","2","T Loch","KWR 320","MTWRF","09:00","1 :00P",LECTURE
-"16214 INT 295 I04","Life Launch","2","J Mathews","WAR 201","MTWRF","09:00","12:30P",LECTURE
-"16217 INT 295 I05","Apartheid in Movies","2","C Strom","CSS 230","MTWRF","1 :30","5 :00P",LECTURE
-"16249 INT 295 I06","Immigratin Rights Immersion_CE","2","V Teske A Davis","BUSH 308 BUSH 308 BUSH 308","W MTF R","07:00","8 :00P 09:00",LECTURE
-"16248 INT 295 I07","Adventures in Tourism","2","S Brown","CSS 135 CSS 135","MTWRF MTWR","09:00","12:00P 1 :00",LECTURE
-"16262 INT 295 I08","Job Market Boot Camp","2","T French","KMC 1","MTWRF","09:00","12:30P",LECTURE
-"16263 INT 295 I09","Managing Your Money","2","R Lewin","FAIRBK 116","MTWRF","09:30","12:50P",LECTURE
-"16264 INT 295 I10","Introduction to Cheese","2","B Pilat","KWR 310 KWR 310 KWR 310","MTWR F MTWR","10:45","12:30P 10:45",LECTURE
-"16265 INT 295 I11","Congress in the Movies","2","P Rickert","CSS 232","MTWRF","12:00","4 :00P",LECTURE
-"16218 PSY 295 I1","Psychology of Haunted Houses","2","P Harris","BUSH 176","MTWRF","12:00","4 :00P",LECTURE
-"16219 THE 195 I1","Digital Rendering w/ Procreate","2","A Crutchfield","TIEDTK 101 TIEDTK 101","MTWRF MTWRF","10:00","12:00P 12:30",LECTURE
-"15459 ASJ 305 1","Soc Justice Theory/Practice","4","N Richter","","TR","2 :00","3 :15P",LECTURE
-"16052 AAAS 101 1","Intro African/Afr-Am Studies","4","D Ponton","","TR","08:00","09:15A",LECTURE
-"16200 AMST 200 1","Am Studies: American Crime","4","J Jones","","MW","1 :00","2 :15P",LECTURE
-"16220 AMST XXX 1","American Studies Courses","4","","","TBA","","",LECTURE
-"15504 ANT 200 1","Cultural Anthropology","4","A Romero","CSS 170","TR","2 :00","3 :15P",LECTURE
-"15505 ANT 200 2","Cultural Anthropology","4","S Saiyed","CSS 170","TR","11:00","12:15P",LECTURE
-"15500 ANT 210 1","Human Evolution","4","Z Gilmore","CSS 119","MWF","11:00","11:50A",LECTURE
-"15502 ANT 235 1","Florida Before Columbus","4","Z Gilmore","CSS 100","MW","2 :30","3 :45P",LECTURE
-"15499 ANT 303 1","Women's Global Health","4","S Brown","","MWF","10:00","10:50A",LECTURE
-"16110 ANT 340 1","Latin American Ethnography","4","A Romero","","TR","11:00","12:15P",LECTURE
-"15503 ANT 351 1","Language, Culture & Society","4","T Mould","","TR","2 :00","3 :15P",LECTURE
-"15506 ANT 361 1","Anthropology & Environment","4","S Saiyed","","TR","2 :00","3 :15P",LECTURE
-"15507 ANT 364 1","Anthro & Storytelling","4","A Romero","CSS 119","TR","3 :30","4 :45P",LECTURE
-"15501 ANT 410 1","Seminar: Thry in Practice","4","S Brown","CSS 119","MW","1 :00","2 :15P",LECTURE
-"15536 ARH 120 1","Eur & Amer Art 1400-present","4","M Nguyen","REX 1","MWF","11:00","11:50A",LECTURE
-"15537 ARH 145 1","Introduction to African Art","4","M Ryan","REX 1","MWF","10:00","10:50A",LECTURE
-"16277 ARH 195 1","Tc:Hstorical Fashion thru Film","2","M Ryan","REX 1","MW","2 :30","3 :45P",LECTURE
-"15538 ARH 215 1","Archaeology of the Greek World","4","R Vander Poppen","REX 1","TR","3 :30","4 :45P",LECTURE
-"15539 ARH 234 1","American Art","4","M Nguyen","CFAC 113","TR","2 :00","3 :15P",LECTURE
-"15546 ARH 243 1","Fashion in Africa","4","M Ryan","REX 1","MW","1 :00","2 :15P",LECTURE
-"15542 ARH 341 1","African Art and Colonialism","4","M Ryan","CFAC 113","TR","11:00","12:15P",LECTURE
-"15543 ARH 402 1","Methodologies of Art History","4","M Nguyen","CFAC 113","MW","2 :30","3 :45P",LECTURE
-"15657 ART 110 1","Two-Dimensional Foundations","4","R Simmons","CFAC 107 CFAC 110 CFAC 112","TR TR TR","11:00","12:15P 11:00",LECTURE
-"16149 ART 120 1","Three-Dimensional Foundations","4","A Hope","CFAC 101","MW","1 :00","2 :15P",LECTURE
-"16150 ART 120 2","Three-Dimensional Foundations","4","A Hope","CFAC 101","MW","2 :30","3 :45P",LECTURE
-"15651 ART 223 1","Graphic Design I","4","D Hargrove","CFAC 116","TR","08:00","09:15A",LECTURE
-"15653 ART 230 1","Digital Media/CriticalPractice","4","D Roe","CFAC 103 CFAC 116","W W","1 :00","3 :30P 1 :00",LECTURE
-"15622 ART 251 1","Painting I","4","D Hargrove","CFAC 112 CFAC 110","W W","1 :00","3 :30P 1 :00",LECTURE
-"15654 ART 325 1","Intergenerational Photgrphy_CE","4","D Roe","CFAC 116 CFAC 103","TR TR","09:30","10:45A 09:30",LECTURE
-"15620 ART 342 1","Sculpture II","4","A Hope","CFAC 101","MW","4 :00","5 :15P",LECTURE
-"15623 ART 351 1","Painting II","4","D Hargrove","CFAC 112 CFAC 110","W W","1 :00","3 :30P 1 :00",LECTURE
-"15655 ART 450 1","Senior Seminar","4","R Simmons","CFAC 103 CFAC 111","TR TR","2 :00","3 :50P 2 :00",LECTURE
-"15575 BIO 121 1","General Biology II","6","A Fearing J Pieczynski","BUSH 105","MWF W","08:00","08:50A 1 :00",LECTURE
-"15583 BIO 121 2","General Biology II","6","J Pieczynski","BUSH 105","MWF M","10:00","10:50A 2 :00",LECTURE
-"15592 BIO 121 3","General Biology II","6","S Guerrier","BUSH 105","MWF T","10:00","10:50A 2 :00",LECTURE
-"15593 BIO 121 4","General Biology II","6","S Guerrier","BUSH 105","MWF R","11:00","11:50A 2 :00",LECTURE
-"15594 BIO 210 1","Oceanography","4","A Fearing","","TR","11:00","12:15P",LECTURE
-"15605 BIO 229 1","Microbiology","6","B Santiago-Narvaez","BUSH 368","MWF TR","09:00","09:50A 11:00",LECTURE
-"15606 BIO 237 1","Vertebrate Zoology","6","B Fokidis","BUSH 101","TR T","11:00","12:15P 2 :00",LECTURE
-"15607 BIO 244 1","Journal Club","2","B Fokidis","","F","1 :00","2 :15P",LECTURE
-"15608 BIO 244 2","Journal Club","2","P Rogers","","MW","09:00","09:50A",LECTURE
-"15609 BIO 246 1","Human Physiology","6","S Kanani","BUSH 101","MW","3 :00","5 :30P",LECTURE
-"15610 BIO 295 1","Topic: Limnology","2","P Rogers","","MW","1 :00","1 :50P",LECTURE
-"15611 BIO 308 1","Genetics","6","A Fearing","BUSH 364","MWF M","10:00","10:50A 2 :00",LECTURE
-"16286 BIO 308 2","Genetics","6","A Fearing","BUSH 364","MWF W","10:00","10:50A 2 :00",LECTURE
-"15612 BIO 311 1","Plant Physiology","6","P Stephenson","BUSH 364","MWF T","10:00","10:50A 2 :00",LECTURE
-"15613 BIO 329 1","Microbial Physiology","6","B Santiago-Narvaez","","MWF W","11:00","11:50A 2 :00",LECTURE
-"15614 BIO 330 1","Fld Botany & FL Ecosytem w/Lab","6","P Stephenson","BUSH 268","MWF R","12:00","12:50P 2 :00",LECTURE
-"15615 BIO 341 1","Molecular Biology","6","J Pieczynski","BUSH 364","MWF R","12:00","12:50P 2 :00",LECTURE
-"16173 BIO 395 1","Tc:Landmrk Discvrs in Cell Bio","2","S Guerrier","","F","1 :00","2 :15P",LECTURE
-"15616 BIO 440 1","SR Sem: Topics in Biology","4","B Fokidis","","TR","09:30","10:45A",LECTURE
-"15617 BIO 440 2","SR Sem: Topics in Biology","4","P Rogers","","TR","09:30","10:45A",LECTURE
-"15639 BUS 230 1","Financial/Managerial Acctng","4","D Corddry","","TR","3 :30","4 :45P",LECTURE
-"15642 BUS 230 4","Financial/Managerial Acctng","4","D Caban","","MWF","11:00","11:50A",LECTURE
-"15643 BUS 230 5","Financial/Managerial Acctng","4","R Phillips","","TR","11:00","12:15P",LECTURE
-"15644 BUS 230 6","Financial/Managerial Acctng","4","R Phillips","","TR","2 :00","3 :15P",LECTURE
-"15645 BUS 230 7","Financial/Managerial Acctng","4","R Phillips","","TR","3 :30","4 :45P",LECTURE
-"15689 BUS 233 1","Micro & Macro Economics","4","J Pereira","","MWF","1 :00","1 :50P",LECTURE
-"15690 BUS 233 2","Micro & Macro Economics","4","J Pereira","","MWF","10:00","10:50A",LECTURE
-"15691 BUS 233 3","Micro & Macro Economics","4","J Pereira","","MWF","11:00","11:50A",LECTURE
-"15692 BUS 233 4","Micro & Macro Economics","4","J Shideler","","TR","2 :00","3 :15P",LECTURE
-"15693 BUS 233 5","Micro & Macro Economics","4","J Shideler","","TR","3 :30","4 :45P",LECTURE
-"15702 BUS 236 1","Statistics for Business","4","V Ahmed","","TR","08:00","09:15A",LECTURE
-"15703 BUS 236 2","Statistics for Business","4","V Ahmed","","TR","09:30","10:45A",LECTURE
-"15704 BUS 236 3","Statistics for Business","4","S Al-Haddad","","MWF","10:00","10:50A",LECTURE
-"15705 BUS 236 4","Statistics for Business","4","S Al-Haddad","","MWF","11:00","11:50A",LECTURE
-"15706 BUS 236 5","Statistics for Business","4","F Hassanmirzaei","","TR","2 :00","3 :15P",LECTURE
-"15707 BUS 236 6","Statistics for Business","4","F Hassanmirzaei","","TR","3 :30","4 :45P",LECTURE
-"15674 BUS 245 1","Intl Organizational Behavior","4","T Loch","","MW","2 :30","3 :45P",LECTURE
-"16170 BUS 245 2","Intl Organizational Behavior","4","V Alves","","MWF","08:00","08:50A",LECTURE
-"15676 BUS 245 3","Intl Organizational Behavior","4","Y Shuumarjav","","MWF","10:00","10:50A",LECTURE
-"15677 BUS 245 4","Intl Organizational Behavior","4","Y Shuumarjav","","MWF","11:00","11:50A",LECTURE
-"15678 BUS 245 5","Intl Organizational Behavior","4","Y Shuumarjav","","MWF","12:00","12:50P",LECTURE
-"15679 BUS 245 6","Intl Organizational Behavior","4","T Loch","","MW","4 :00","5 :15P",LECTURE
-"16172 BUS 295 1","Tc: Dev Emotional Intelligence","4","T Loch","","MW","1 :00","2 :15P",LECTURE
-"15626 BUS 319 1","Business Law & Ethics","4","M Whitesides","","MW","1 :00","2 :15P",LECTURE
-"15660 BUS 321 1","Global Entrepreneurship","4","A Althuis","","MWF","10:00","10:50A",LECTURE
-"15661 BUS 321 2","Global Entrepreneurship","4","A Althuis","","MWF","09:00","09:50A",LECTURE
-"15625 BUS 325 1","Business Comm & Negotiation","4","A Hemphill","","TR","09:30","10:45A",LECTURE
-"15638 BUS 331 1","Financial Statement Analysis","4","T Sheppe","","TR","08:00","09:15A",LECTURE
-"15636 BUS 332 1","Family Business Financial Mgt","4","D Caban","","MW","1 :00","2 :15P",LECTURE
-"15637 BUS 334 1","Family Business Planning","4","M Carroll","","MW","2 :30","3 :45P",LECTURE
-"15687 BUS 348 1","Investments","4","M Sardy","","MW","4 :00","5 :15P",LECTURE
-"16096 BUS 348 2","Investments","4","M Sardy","","MW","1 :00","2 :15P",LECTURE
-"15713 BUS 352 1","Customer Experience Management","4","R Phillips","","F","1 :00","3 :30P",LECTURE
-"15695 BUS 376 1","Personal Selling","4","B Kroll","","TR","2 :00","3 :15P",LECTURE
-"15696 BUS 376 2","Personal Selling","4","B Kroll","","TR","3 :30","4 :45P",LECTURE
-"16239 BUS 395 1","Tpc:Business of Water & Energy","4","J Shideler","","TR","11:00","12:15P",LECTURE
-"15646 BUS 450 1","Global Business Strategy","4","K Kiefer","","TR","09:30","10:45A",LECTURE
-"15647 BUS 450 2","Global Business Strategy","4","J Lee","","MW","1 :00","2 :15P",LECTURE
-"15648 BUS 450 3","Global Business Strategy","4","K Kiefer","","TR","11:00","12:15P",LECTURE
-"15649 BUS 450 4","Global Business Strategy","4","M Carroll","","TR","2 :00","3 :15P",LECTURE
-"15650 BUS 450 5","Global Business Strategy","4","J Lee","","MW","2 :30","3 :45P",LECTURE
-"15658 BUS 450 6","Global Business Strategy","4","M Carroll","","TR","3 :30","4 :45P",LECTURE
-"15659 BUS 450 H1X","Global Business Strategy","4","J Lee","","W","6 :00","8 :30P",LECTURE
-"15681 INB 200 1","Intro to Intl Business","4","K Buckley","","MWF","08:00","08:50A",LECTURE
-"15682 INB 200 2","Intro to Intl Business","4","K Buckley","","MWF","09:00","09:50A",LECTURE
-"15671 INB 337 1","International Marketing Mgmt","4","M Carroll","","MW","1 :00","2 :15P",LECTURE
-"15672 INB 365 1","International Operations & MIS","4","F Hassanmirzaei","","TR","11:00","12:15P",LECTURE
-"15673 INB 372 1","Intl Financial Management","4","M Sardy","","MW","2 :30","3 :45P",LECTURE
-"15683 MGT 101 1","Intro to Resp Business Mgmt","4","M Whitesides","","MWF","09:00","09:50A",LECTURE
-"15684 MGT 101 2","Intro to Resp Business Mgmt","4","M Whitesides","","MWF","10:00","10:50A",LECTURE
-"15685 MGT 101 3","Intro to Resp Business Mgmt","4","M Whitesides","","MWF","12:00","12:50P",LECTURE
-"15698 MGT 312 1","Responsible Bus Leadership","4","V Alves","","MWF","11:00","11:50A",LECTURE
-"15699 MGT 312 2","Responsible Bus Leadership","4","J Pereira","","MWF","08:00","08:50A",LECTURE
-"15700 MGT 312 3","Responsible Bus Leadership","4","M Orlowsky","","MW","1 :00","2 :15P",LECTURE
-"15701 MGT 312 4","Responsible Bus Leadership","4","M Orlowsky","","MW","2 :30","3 :45P",LECTURE
-"16171 MGT 312 5","Responsible Bus Leadership","4","V Alves","","MWF","10:00","10:50A",LECTURE
-"15627 MGT 320 1","Entrepreneurial & Corp Finance","4","K Brady","","MW","1 :00","2 :15P",LECTURE
-"15628 MGT 320 2","Entrepreneurial & Corp Finance","4","R Lewin","","TR","2 :00","3 :15P",LECTURE
-"15629 MGT 320 3","Entrepreneurial & Corp Finance","4","K Brady","","MW","2 :30","3 :45P",LECTURE
-"15630 MGT 320 4","Entrepreneurial & Corp Finance","4","R Lewin","","TR","3 :30","4 :45P",LECTURE
-"15632 MGT 330 1","Entrepreneurial Marketing","4","M Badra","","MW","2 :30","3 :45P",LECTURE
-"15633 MGT 330 2","Entrepreneurial Marketing","4","M Badra","","MW","1 :00","2 :15P",LECTURE
-"15634 MGT 330 3","Entrepreneurial Marketing","4","M Badra","","TR","08:00","09:15A",LECTURE
-"15635 MGT 330 4","Entrepreneurial Marketing","4","M Badra","","TR","09:30","10:45A",LECTURE
-"15665 MGT 342 1","Human Resource Management","4","A Althuis","","MW","1 :00","2 :15P",LECTURE
-"15666 MGT 342 2","Human Resource Management","4","A Althuis","","MW","2 :30","3 :45P",LECTURE
-"15667 MGT 342 3","Human Resource Management","4","M Orlowsky","","MW","4 :00","5 :15P",LECTURE
-"15708 MGT 350 1","Supply Chain Mgmt & MIS","4","F Hassanmirzaei","","TR","08:00","09:15A",LECTURE
-"15709 MGT 350 2","Supply Chain Mgmt & MIS","4","M Heileman","","TR","09:30","10:45A",LECTURE
-"15710 MGT 350 3","Supply Chain Mgmt & MIS","4","M Heileman","","TR","11:00","12:15P",LECTURE
-"15662 MGT 354 1","High Performance Organizations","4","T Pett","","TR","09:30","10:45A",LECTURE
-"15663 MGT 354 2","High Performance Organizations","4","T Pett","","TR","11:00","12:15P",LECTURE
-"16135 MGT 354 3","High Performance Organizations","4","T Pett","","TR","2 :00","3 :15P",LECTURE
-"16114 CLP 102 1","Making Any Major Marketable","2","J Wensel , T French","KWR HUB","TR","11:00","12:15P",LECTURE
-"16115 CLP 102 2","Making Any Major Marketable","2","D Metko , S Brown","KWR HUB","TR","2 :00","3 :15P",LECTURE
-"16142 CLP 102 H1X","Making Any Major Marketable","2","J Wensel","KWR HUB","TR","6 :00","7 :15P",LECTURE
-"16112 CLP 107 1X","Career Champions Mentor","2","C Morman","","TBA","","",LECTURE
-"16137 INTN XXX 1","Internship","","","","TBA","","",LECTURE
-"16207 BCH 244 1","Biochemistry Journal Club","2","M Fuse","","TR","08:00","09:15A",LECTURE
-"15816 BCH 335 1","Biochemistry","4","K Riley","","MWF","09:00","09:50A",LECTURE
-"15817 BCH 335L 1","Biochemistry Lab","2","A Hashim","BUSH 368","M","2 :30","5 :30P",LECTURE
-"15818 BCH 335L 2","Biochemistry Lab","2","A Hashim","BUSH 368","T","2 :30","5 :30P",LECTURE
-"15819 BCH 435 1","Advanced Biochemistry","4","K Riley","","TR","09:30","10:45A",LECTURE
-"16156 BCH 435 2","Advanced Biochemistry","4","K Riley","","TR","11:00","12:15P",LECTURE
-"15802 CHM 120 1","Chemistry I","6","M Fuse","BUSH 305","MWF R","08:00","08:50A 2 :00",LECTURE
-"15803 CHM 120 2","Chemistry I","6","M Fuse","BUSH 305","MWF F","10:00","10:50A 1 :00",LECTURE
-"15804 CHM 121 1","Chemistry II","6","B Mosby","BUSH 305","MWF W","11:00","11:50A 1 :00",LECTURE
-"15805 CHM 121 2","Chemistry II","6","E Yook","BUSH 305","MWF T","10:00","10:50A 2 :00",LECTURE
-"15806 CHM 121 3","Chemistry II","6","P Bernal","BUSH 305","MWF M","11:00","11:50A 2 :30",LECTURE
-"15807 CHM 220 1","Organic Chemistry I","4","L Habgood","","MWF","10:00","10:50A",LECTURE
-"15808 CHM 220L 1","Organic Chemistry I Lab","2","L Habgood","BUSH 205","M","1 :00","4 :00P",LECTURE
-"15810 CHM 221 1","Organic Chemistry II","4","L Habgood","","MWF","09:00","09:50A",LECTURE
-"15811 CHM 221L 1","Organic Chemistry II Lab","2","L Habgood","BUSH 205","W","1 :00","4 :00P",LECTURE
-"15812 CHM 221L 2","Organic Chemistry II Lab","2","E Yook","BUSH 205","R","2 :00","5 :00P",LECTURE
-"15815 CHM 305 1","Physical Chemistry I","6","P Bernal","BUSH 264","MWF W","1 :00","1 :50P 2 :30",LECTURE
-"15813 CHM 460 1","AdvTpc:Crystlgrphy & Diffractn","2","B Mosby","","TR","11:00","12:15P",LECTURE
-"16273 CHM 460 2","AdvTpc:Chm Mech Cancer Signal","2","M Fuse","","TR","11:00","12:15P",LECTURE
-"16242 CLS 104 1","Rome: Identity and Empire","4","R Vander Poppen","REX 1","TR","11:00","12:15P",LECTURE
-"15984 LAT 102 1","Introductory Latin II","4","S Rubarth","","MWF","12:00","12:50P",LECTURE
-"16166 LAT 202 1","Intermediate Latin II","4","R Vander Poppen","REX 1","TR","08:00","09:15A",LECTURE
-"15732 COM 100 1","Intro Communication Studies","4","K Pierre","","MW","2 :30","3 :45P",LECTURE
-"15734 COM 100 2","Intro Communication Studies","4","P Adu Gyamfi","","MWF","08:00","08:50A",LECTURE
-"15735 COM 100 3","Intro Communication Studies","4","Y Zhu","","TR","09:30","10:45A",LECTURE
-"15736 COM 100 4","Intro Communication Studies","4","Y Zhu","","MWF","10:00","10:50A",LECTURE
-"15738 COM 100 5","Intro Communication Studies","4","T Vierrether","","MW","1 :00","2 :15P",LECTURE
-"16231 COM 100 6","Intro Communication Studies","4","T Vierrether","","MW","2 :30","3 :45P",LECTURE
-"15739 COM 210 1","Public Speaking","4","K Pierre","","TR","2 :00","3 :15P",LECTURE
-"15740 COM 210 2","Public Speaking","4","K Pierre","","TR","3 :30","4 :45P",LECTURE
-"15741 COM 210 3","Public Speaking","4","R Zhang","","MWF","11:00","11:50A",LECTURE
-"15742 COM 212 H1X","Persuasion","4","T Vierrether","","MW","7 :30","8 :45P",LECTURE
-"16097 COM 220 3","Interpersonal Communication","4","P Adu Gyamfi","","MWF","12:00","12:50P",LECTURE
-"15754 COM 225 1","Legal Communication","4","K Pierre","","MW","4 :00","5 :15P",LECTURE
-"15755 COM 230 1","Listening","4","A Stone","","MW","1 :00","2 :15P",LECTURE
-"15757 COM 240 1","Intercultural Communication","4","Y Zhu","","TR","2 :00","3 :15P",LECTURE
-"15758 COM 240 2","Intercultural Communication","4","H Mesbah","","TR","3 :30","4 :45P",LECTURE
-"15760 COM 285 1","Research Methods Comm","4","D Painter","OLIN 225","TR","11:00","12:15P",LECTURE
-"15761 COM 285 2","Research Methods Comm","4","D Painter","","TR","3 :30","4 :45P",LECTURE
-"15759 COM 285 H1X","Research Methods Comm","4","T Vierrether","","MW","6 :00","7 :15P",LECTURE
-"15762 COM 295 1","Tpc:Dark Side of Communication","4","Y Zhu","","MWF","11:00","11:50A",LECTURE
-"15763 COM 302 1","New Media & Public Relations","4","R Zhang","","MWF","10:00","10:50A",LECTURE
-"15765 COM 313 1","Mass Media & Society","4","H Mesbah","","MW","1 :00","2 :15P",LECTURE
-"15766 COM 319 1","Leadership & Effective Com","4","J Hammonds","","MWF","08:00","08:50A",LECTURE
-"15767 COM 330 1","Health Communication","4","P Adu Gyamfi","","MWF","10:00","10:50A",LECTURE
-"15768 COM 331 H1X","Comm and Social Change","4","R Winter","","R","6 :00","8 :30P",LECTURE
-"15771 COM 351 H1X","Writing for PR","4","R Winter","","T","6 :00","8 :30P",LECTURE
-"15772 COM 352 1","Middle East Media","4","H Mesbah","","MW","2 :30","3 :45P",LECTURE
-"15773 COM 360 1","Destructive Workplace Comm","4","M Garcia","","TR","3 :30","4 :45P",LECTURE
-"16164 COM 365 1","Social Media Influencers/PR","4","R Zhang","","TR","2 :00","3 :15P",LECTURE
-"15774 COM 480 1","SR Seminar in Communication","4","M Garcia","","TR","2 :00","3 :15P",LECTURE
-"15775 COM 480 H1X","SR Seminar in Communication","4","M Garcia","","TR","6 :00","7 :15P",LECTURE
-"15557 CMS 120 1","Intro to Computer Science","4","D Myers","","MWF","10:00","10:50A",LECTURE
-"15558 CMS 120L 1","Intro to Computer Sci Lab","2","D Myers","","W","2 :00","5 :00P",LECTURE
-"15559 CMS 121 1","Prog & Software Development","4","S Tisha","","TR","11:00","12:15P",LECTURE
-"16196 CMS 195 1","Topic: AI Coding for Everyone","2","D Myers","","MWF","12:00","12:50P",LECTURE
-"15560 CMS 230 1","Computer Org & Architecture","4","V Summet","","TR","2 :00","3 :15P",LECTURE
-"15562 CMS 250 1","Data Structures and Algorithms","4","S Tisha","","MW","1 :00","2 :15P",LECTURE
-"16169 CMS 295 1","Tc: App Electronics & Embd Sys","4","W Coyle","BUSH 160","MW","1 :00","2 :15P",LECTURE
-"15564 CMS 375 1","Database Design & Dev","4","S Tisha","","MWF","10:00","10:50A",LECTURE
-"15565 CMS 430 1","Artificial Intelligence","4","D Myers","","MWF","11:00","11:50A",LECTURE
-"15566 CMS 484 1","Computer Science Capstone","4","V Summet","","TR","08:00","09:15A",LECTURE
-"16195 CMS 495 1","Topic: Intro to Cybersecurity","4","V Summet","","TR","3 :30","4 :45P",LECTURE
-"15461 CMC 110 1","Digital Storytelling","4","S Schoen","OLIN 220","TR","09:30","10:45A",LECTURE
-"15468 CMC 110 2","Digital Storytelling","4","S Schoen","OLIN 220","TR","11:00","12:15P",LECTURE
-"15473 CMC 295 1","Tpc: Body, Food & Justice","4","L Tillmann","","TR","08:00","09:15A",LECTURE
-"15486 CMC 295 2","Tpc: Body, Food & Justice","4","L Tillmann","","TR","09:30","10:45A",LECTURE
-"15460 CMC 300 1","Critical Frameworks","4","N Richter","","TR","2 :00","3 :15P",LECTURE
-"15465 CMC 325 1","Incarceration & Inequality","4","L Tillmann","","W","1 :00","3 :30P",LECTURE
-"15463 CMC 395 1","Topic: Animation in Film","4","N Richter","","T","6 :00","8 :30P",LECTURE
-"15467 CMC 400 1","Doc Filmmaking Seminar","4","S Schoen D McIntosh","OLIN 220 OLIN 220","F F","12:00","12:50P 1 :00",LECTURE
-"15533 DTA 250 1","Fund. Data Science & Analytics","4","J Jasser","","MWF","10:00","10:50A",LECTURE
-"15534 DTA 250 2","Fund. Data Science & Analytics","4","J Jasser","","MWF","11:00","11:50A",LECTURE
-"15547 DTA 350 1","Adv Visualization & Comm","4","J Jasser","","MW","1 :00","2 :15P",LECTURE
-"16057 ECO 108 1","Mathematical Mthds for Econ","4","Y Bing","","MWF","1 :00","1 :50P",LECTURE
-"16059 ECO 121 1","Econ of Contemporary Issues","4","C Abraham","","TR","2 :00","3 :15P",LECTURE
-"16061 ECO 202 1","Econ in Historical Perspective","4","M Rice","","MW","1 :00","2 :15P",LECTURE
-"16062 ECO 202 2","Econ in Historical Perspective","4","M Rice","","MW","2 :30","3 :45P",LECTURE
-"16064 ECO 202 3","Econ in Historical Perspective","4","M Rice","","MW","4 :00","5 :15P",LECTURE
-"16065 ECO 202 4","Econ in Historical Perspective","4","B Balak","","TR","3 :30","4 :45P",LECTURE
-"16085 ECO 202 H1X","Econ in Historical Perspective","4","B Balak","","TR","7 :30","8 :45P",LECTURE
-"16066 ECO 203 1","Prin Micro & Macro Economics","4","C Abraham","","MWF","1 :00","1 :50P",LECTURE
-"16067 ECO 203 2","Prin Micro & Macro Economics","4","C Abraham","","MWF","10:00","10:50A",LECTURE
-"16068 ECO 221 1","Statistics for Economics","4","M Vidovic","","TR","2 :00","3 :15P",LECTURE
-"16069 ECO 221 2","Statistics for Economics","4","E Wolpert","","MW","4 :00","5 :15P",LECTURE
-"16077 ECO 303 1","Intermediate Microeconomics","4","M Vidovic","","TR","3 :30","4 :45P",LECTURE
-"16078 ECO 304 1","Intermediate Macroeconomics","4","A Voicu","","MW","2 :00","3 :15P",LECTURE
-"16182 ECO 304 2","Intermediate Macroeconomics","4","A Voicu","","TR","3 :30","4 :45P",LECTURE
-"16079 ECO 307 1","International Economics","4","A Voicu","","MW","1 :00","2 :15P",LECTURE
-"16183 ECO 310 1","International Finance","4","Y Bing","","TR","2 :00","3 :15P",LECTURE
-"16086 ECO 312 H1X","Alternative Econ Perspectives","4","B Balak","","TR","6 :00","7 :15P",LECTURE
-"16184 ECO 355 1","Environmental Economics","4","C Abraham","","MW","2 :30","3 :45P",LECTURE
-"16081 ECO 381 1","Intro to Econometrics","4","M Vidovic","","TR","11:00","12:15P",LECTURE
-"16082 ECO 395 1","Tpc:Instn'l Eco & Evol Theory","4","M Rice","","TR","3 :30","4 :45P",LECTURE
-"16083 ECO 404 1","Senior Seminar in Econ","4","P Kozel","","MW","2 :30","3 :45P",LECTURE
-"16084 ECO 404 2","Senior Seminar in Econ","4","P Kozel","","MW","4 :00","5 :15P",LECTURE
-"15838 EDU 260 1","American Educational History","4","J Surian , S Hunt-Barron","","W","4 :30","7 :00P",LECTURE
-"16267 EDU 271 1","Introduction to Education","4","S Hunt-Barron","","MW","2 :30","3 :45P",LECTURE
-"15865 EDU 272 H1X","Educational Psychology","4","D Quito","","M","4 :30","7 :00P",LECTURE
-"15840 EDU 280 1","The American Classroom_CE","4","D Quito","","MW","1 :00","2 :15P",LECTURE
-"16181 EDU 295 1","Topic: Invisible Children","4","J Surian","","TR","11:00","12:15P",LECTURE
-"15843 EDU 324 1","Curriculum & Eductnl Assesmnt","4","D Quito","","TR","2 :00","3 :15P",LECTURE
-"15841 EDU 335 H1X","Content Area Read:Secondary","4","S Hunt-Barron","","M","4 :30","7 :00P",LECTURE
-"15844 EDU 406 H1X","Instr Lrng & Class Mgmt","4","J Sanguiliano Lonski","","T","4 :30","7 :00P",LECTURE
-"16177 EDU 417 H1X","Instr Strat & Mgt Secondary","4","T Staff","","T","4 :30","7 :00P",LECTURE
-"16179 EDU 417L H1X","Secondary Ed Field Experience","2","T Staff","","TBA","","",LECTURE
-"15848 EDU 470 H1X","Classroom Management","4","A Griner","CSS 222","W","4 :30","7 :00P",LECTURE
-"15852 EDU 490 1X","Student Teaching: Elem","14","J Surian","","MTWRF","08:00","3 :00P",LECTURE
-"15853 EDU 491 H1X","Student Teaching: Secondary","14","J Manak","","MTWRF","08:00","3 :30P",LECTURE
-"15855 EED 319 H1X","Integrated Arts Elem School","3","J Surian","CSS 222","R","4 :30","6 :30P",LECTURE
-"15857 EED 363 H1X","Social Studies for Elem Sch","4","J Sanguiliano Lonski","","R","4 :30","7 :00P",LECTURE
-"15839 RED 371 1","Diag of Reading Difficulties","4","J Manak","","MW","09:00","10:50A",LECTURE
-"15861 RED 409 H1X","Different Lit & Content Instr","4","A Griner","","R","4 :30","7 :00P",LECTURE
-"15863 RED 409L H1X","Reading Field Experience","4","J Sanguiliano Lonski , A Griner","","TBA","","",LECTURE
-"15510 ENG 190 1","Txt/Contxt: British Romance","4","B Hudson","","TR","3 :30","4 :45P",LECTURE
-"15512 ENG 201 1","Pre1900: Shakespeare","4","B Boles","","W","4 :00","6 :30P",LECTURE
-"15513 ENG 201 2","Pre1900: Sex, War, Plague","4","J Mathews , E Russell","BUSH 201","MWF","09:00","09:50A",LECTURE
-"15514 ENG 221 1","TransNat: The American Abroad","4","M Moise","","MW","2 :30","3 :45P",LECTURE
-"15515 ENG 232 1","Studies in Film: Queer Cinema","4","B Hudson","","TR","2 :00","3 :15P",LECTURE
-"15517 ENG 303 1","Pre1900: Oscar Wilde","4","B Hudson","","MW","4 :00","5 :15P",LECTURE
-"15518 ENG 321 1","TransNat:AsianAmerican Stories","4","M Cheng","","MW","1 :00","2 :15P",LECTURE
-"15520 ENG 334 1","CntmpMdia:Gd Medicine/Bd Drugs","4","E Russell","","MW","2 :30","3 :45P",LECTURE
-"15521 ENG 345 1","AmLit: American Drama","4","B Boles","","TR","3 :30","4 :45P",LECTURE
-"15522 ENG 445 1","AmLit: Sin & Redemption","4","J Jones","","TR","11:00","12:15P",LECTURE
-"15476 ENGW 140 04","Writing About: Magic Kingdom","4","A Zimmermann","","MWF","10:00","10:50A",LECTURE
-"15477 ENGW 140 05","Writing About: Magic Kingdom","4","A Zimmermann","","MWF","11:00","11:50A",LECTURE
-"15478 ENGW 140 06","Writing About: Magic Kingdom","4","A Zimmermann","","MWF","12:00","12:50P",LECTURE
-"15479 ENGW 140 07","Writing About: Comics","4","F Tran","","MWF","10:00","10:50A",LECTURE
-"15480 ENGW 140 08","Writing About: Comics","4","F Tran","","MWF","11:00","11:50A",LECTURE
-"15481 ENGW 140 09","Writing About: Comics","4","F Tran","","MWF","12:00","12:50P",LECTURE
-"15482 ENGW 140 10","Writing About: Fandoms","4","K Avagliano","","MW","1 :00","2 :15P",LECTURE
-"15483 ENGW 140 11","Writing About: Fandoms","4","K Avagliano","","MW","2 :30","3 :45P",LECTURE
-"15485 ENGW 140 12","Writing About: Fandoms","4","K Avagliano","","TR","09:30","10:45A",LECTURE
-"15487 ENGW 140 13","Writing Abt:BusinessNarratives","4","B Boles","","TR","09:30","10:45A",LECTURE
-"15488 ENGW 140 14","Writing About: Prestige TV","4","M Moise","","MW","1 :00","2 :15P",LECTURE
-"15489 ENGW 140 15","Writing About: Prestige TV","4","M Moise","","TR","11:00","12:15P",LECTURE
-"16199 ENGW 140 16","Writing Abt:The Sunshine State","4","J Mathews","","MWF","11:00","11:50A",LECTURE
-"15523 ENGW 167 1","Intro to Creative Writing","4","A Zimmermann","","MW","2 :30","3 :45P",LECTURE
-"15524 ENGW 167 2","Intro to Creative Writing","4","K Avagliano","","TR","11:00","12:15P",LECTURE
-"15525 ENGW 263 1","WrtFc:Autofiction Bots Bck Off","4","V Brown","","TR","2 :00","3 :15P",LECTURE
-"15526 ENGW 267 1","Tpc/Tch: Travel Writing","4","M Forsythe","","MWF","10:00","10:50A",LECTURE
-"15527 ENGW 367 1","Tpc/Tch: Children's Literature","4","M Forsythe","","MWF","11:00","11:50A",LECTURE
-"15529 ENGW 377 1","Prof Writ: Legal Writing","4","J Mathews","","MW","1 :00","2 :15P",LECTURE
-"15528 ENGW 380 1","Language Studies","4","M Cheng","","TR","2 :00","3 :15P",LECTURE
-"15530 ENGW 482 1","Writing for Publication","4","V Brown","","TR","11:00","12:15P",LECTURE
-"15821 ENV 189 1","Envir Crisis in Cultural Cntxt","4","V Machado","LODGE REEVES","TR","11:00","12:15P",LECTURE
-"16160 ENV 295 1","Topic: Freshwater Perspectives","4","E Nodine","BEAL 1","TR","11:00","12:15P",LECTURE
-"16269 ENV 295 2","Topics: Field Ornithology","2","I Biazzo","BEAL 1","MWF","08:00","08:50A",LECTURE
-"15824 ENV 323 1","Conservation of Biodiversity","4","I Biazzo","BUSH 176","TR","08:00","09:15A",LECTURE
-"16118 ENV 330 1","Women and the Environment","4","L Poole","BEAL 2","MW","1 :00","2 :15P",LECTURE
-"15826 ENV 348 1","Sustainable Development","4","B Allen","BEAL 2","TR","3 :30","4 :45P",LECTURE
-"15827 ENV 350 1","Food Culture and Environment","4","L Lines","BEAL 1","TR","09:30","10:45A",LECTURE
-"15828 ENV 380 1","American Environmental History","4","L Poole","BEAL 2","TR","11:00","12:15P",LECTURE
-"15829 ENV 395 1","Tpc: Neotropical Environments","4","L Lines","BEAL 1","MWF","10:00","10:50A",LECTURE
-"16117 ENV 395 4","Tc:Ecotourism Agr Consrv Carib","4","B Allen","BEAL 2","MWF","11:00","11:50A",LECTURE
-"15832 ENV 413 1","Sr Sem: Environmental Issues","4","L Lines","BEAL 1","TR","2 :00","3 :15P",LECTURE
-"15833 ENV 413 2","Sr Sem: Environmental Issues","4","E Nodine","BEAL 2","TR","2 :00","3 :15P",LECTURE
-"15466 FIL 245 1","Film as Art: Florida Film Fest","4","N Richter","","TBA","","",LECTURE
-"15464 FIL 395 1","Topics: Animation in Film","4","N Richter","","T","6 :00","8 :30P",LECTURE
-"15567 GBH 200 1","Intro to Public Health","4","S Brown","","MWF","11:00","11:50A",LECTURE
-"15458 ARA 102 1","Elementary Arabic II","4","S Alaya Seghair","","MWF","12:00","12:50P",LECTURE
-"15392 CHN 101 1","Elem Chinese I","4","Z Gu","","MWF","09:00","09:50A",LECTURE
-"15393 CHN 102 1","Elem Chinese II","4","Z Gu","","MWF","10:00","10:50A",LECTURE
-"15394 CHN 201 1","Intermediate Chinese I","4","Z Gu","","MWF","11:00","11:50A",LECTURE
-"15395 CHN 202 1","Intermediate Chinese II","4","Z Gu","","MWF","12:00","12:50P",LECTURE
-"15449 FRN 101 1","Elementary French I","4","N Gammar","","MWF","10:00","10:50A",LECTURE
-"15450 FRN 101 2","Elementary French I","4","N Gammar","","MWF","11:00","11:50A",LECTURE
-"15451 FRN 102 1","Elementary French II","4","S Alaya Seghair","","MWF","10:00","10:50A",LECTURE
-"15452 FRN 102 2","Elementary French II","4","S Alaya Seghair","","MWF","11:00","11:50A",LECTURE
-"15453 FRN 201 1","Intermediate French I","4","C Castillo","","MWF","10:00","10:50A",LECTURE
-"15454 FRN 201 2","Intermediate French I","4","C Castillo","","MWF","11:00","11:50A",LECTURE
-"15455 FRN 202 1","Intermediate French II","4","N Gammar","","MWF","1 :00","1 :50P",LECTURE
-"16089 FRN 350 1","Tc: French & Francophone World","4","C Castillo","","MWF","12:00","12:50P",LECTURE
-"15397 HBR 102 1","Elementary Hebrew II","4","R Shisgal","","TR","3 :30","4 :45P",LECTURE
-"15412 SPN 101 1","Elementary Spanish I","4","C Gonzalez Martin","","MWF","10:00","10:50A",LECTURE
-"15413 SPN 101 2","Elementary Spanish I","4","C Gonzalez Martin","","MWF","11:00","11:50A",LECTURE
-"15414 SPN 101 3","Elementary Spanish I","4","J Fischer","","MWF","12:00","12:50P",LECTURE
-"15415 SPN 101 4","Elementary Spanish I","4","J Fischer","","MWF","1 :00","1 :50P",LECTURE
-"15417 SPN 102 2","Elementary Spanish II","4","J Fischer","","MWF","09:00","09:50A",LECTURE
-"15418 SPN 102 3","Elementary Spanish II","4","J Fischer","","MWF","10:00","10:50A",LECTURE
-"15419 SPN 102 4","Elementary Spanish II","4","Y Smith","","MWF","10:00","10:50A",LECTURE
-"15420 SPN 102 5","Elementary Spanish II","4","Y Smith","","MWF","11:00","11:50A",LECTURE
-"15421 SPN 102 6","Elementary Spanish II","4","C Gonzalez Martin","","MWF","12:00","12:50P",LECTURE
-"15422 SPN 102 7","Elementary Spanish II","4","J Holguin-Intriago","","MWF","12:00","12:50P",LECTURE
-"15423 SPN 102 8","Elementary Spanish II","4","J Holguin-Intriago","","MWF","1 :00","1 :50P",LECTURE
-"15424 SPN 201 01","Intermediate Spanish I","4","Y Smith","","MWF","08:00","08:50A",LECTURE
-"15425 SPN 201 02","Intermediate Spanish I","4","M Paniagua-Tejo","","MWF","09:00","09:50A",LECTURE
-"15426 SPN 201 03","Intermediate Spanish I","4","J Holguin-Intriago","","MWF","10:00","10:50A",LECTURE
-"15427 SPN 201 04","Intermediate Spanish I","4","R Lilienthal","","MWF","10:00","10:50A",LECTURE
-"15428 SPN 201 05","Intermediate Spanish I","4","R Lilienthal","","MWF","11:00","11:50A",LECTURE
-"15429 SPN 201 06","Intermediate Spanish I","4","J Holguin-Intriago","","MWF","11:00","11:50A",LECTURE
-"15430 SPN 201 07","Intermediate Spanish I","4","M Kupetz","","MWF","12:00","12:50P",LECTURE
-"15431 SPN 201 08","Intermediate Spanish I","4","Y Smith","","MWF","12:00","12:50P",LECTURE
-"15432 SPN 201 09","Intermediate Spanish I","4","R Lilienthal","","MWF","1 :00","1 :50P",LECTURE
-"15433 SPN 201 10","Intermediate Spanish I","4","R Lilienthal","","MWF","2 :00","2 :50P",LECTURE
-"15434 SPN 202 1","Intermediate Spanish II","4","M Paniagua-Tejo","","MWF","10:00","10:50A",LECTURE
-"15435 SPN 202 2","Intermediate Spanish II","4","M Paniagua-Tejo","","MWF","11:00","11:50A",LECTURE
-"15436 SPN 291 1","Advanced Spanish Communication","4","M Kupetz","","MWF","10:00","10:50A",LECTURE
-"15437 SPN 291 2","Advanced Spanish Communication","4","M Kupetz","","MWF","11:00","11:50A",LECTURE
-"15440 SPN 301 1","Adv Spanish thru Lit & Film_CE","4","C Gonzalez Martin","","MW","2 :30","3 :45P",LECTURE
-"15443 SPN 303 1","Business Spanish for Non-Nat","4","A Prieto-Calixto","","MW","2 :30","3 :45P",LECTURE
-"15444 SPN 303 2","Business Spanish for Non-Nat","4","A Prieto-Calixto","","MW","4 :00","5 :15P",LECTURE
-"15469 SPN 321 1","Peoples/Cultures of Spain","4","A Prieto-Calixto","","MW","1 :00","2 :15P",LECTURE
-"15446 SPN 337 1","PerformIdentity:Hspnic Theatre","4","P Tome","","TR","11:00","12:15P",LECTURE
-"16229 SPN 346 1","Fictions of Fear in Latin Amer","4","R Diaz-Zambrana","","TR","2 :00","3 :15P",LECTURE
-"15445 SPN 348 1","Latin Amer Pop Culture","4","R Diaz-Zambrana","","TR","11:00","12:15P",LECTURE
-"15448 SPN 497 1","Senior Capstone Seminar","2","R Diaz-Zambrana , A Prieto-Calixto","","F","1 :00","3 :30P",LECTURE
-"15398 HIS 120 1","DoD: China’s Cultural Rev.","4","K Shi","","MWF","08:00","08:50A",LECTURE
-"15399 HIS 120 2","DoD: Cuba in the 1950s","4","J Varela Yepes","","MWF","10:00","10:50A",LECTURE
-"15400 HIS 125 1","History of a City:Ancnt Athens","4","H Ewing","","MW","1 :00","2 :15P",LECTURE
-"15401 HIS 125 2","History of a City: Cape Town","4","C Strom","CSS 230","MWF","11:00","11:50A",LECTURE
-"16154 HIS 250 1","Hist Methodology: Latin Amer","4","J Varela Yepes","","MWF","12:00","12:50P",LECTURE
-"15402 HIS 332 1","Crusades","4","H Ewing","","TR","11:00","12:15P",LECTURE
-"15403 HIS 338 1","Europe: Revolt, Nation, Empire","4","H Ewing","","TR","2 :00","3 :15P",LECTURE
-"15405 HIS 395 1","Tpc: Maritime E Asia 1500-1900","4","K Shi","","TR","3 :30","4 :45P",LECTURE
-"16147 HIS 395 2","Topics: Cape Town","4","C Strom","CSS 230","MWF","11:00","11:50A",LECTURE
-"15406 HIS 490 1","Senior Capstone","4","C Strom","","F","1 :00","3 :30P",LECTURE
-"16006 HON 202AH 1","Best Writer in the World","4","V Brown","","TR","09:30","10:45A",LECTURE
-"15983 HON 202CH 1","Ethical Controversies & Global","4","M McLaren","CSS 134","TR","09:30","10:45A",LECTURE
-"16088 HON 300AH 1","WritingBooksfor&w/Children_CE","4","M Forsythe","","TR","09:30","10:45A",LECTURE
-"15952 HON 350S 1","DogScience: HumanAnimalInterac","4","R Yankelevitz","","TR","09:30","10:45A",LECTURE
-"15778 HON 400 1","Your Last Lecture","4","D Painter","","TR","09:30","10:45A",LECTURE
-"16232 INT 125 1","Life&Financial Literacy Skills","1","D Pistor","","T","12:20","1 :05P",LECTURE
-"16234 INT 195 2","Tc:Buildng Resiliency & Wellns","2","C Briscoe","","TR","3 :30","4 :45P",LECTURE
-"16233 INT 225 1","Adv Life & Financial Literacy","1","D Pistor","","T","1 :10","1 :50P",LECTURE
-"16143 INT 232 1X","Found Peer Health Education II","2","A Williams","OLIN VAN HOUTEN","T","12:30","1 :45P",LECTURE
-"16282 INT 295 1","Tc: Acad Upgrade AI & Research","2","R Walton","OLIN","MW","1 :00","2 :15P",LECTURE
-"16157 LAC 200 1","Latin Amer and Carib Society","4","J Doyle","","TR","2 :00","3 :15P",LECTURE
-"16158 LAC 395 1","Tpc: Social Mvmnts in Latin Am","4","J Doyle","","MW","1 :00","2 :15P",LECTURE
-"15571 MAT 103 1","Statistical Reasoning","4","S Jani","","MWF","08:00","08:50A",LECTURE
-"15572 MAT 103 2","Statistical Reasoning","4","S Jani","","MWF","10:00","10:50A",LECTURE
-"15576 MAT 107 1","Mathematics Elementary Teachrs","4","S Jani","","MW","1 :00","2 :15P",LECTURE
-"15578 MAT 108 1","Essential Math","4","S Boyd","","MWF","11:00","11:50A",LECTURE
-"15579 MAT 109 1","Precalculus Mathematics","4","P Yazdanbakhshghahyazi","","MWF","11:00","11:50A",LECTURE
-"15580 MAT 111 1","Calculus I","4","S Jani","","MWF","11:00","11:50A",LECTURE
-"15581 MAT 112 1","Calculus II","4","Z Teymuroglu","","MWF","11:00","11:50A",LECTURE
-"15582 MAT 140 1","Intro to Discrete Mathematics","4","S Boyd","","MWF","12:00","12:50P",LECTURE
-"16266 MAT 195 1","Topics: Math in Motion","4","Z Teymuroglu","","MWF","10:00","10:50A",LECTURE
-"15585 MAT 211 1","Calculus III","4","P Yazdanbakhshghahyazi","","MWF","12:00","12:50P",LECTURE
-"15586 MAT 230 1","Linear Algebra","4","P Yazdanbakhshghahyazi","","MWF","10:00","10:50A",LECTURE
-"15587 MAT 340 1","Models/Algorithms Graph Theory","4","M Anderson","","TR","11:00","12:15P",LECTURE
-"15588 MAT 455 1","Real Analysis","4","M Anderson","","TR","09:30","10:45A",LECTURE
-"16099 MAT 490 1","Topics: Math for Industry","4","Z Teymuroglu","","F","1 :00","3 :30P",LECTURE
-"16007 MUS 152 1","Theory II","4","D Crozier","KEENE 101","MWF","10:00","10:50A",LECTURE
-"16011 MUS 154 1X","Keyboard Harmony II","2","S Kim J Raspolich","KEENE 104 KEENE 104","T R","09:30","10:45A 09:30",LECTURE
-"16014 MUS 154 2X","Keyboard Harmony II","2","S Kim J Raspolich","KEENE 104 KEENE 104","T R","11:00","12:15P 11:00",LECTURE
-"16016 MUS 154 H1X","Keyboard Harmony II","2","S Kim J Raspolich","KEENE 104 KEENE 104","T R","2 :00","3 :15P 2 :00",LECTURE
-"16017 MUS 154 H2X","Keyboard Harmony II","2","S Kim J Raspolich","KEENE 104 KEENE 104","T R","3 :30","4 :45P 3 :30",LECTURE
-"16020 MUS 227 1X","Song Writing I","4","D Flick","KEENE 101","MWF","1 :00","2 :15P",LECTURE
-"16021 MUS 252 1","Theory 4","4","D Crozier","KEENE 101","MWF","11:00","11:50A",LECTURE
-"16023 MUS 301 1X","Recording Practicum","2","C Shelton","KEENE","F","2 :00","4 :30P",LECTURE
-"16024 MUS 317 1X","Music Technology II","4","C Shelton","KEENE 104","MW","2 :30","3 :45P",LECTURE
-"16025 MUS 324 1X","German and French Diction","2","C Mohr","KEENE 103","MW","11:00","11:50A",LECTURE
-"16026 MUS 330 1X","Jazz Vision","4","C Archard","KEENE 103","TR","11:00","12:15P",LECTURE
-"16028 MUS 339 1X","Health & the Musician","4","C Mohr","KEENE 103","MWF","10:00","10:50A",LECTURE
-"16027 MUS 340 1X","Methods: Percussion","2","J Katalenic","KEENE 102","M","1 :00","2 :15P",LECTURE
-"16029 MUS 355 1X","Composition Practicum","2","D Crozier","","TBA","","",LECTURE
-"16030 MUS 362 1","Music Hist: Classic to Modern","4","M Breckling","KEENE 101","TR","11:00","12:15P",LECTURE
-"16032 MUS 375 1X","Music Business & Music Mrkting","4","C Archard","KEENE 101","TR","2 :00","3 :15P",LECTURE
-"16144 MUS 383 1X","String Pedagogy","4","J Roos","KEENE 119","MW","1 :00","2 :15P",LECTURE
-"16034 MUS 389 1X","Pedagogy: Singing Voice","4","J Grau","KEENE 103","TR","3 :30","4 :45P",LECTURE
-"16035 MUS 391 1X","Conducting Practicum","2","J Sinclair","","TBA","","",LECTURE
-"16033 MUS 393 1X","Piano Pedagogy I","4","S Kim","KEENE 101","MW","2 :30","3 :45P",LECTURE
-"16036 MUS 395 1X","Topic: Jazz Theory","4","C Shelton","KEENE 103","MW","1 :00","2 :15P",LECTURE
-"16038 MUS 455 1X","Paris Moscow Vienna: 1890-1915","4","D Crozier","KEENE 101","TR","3 :30","4 :45P",LECTURE
-"16040 MUS 485 1X","Senior Project","4","M Breckling","KEENE 103","TR","2 :00","3 :15P",LECTURE
-"15951 INT 496 1","Adv Seminar in Neuroscience","2","S St. John","","TR","09:30","10:45A",LECTURE
-"15985 PHI 103 1","Intro to Philosophy","4","R Putzer","KMC 1","TR","2 :00","3 :15P",LECTURE
-"15986 PHI 108 1","Ethics","4","L Musgrave","","MW","4 :00","5 :15P",LECTURE
-"16187 PHI 223 1","Intro to Formal Logic","4","R Putzer","KWR 310","TR","09:30","10:45A",LECTURE
-"16101 PHI 226 1","Philosophy of Education","4","L Musgrave","","MW","1 :00","2 :15P",LECTURE
-"15988 PHI 231 1","Hist of Modern Philosophy","4","R Putzer","KMC 1","TR","11:00","12:15P",LECTURE
-"16238 PHI 250 1","Dreams and Demons","4","M McLaren","CSS 134","TR","11:00","12:15P",LECTURE
-"16186 PHI 290 1","Medical Ethics","4","T Cook","","MW","1 :00","2 :15P",LECTURE
-"15993 PHI 312 1","Feminist Theory","4","M McLaren","SULLV HSE","W","6 :00","8 :30P",LECTURE
-"16100 PHI 395 1","Topics: Jane Addams","4","L Musgrave","","MW","2 :30","3 :45P",LECTURE
-"16102 PHI 395 2","Topics: Cynics & Stoics","4","S Rubarth","","MW","4 :00","5 :15P",LECTURE
-"15995 PHI 490 1","Senior Seminar: Jane Addams","4","L Musgrave","","MW","2 :30","3 :45P",LECTURE
-"15997 REL 113 1","Asian Religions","4","J Liu","","MW","2 :30","3 :45P",LECTURE
-"16105 REL 195 1","Topics: Sports and Religion","4","T French","","TR","2 :00","3 :15P",LECTURE
-"16257 REL 195 2","Topics: Magic and Medicine","4","J Liu","","MW","4 :00","5 :15P",LECTURE
-"15999 REL 217 1","Jewish Life & Thought","4","Y Greenberg","SULLV HSE","TR","11:00","12:15P",LECTURE
-"16247 REL 295 1","Topics: Daoism: The Basics","4","J Liu","","MW","1 :00","2 :15P",LECTURE
-"16185 REL 350 1","Religion and Food","4","Y Greenberg","","W","1 :00","3 :30P",LECTURE
-"16283 REL 395 1","Topics: Sports and Religion","4","T French","","TR","2 :00","3 :15P",LECTURE
-"16285 REL 395 2","Topics: Magic and Medicine","4","J Liu","","MW","4 :00","5 :15P",LECTURE
-"15553 PHY 121 1","General Physics II","6","A Cannaday","BUSH 164 BUSH 180","MWF T","10:00","10:50A 2 :00",LECTURE
-"15548 PHY 131 1","Principles of Physics II","6","W Coyle","BUSH 180 BUSH 180","MWF M","10:00","10:50A 2 :30",LECTURE
-"15550 PHY 221 1","Math Methods Physical Sci II","4","S Fonseca Douguet","BUSH 180","TR","11:00","12:15P",LECTURE
-"16168 PHY 295 1","Tc: App Electronics & Embd Sys","4","W Coyle","BUSH 160","MW","1 :00","2 :15P",LECTURE
-"15552 PHY 300 1","Thermodynamics","4","A Cannaday","BUSH 164","MWF","09:00","09:50A",LECTURE
-"15551 PHY 451 1","Quantum Mechanics","4","C Fuse","BUSH 164","MWF","11:00","11:50A",LECTURE
-"15715 POL 100 1","Intro to Comparative Politics","4","T Rahman","","MWF","11:00","11:50A",LECTURE
-"15716 POL 100 2","Intro to Comparative Politics","4","D Boniface","","MWF","10:00","10:50A",LECTURE
-"15717 POL 130 1","Intro International Politics","4","M Gunter","","TR","11:00","12:15P",LECTURE
-"15718 POL 160 1","Intro to American Politics","4","P Rickert","","MWF","12:00","12:50P",LECTURE
-"15719 POL 160 2","Intro to American Politics","4","J Lin","CSS 232","TR","08:00","09:15A",LECTURE
-"15720 POL 220 1","Problems in Political Thought","4","J Maskivker","","MWF","12:00","12:50P",LECTURE
-"15730 POL 240A 1","Quantitative Analysis","4","J Lin","CSS 232","MW","2 :30","3 :45P",LECTURE
-"15721 POL 302 1","Politics of Global Poverty","4","D Chong","","TR","2 :00","3 :15P",LECTURE
-"15723 POL 309 1","Global Democratization","4","D Boniface","","MW","1 :00","2 :15P",LECTURE
-"15724 POL 312 1","Problems of Latin America","4","D Boniface","","MW","4 :00","5 :15P",LECTURE
-"15726 POL 318 1","Applied Political Ethics","4","J Maskivker","","MWF","10:00","10:50A",LECTURE
-"16216 POL 332 1","International Human Rights","4","D Chong","","TR","11:00","12:15P",LECTURE
-"15731 POL 333 1","Sustainable Development Cases","4","M Gunter","","TR","2 :00","3 :15P",LECTURE
-"15727 POL 343 1","The American Presidency","4","P Rickert","","MWF","10:00","10:50A",LECTURE
-"15725 POL 395 1","Tpcs Pol Thry: Work & Society","4","J Maskivker","","F","1 :00","3 :30P",LECTURE
-"16124 POL 453 1","IR Senior Seminar","4","T Rahman","","MW","1 :00","2 :15P",LECTURE
-"15729 POL 481 1","Sem in American Politics","4","P Rickert","","MW","2 :30","3 :45P",LECTURE
-"15914 PSY 101 1","Intro to Psychology","4","E Slifkin","","MWF","11:00","11:50A",LECTURE
-"15915 PSY 101 2","Intro to Psychology","4","L Held","","TR","3 :30","4 :45P",LECTURE
-"15916 PSY 155 1","Perspectives in Psychology II","4","R Yankelevitz","","MW","2 :30","3 :45P",LECTURE
-"15917 PSY 155 2","Perspectives in Psychology II","4","J Queen","","MW","2 :30","3 :45P",LECTURE
-"15918 PSY 155 3","Perspectives in Psychology II","4","S St. John","","MW","2 :30","3 :45P",LECTURE
-"15954 PSY 225 1","Careers in Psychology","2","L Held","","T","09:30","10:45A",LECTURE
-"15919 PSY 250 1","Stats & Rsch Meth I w/Lab","4","J Houston","","TR","11:00","12:15P",LECTURE
-"15920 PSY 250 2","Stats & Rsch Meth I w/Lab","4","A Davidson","","TR","11:00","12:15P",LECTURE
-"15921 PSY 250L 1","Stats & Rsch Meth I Lab","2","J Houston","","TR","2 :00","3 :15P",LECTURE
-"15922 PSY 250L 2","Stats & Rsch Meth I Lab","2","A Davidson","","TR","2 :00","3 :15P",LECTURE
-"15923 PSY 255 1","Stats & Rsch Meth II w/Lab","4","P Harris","","TR","11:00","12:15P",LECTURE
-"15924 PSY 255 2","Stats & Rsch Meth II w/Lab","4","J Queen","","TR","11:00","12:15P",LECTURE
-"15925 PSY 255L 1","Stats & Rsch Meth II Lab","2","P Harris","","TR","2 :00","3 :15P",LECTURE
-"15926 PSY 255L 2","Stats & Rsch Meth II Lab","2","J Queen","","TR","2 :00","3 :15P",LECTURE
-"15927 PSY 309 1","DV: Adolescent Development","4","A Davidson","","TR","08:00","09:15A",LECTURE
-"15928 PSY 314 1","CN: Sensation-Perception","4","E Slifkin","","MW","1 :00","2 :15P",LECTURE
-"15929 PSY 314L 1","CN: Sensation-Perception Lab","2","E Slifkin","","MW","2 :30","3 :45P",LECTURE
-"16284 PSY 314L 2","CN: Sensation-Perception Lab","2","E Slifkin","","TR","11:00","12:15P",LECTURE
-"15930 PSY 319 1","IS: Psychology of Work","4","J Houston","","MW","4 :00","5 :15P",LECTURE
-"15931 PSY 320 1","IS: Psychotherapy w/Lab","4","A Luchner","","TR","11:00","12:15P",LECTURE
-"15932 PSY 320L 1","IS: Psychotherapy Lab","2","A Luchner","","TR","3 :30","4 :45P",LECTURE
-"15935 PSY 327 1","BB: Psychoactive Drugs","4","S St. John","","MWF","12:00","12:50P",LECTURE
-"15936 PSY 328 1","DV:Developmental Psy W/lab_CE","4","L Held","HUME 101","MW","1 :00","2 :15P",LECTURE
-"15937 PSY 328L 1","DV:Developmental Psy Lab_CE","2","L Held","HUME 101","W","09:00","10:50A",LECTURE
-"15938 PSY 328L 2","DV:Developmental Psy Lab_CE","2","L Held","HUME 101","W","10:00","11:50A",LECTURE
-"15912 PSY 330 H1X","Organization Behavior (IC)(IS)","4","N Steigerwald","","R","6 :00","8 :30P",LECTURE
-"15943 PSY 341 1","BB: Learning w/Lab","4","R Yankelevitz","BUSH 274","TR","2 :00","3 :15P",LECTURE
-"15944 PSY 341L 1","BB: Learning Lab","2","R Yankelevitz","BUSH 274","TR","3 :30","4 :45P",LECTURE
-"15947 PSY 350 1","Science of Compassion (IS)","4","S Dunn","","MW","4 :00","5 :15P",LECTURE
-"15911 PSY 350 H1X","Sci. of Compassion (IC/TB)(IS)","4","S Dunn","","MW","6 :00","7 :15P",LECTURE
-"15948 PSY 395 1","Topics: CN: Law and Psychology","4","E Slifkin","","MWF","10:00","10:50A",LECTURE
-"16111 PSY 395 1X","Topic: Sports Psych (IC;IS)","4","T Langley","","MW","4 :00","5 :15P",LECTURE
-"15949 PSY 495 1","Sr Sem:Indiv-Social Psych","4","S Dunn","","MWF","11:00","11:50A",LECTURE
-"15950 PSY 495 2","Sr Sem:Indiv-Social Psych","4","P Harris","","TR","09:30","10:45A",LECTURE
-"16203 RCC 100 1","College Crash Course","4","M Perez","","MWF","09:00","09:50A",LECTURE
-"16202 RCC 200 1","Rollins Transition Seminar","2","K Murphy","","W","09:00","09:50A",LECTURE
-"16051 SWAG 205 1","Intro Sex, Wmn, Gender Stds","4","J Eisele","","M","1 :00","3 :30P",LECTURE
-"15595 SE 100 1","Soc Entrepreneur: Lead Change","4","A KatunWilliams","","MWF","10:00","10:50A",LECTURE
-"15596 SE 100 2","Soc Entrepreneur: Lead Change","4","A KatunWilliams","","MWF","11:00","11:50A",LECTURE
-"15597 SE 220 1","Global Dev: Challenge/Opportun","4","T Warnecke","","MW","1 :00","2 :15P",LECTURE
-"15598 SE 295 1","Topic: BusPlan/ImpVentureCreat","4","W Mswaka","","TR","11:00","12:15P",LECTURE
-"15600 SE 315 1","Ethical Sourcing:People&Planet","4","W Mswaka","","TR","08:00","09:15A",LECTURE
-"15601 SE 320 1","Strategies for Changemakers","4","A KatunWilliams","","TR","2 :00","3 :15P",LECTURE
-"15602 SE 333 1","Sales & Negotiations for SE","4","A KatunWilliams","","MW","2 :30","3 :45P",LECTURE
-"15603 SE 345 1","Financing Soc Entrepreneurship","4","A Samaniego Diaz","","MWF","11:00","11:50A",LECTURE
-"16151 SE 395 1","Tpc:Branding for Social Impact","4","A Samaniego Diaz","","MWF","12:00","12:50P",LECTURE
-"15604 SE 440 1","Planning/ Implement for SE","4","W Mswaka","","MW","1 :00","2 :15P",LECTURE
-"16019 SOC 111 1","Social Problems","4","M Nichter","","MW","2 :30","3 :45P",LECTURE
-"16039 SOC 111 2","Social Problems","4","M Nichter","","MW","4 :00","5 :15P",LECTURE
-"16190 SOC 112 1","The Family","4","J Jenoch","","TR","2 :00","3 :15P",LECTURE
-"16276 SOC 112 2","The Family","4","J Jenoch","","TR","11:00","12:15P",LECTURE
-"16047 SOC 201 1","The Sociological Perspective","4","S Gonzalez Guittar","","TR","08:00","09:15A",LECTURE
-"16048 SOC 201 2","The Sociological Perspective","4","S Gonzalez Guittar","","TR","11:00","12:15P",LECTURE
-"16010 SOC 215 1","Stats & Data Analysis Soc Sci","4","J Jenoch","BUSH 310","W","1 :00","3 :30P",LECTURE
-"16013 SOC 302 1","Sociological Theory","4","J Eisele","","MWF","10:00","10:50A",LECTURE
-"16049 SOC 340 1","Sociology of Reproduction","4","S Gonzalez Guittar","","TR","2 :00","3 :15P",LECTURE
-"16015 SOC 346 1","Sexualities","4","J Eisele","","W","1 :00","3 :30P",LECTURE
-"16037 SOC 350 1","Class Inequality","4","M Nichter","","TR","3 :30","4 :45P",LECTURE
-"16191 SOC 395 1","Topic: Medical Sociology","4","J Eisele","","MWF","11:00","11:50A",LECTURE
-"16192 SOC 395 2","Topic:Slavery, Sex, & Religion","4","D Ponton","","TR","11:00","12:15P",LECTURE
-"16193 SOC 395 3","Topc:Segregation, Past & Prsnt","4","D Ponton","","M","1 :00","3 :30P",LECTURE
-"16041 SOC 418 1","Senior Seminar","4","A McClure","","TR","2 :00","3 :15P",LECTURE
-"15872 DAN 270 1","Ballet II","4","P Kalivas","TIEDTK 105","MW","1 :00","2 :15P",LECTURE
-"15873 DAN 279 1","Modern II","4","C Loupe","TIEDTK 105","TR","11:00","12:15P",LECTURE
-"15874 DAN 300 1","Dance Composition","4","C Loupe","TIEDTK 105","TR","2 :00","3 :15P",LECTURE
-"15875 DAN 370 1","Ballet III","4","P Kalivas","TIEDTK 105","MW","1 :00","2 :15P",LECTURE
-"15876 DAN 379 1","Modern III","4","C Loupe","","TR","11:00","12:15P",LECTURE
-"15877 DAN 420 1","Dance Production I","2","R Gerchman","TIEDTK 105","W","4 :00","5 :00P",LECTURE
-"15878 THE 103 1","Theatre Prod/Technical C","2","L Cushman","ANNIE AUD","MTWRF","7 :00","10:00P",LECTURE
-"15879 THE 104 1","Theatre Prod/Technical D","2","L Cushman","ANNIE AUD","MTWRF","7 :00","10:00P",LECTURE
-"15880 THE 111 1","Intro to Technical Theatre","4","R Miller","TIEDTK 101","TR","11:00","12:15P",LECTURE
-"15881 THE 112 1","Fund of Theatrical Design","4","L Cody-Rapport","TIEDTK 101","MW","1 :00","2 :50P",LECTURE
-"15882 THE 120 1","Acting I: Fundamentals","4","D Charles","TIEDTK 107","TR","11:00","12:15P",LECTURE
-"15883 THE 216 1","Design/Tech Studio","4","L Cody-Rapport , B Pilat","TIEDTK 101","MW","11:00","12:50P",LECTURE
-"15884 THE 220 1","Acting II: Character","4","T Staff","TIEDTK 107","MW","3 :00","4 :50P",LECTURE
-"15887 THE 238 1","Mainstage Assistant Director","2","T Staff","ANNIE AUD","TBA","","",LECTURE
-"15885 THE 240 1","Script Analysis","4","E Hill","","MW","2 :00","3 :15P",LECTURE
-"16145 THE 242 1","Rsrch Meth Dramaturgy/Director","4","E Hill","","MWF","10:00","10:50A",LECTURE
-"15888 THE 247 1","Mainstage Assistant Dramaturg","2","T Staff","ANNIE AUD","TBA","","",LECTURE
-"15889 THE 311 1","Second Stage: In Production II","2","L Cushman","TIEDTK 150","MTWRF","7 :00","10:00P",LECTURE
-"15890 THE 312 1","Second Stage:In Production III","2","L Cushman","TIEDTK 150","MTWRF","7 :00","10:00P",LECTURE
-"15891 THE 313 1","Mainstage Assistant Design/Tec","2","T Staff","ANNIE AUD","TBA","","",LECTURE
-"15892 THE 314 1","Mainstage Associate Design/Tec","3","T Staff","ANNIE AUD","TBA","","",LECTURE
-"15893 THE 315 1","Mainstage Design/Tech","4","","","TBA","","",LECTURE
-"15886 THE 329 1","Acting for Musical Theatre II","4","M Barnes","TIEDTK 107","MW","1 :00","2 :50P",LECTURE
-"15894 THE 333 1","Directing I: Fundamentals","4","E Hill","","TR","2 :00","3 :50P",LECTURE
-"15895 THE 338 1","Mainstage Associate Director","3","T Staff","ANNIE AUD","TBA","","",LECTURE
-"15896 THE 342 1","History of Theatre II:1750-Pre","4","M DiQuattro","","TR","11:00","12:15P",LECTURE
-"15898 THE 348 1","Mainstage Associate Dramaturg","3","M DiQuattro","ANNIE AUD","TBA","","",LECTURE
-"15897 THE 349 1","Hist of Amer Musical Theatre","4","M Barnes","","MWF","11:00","11:50A",LECTURE
-"15899 THE 378 1","Rollins Improv Players Lab","2","D Charles","TIEDTK 150","F","12:00","1 :50P",LECTURE
-"15900 THE 410 1","Design/Tech Theatre Capstone","4","A Crutchfield , B Pilat","","TBA","","",LECTURE
-"15901 THE 424 1","Theatre Prod: Performance","2","M Barnes","ANNIE AUD","MTWRF","7 :00","10:00P",LECTURE
-"15902 THE 425 1","Theatre Prod:Performance","2","D Charles","ANNIE AUD","MTWRF","7 :00","10:00P",LECTURE
-"15903 THE 438 1","Directing Capstone","4","T Staff","","TBA","","",LECTURE
-"15904 THE 442 1","Mainstage Dramaturg","4","T Staff","ANNIE AUD","TBA","","",LECTURE
-"16148 RFLA 100A 01","Moving Stories & Conversations","4","R Gerchman","TIEDTK 105","TR","09:30","10:45A",LECTURE
-"16197 RFLA 100A 02","Classical Myth via Art","4","R Vander Poppen","REX 1","TR","09:30","10:45A",LECTURE
-"16227 RFLA 100A 03","Inside Jokes:Comedy Thry Prctc","4","E Hill","","TR","09:30","10:45A",LECTURE
-"16228 RFLA 100A 04","Popular Song in AmericanCultur","4","M Breckling","KEENE 101","TR","09:30","10:45A",LECTURE
-"15408 RFLA 100C 01","Dictators in Latin America","4","J Varela Yepes","","TR","09:30","10:45A",LECTURE
-"15409 RFLA 100C 02","Dictators in Latin America","4","J Varela Yepes","","MW","2 :30","3 :45P",LECTURE
-"15590 RFLA 100C 03","How to Change the World","4","T Warnecke","","MW","2 :30","3 :45P",LECTURE
-"15591 RFLA 100C 04","Business for Social Impact","4","A Samaniego Diaz","","MWF","09:00","09:50A",LECTURE
-"16050 RFLA 100C 05","Identities:Conformity&Deviance","4","A McClure","","TR","09:30","10:45A",LECTURE
-"16221 RFLA 100C 06","Economic History of China","4","K Shi","","TR","09:30","10:45A",LECTURE
-"16222 RFLA 100C 07","Economic History of China","4","K Shi","","MW","2 :30","3 :45P",LECTURE
-"16223 RFLA 100C 08","Beyond 23andMe","4","T Mould","","TR","09:30","10:45A",LECTURE
-"16224 RFLA 100C 09","Global Financial History","4","Y Bing","","TR","09:30","10:45A",LECTURE
-"16241 RFLA 100C 10","Identities:Conformity&Deviance","4","A McClure","","TR","08:00","09:15A",LECTURE
-"15462 RFLA 100H 01","Digital Storytelling","4","S Schoen","OLIN 220","TR","09:30","10:45A",LECTURE
-"15490 RFLA 100H 02","Sex, War, & Plague","4","E Russell , J Mathews","BUSH 202","MWF","09:00","09:50A",LECTURE
-"15491 RFLA 100H 03","Growing Up Other(wise)","4","F Tran","","MWF","08:00","08:50A",LECTURE
-"15492 RFLA 100H 04","Studies in Television","4","M Moise","","TR","09:30","10:45A",LECTURE
-"16235 RFLA 100H 05","Nature Spirituality","4","V Machado","SULLV HSE","TR","09:30","10:45A",LECTURE
-"16002 RFLA 100H 06","Extremes of Religion","4","T French","KMC 1","TR","09:30","10:45A",LECTURE
-"16236 RFLA 100H 07","Nature Spirituality","4","V Machado","SULLV HSE","TR","2 :00","3 :15P",LECTURE
-"16244 RFLA 100H 08","Can You (Still) Laugh?","4","N Gammar","","MWF","09:00","09:50A",LECTURE
-"15621 RFLA 200A 01","Introduction to Sculpture","4","A Hope","CFAC 101","MW","2 :30","3 :45P",LECTURE
-"15656 RFLA 200A 02","Graphic Narratives","4","R Simmons","CFAC 107 CFAC 110","TR TR","09:30","10:45A 09:30",LECTURE
-"15905 RFLA 200A 03","History of Musical Theatre","4","M Barnes","","MWF","11:00","11:50A",LECTURE
-"16043 RFLA 200A 04","Musical One Hit Wonders","4","C Archard","KEENE 103","TR","09:30","10:45A",LECTURE
-"16044 RFLA 200A 05","Music Meets Life","4","D Flick","KEENE 103","MWF","09:00","09:50A",LECTURE
-"16090 RFLA 200A 06","Introduction to Sculpture","4","A Hope","CFAC 101","MW","1 :00","2 :15P",LECTURE
-"16046 RFLA 200A 07","Oh, The Horror!","4","C Shelton","KEENE 101","MWF","09:00","09:50A",LECTURE
-"16122 RFLA 200C 01","Americn Political Polarization","4","J Lin","CSS 232","TR","09:30","10:45A",LECTURE
-"16194 RFLA 200C 02","Life on Film","4","J Jenoch","","TR","09:30","10:45A",LECTURE
-"15508 RFLA 200C 03","Primates & People","4","S Saiyed","","TR","09:30","10:45A",LECTURE
-"16056 RFLA 200C 04","Science Fiction and Politics","4","T Rahman","","MWF","09:00","09:50A",LECTURE
-"15776 RFLA 200C 05","Human Com: Body Language","4","J Hammonds","","TR","08:00","09:15A",LECTURE
-"15953 RFLA 200C 06","Psychology of Stress","4","A Luchner","","TR","2 :00","3 :15P",LECTURE
-"15441 RFLA 200H 01","The Latino Journey to the U.S.","4","M Kupetz","","MWF","09:00","09:50A",LECTURE
-"15442 RFLA 200H 02","Spanish Gastronomy Explosion","4","M Paniagua-Tejo","","TR","09:30","10:45A",LECTURE
-"16153 RFLA 200H 03","Race, Class, Gender Lat Amer","4","R Diaz-Zambrana","","TR","09:30","10:45A",LECTURE
-"15475 RFLA 200H 04","Body Liberation, Food Justice","4","L Tillmann","","TR","08:00","09:15A",LECTURE
-"15484 RFLA 200H 05","Body Liberation, Food Justice","4","L Tillmann","","TR","09:30","10:45A",LECTURE
-"15495 RFLA 200H 06","Mean Girls in Film & Lit","4","J Jones","","MW","2 :30","3 :45P",LECTURE
-"16003 RFLA 200H 07","Sci-Fi, Philosophy, and Film","4","S Rubarth","","MW","1 :00","2 :15P",LECTURE
-"16275 RFLA 200S 01","Astronomy & NASA","6","C Fuse","BUSH 176","TR M","09:30","10:45A 2 :00",LECTURE
-"15555 RFLA 200S 02","Astronomy & NASA","6","C Fuse","BUSH 176 BUSH 308","TR T","09:30","10:45A 2 :00",LECTURE
-"16250 RFLA 200S 03","Science&Art: Leonardo DaVinci","6","S Fonseca Douguet","BUSH 180","TR F","2 :00","3 :15P 2 :00",LECTURE
-"15836 RFLA 200S 04","FL Biodiversity & Enviro Sci","6","I Biazzo","BUSH 164","TR","09:30","10:45A",LECTURE
-"15554 RFLA 200S 05","Science&Art: Leonardo DaVinci","6","S Fonseca Douguet","BUSH 180","TR W","09:30","10:45A 2 :00",LECTURE
-"16230 RFLA 300 01","Embodied Resistance: Prf Desgn","4","M DiQuattro , L Cody-Rapport","ASC 109","TR","09:00","10:50A",LECTURE
-"15496 RFLA 300 02","Good Medicine/Bad Drugs","4","E Russell","","MW","2 :30","3 :45P",LECTURE
-"16123 RFLA 300 03","Beyond Cultural Relativity","4","G Beaudin","","MW","2 :30","3 :45P",LECTURE
-"15498 RFLA 300 04","Righting Wrongs","4","M Cheng","","TR","09:30","10:45A",LECTURE
-"15569 RFLA 300 05","Social Choice Math","4","S Boyd","","MWF","08:00","08:50A",LECTURE
-"15570 RFLA 300 06","Social Choice Math","4","S Boyd","","MWF","09:00","09:50A",LECTURE
-"15733 RFLA 300 07","Asian Amercn Identity Thru Rep","4","M Robinson","","TR","09:30","10:45A",LECTURE
-"15439 RFLA 300 08","Latin Amer. Goes to the Movies","4","P Tome","","TR","09:30","10:45A",LECTURE
-"15777 RFLA 300 09","Communication Culture & Confct","4","A Stone , M Nelson","","TR","09:30","10:45A",LECTURE
-"16053 RFLA 300 10","Materials and Society","4","B Mosby","","TR","09:30","10:45A",LECTURE
-"15837 RFLA 300 11","America's Gifts","4","B Allen","BEAL 2","MW","2 :30","3 :45P",LECTURE
-"16004 RFLA 300 12","Learn/Teach about Holocaust","4","Y Greenberg , H Zissman","","TR","09:30","10:45A",LECTURE
-"16288 RFLA 300 13","Critical Disability Studies","4","S Coffman-Rosen","","TR","09:30","10:45A",LECTURE
+course,title,credits,instructor,location,day,start,end,type
+"16272 ARH 295 I1","Art in Orlando","2","M Ryan","","MTWRF","10:00","1 :30P","LECTURE"
+"16210 ART 295 I1","Ceramic Sculpture","2","A Hope","CFAC 101","MTWRF","09:00","1 :00P","LECTURE"
+"16215 INT 195 I1","Orange is the New Black","2","A McClure","CSS 134 CSS 134 CSS 134","MR TW F","09:00","12:00P 09:00","LECTURE"
+"16226 INT 195 I2","The Plots of PIXAR","2","M Forsythe","BUSH 228 BUSH 228","MTWRF MTWRF","10:00","12:00P 12:30","LECTURE"
+"16268 INT 195 I3","Body Count: Serial Killers C&M","2","A Zimmermann","","MTWR F MTWR","10:00","12:30P 10:00","LECTURE"
+"16211 INT 295 I01","Field Ornithology","2","I Biazzo","BEAL 1","MTWRF","08:00","1 :00P","LECTURE"
+"16212 INT 295 I02","Business Scandals","2","D Caban","FAIRBK 107","MTWRF","09:00","12:30P","LECTURE"
+"16213 INT 295 I03","Dev Your Emotional Intelligenc","2","T Loch","KWR 320","MTWRF","09:00","1 :00P","LECTURE"
+"16214 INT 295 I04","Life Launch","2","J Mathews","WAR 201","MTWRF","09:00","12:30P","LECTURE"
+"16217 INT 295 I05","Apartheid in Movies","2","C Strom","CSS 230","MTWRF","1 :30","5 :00P","LECTURE"
+"16249 INT 295 I06","Immigratin Rights Immersion_CE","2","V Teske A Davis","BUSH 308 BUSH 308 BUSH 308","W MTF R","07:00","8 :00P 09:00","LECTURE"
+"16248 INT 295 I07","Adventures in Tourism","2","S Brown","CSS 135 CSS 135","MTWRF MTWR","09:00","12:00P 1 :00","LECTURE"
+"16262 INT 295 I08","Job Market Boot Camp","2","T French","KMC 1","MTWRF","09:00","12:30P","LECTURE"
+"16263 INT 295 I09","Managing Your Money","2","R Lewin","FAIRBK 116","MTWRF","09:30","12:50P","LECTURE"
+"16264 INT 295 I10","Introduction to Cheese","2","B Pilat","KWR 310 KWR 310 KWR 310","MTWR F MTWR","10:45","12:30P 10:45","LECTURE"
+"16265 INT 295 I11","Congress in the Movies","2","P Rickert","CSS 232","MTWRF","12:00","4 :00P","LECTURE"
+"16218 PSY 295 I1","Psychology of Haunted Houses","2","P Harris","BUSH 176","MTWRF","12:00","4 :00P","LECTURE"
+"16219 THE 195 I1","Digital Rendering w/ Procreate","2","A Crutchfield","TIEDTK 101 TIEDTK 101","MTWRF MTWRF","10:00","12:00P 12:30","LECTURE"
+"15459 ASJ 305 1","Soc Justice Theory/Practice","4","N Richter","","TR","2 :00","3 :15P","LECTURE"
+"16052 AAAS 101 1","Intro African/Afr-Am Studies","4","D Ponton","","TR","08:00","09:15A","LECTURE"
+"16200 AMST 200 1","Am Studies: American Crime","4","J Jones","","MW","1 :00","2 :15P","LECTURE"
+"16220 AMST XXX 1","American Studies Courses","4","","","TBA","","","LECTURE"
+"15504 ANT 200 1","Cultural Anthropology","4","A Romero","CSS 170","TR","2 :00","3 :15P","LECTURE"
+"15505 ANT 200 2","Cultural Anthropology","4","S Saiyed","CSS 170","TR","11:00","12:15P","LECTURE"
+"15500 ANT 210 1","Human Evolution","4","Z Gilmore","CSS 119","MWF","11:00","11:50A","LECTURE"
+"15502 ANT 235 1","Florida Before Columbus","4","Z Gilmore","CSS 100","MW","2 :30","3 :45P","LECTURE"
+"15499 ANT 303 1","Women's Global Health","4","S Brown","","MWF","10:00","10:50A","LECTURE"
+"16110 ANT 340 1","Latin American Ethnography","4","A Romero","","TR","11:00","12:15P","LECTURE"
+"15503 ANT 351 1","Language, Culture & Society","4","T Mould","","TR","2 :00","3 :15P","LECTURE"
+"15506 ANT 361 1","Anthropology & Environment","4","S Saiyed","","TR","2 :00","3 :15P","LECTURE"
+"15507 ANT 364 1","Anthro & Storytelling","4","A Romero","CSS 119","TR","3 :30","4 :45P","LECTURE"
+"15501 ANT 410 1","Seminar: Thry in Practice","4","S Brown","CSS 119","MW","1 :00","2 :15P","LECTURE"
+"15536 ARH 120 1","Eur & Amer Art 1400-present","4","M Nguyen","REX 1","MWF","11:00","11:50A","LECTURE"
+"15537 ARH 145 1","Introduction to African Art","4","M Ryan","REX 1","MWF","10:00","10:50A","LECTURE"
+"16277 ARH 195 1","Tc:Hstorical Fashion thru Film","2","M Ryan","REX 1","MW","2 :30","3 :45P","LECTURE"
+"15538 ARH 215 1","Archaeology of the Greek World","4","R Vander Poppen","REX 1","TR","3 :30","4 :45P","LECTURE"
+"15539 ARH 234 1","American Art","4","M Nguyen","CFAC 113","TR","2 :00","3 :15P","LECTURE"
+"15546 ARH 243 1","Fashion in Africa","4","M Ryan","REX 1","MW","1 :00","2 :15P","LECTURE"
+"15542 ARH 341 1","African Art and Colonialism","4","M Ryan","CFAC 113","TR","11:00","12:15P","LECTURE"
+"15543 ARH 402 1","Methodologies of Art History","4","M Nguyen","CFAC 113","MW","2 :30","3 :45P","LECTURE"
+"15657 ART 110 1","Two-Dimensional Foundations","4","R Simmons","CFAC 107 CFAC 110 CFAC 112","TR TR TR","11:00","12:15P 11:00","LECTURE"
+"16149 ART 120 1","Three-Dimensional Foundations","4","A Hope","CFAC 101","MW","1 :00","2 :15P","LECTURE"
+"16150 ART 120 2","Three-Dimensional Foundations","4","A Hope","CFAC 101","MW","2 :30","3 :45P","LECTURE"
+"15651 ART 223 1","Graphic Design I","4","D Hargrove","CFAC 116","TR","08:00","09:15A","LECTURE"
+"15653 ART 230 1","Digital Media/CriticalPractice","4","D Roe","CFAC 103 CFAC 116","W W","1 :00","3 :30P 1 :00","LECTURE"
+"15622 ART 251 1","Painting I","4","D Hargrove","CFAC 112 CFAC 110","W W","1 :00","3 :30P 1 :00","LECTURE"
+"15654 ART 325 1","Intergenerational Photgrphy_CE","4","D Roe","CFAC 116 CFAC 103","TR TR","09:30","10:45A 09:30","LECTURE"
+"15620 ART 342 1","Sculpture II","4","A Hope","CFAC 101","MW","4 :00","5 :15P","LECTURE"
+"15623 ART 351 1","Painting II","4","D Hargrove","CFAC 112 CFAC 110","W W","1 :00","3 :30P 1 :00","LECTURE"
+"15655 ART 450 1","Senior Seminar","4","R Simmons","CFAC 103 CFAC 111","TR TR","2 :00","3 :50P 2 :00","LECTURE"
+"15575 BIO 121 1","General Biology II","6","A Fearing J Pieczynski","BUSH 105","MWF W","08:00","08:50A 1 :00","LECTURE"
+"15583 BIO 121 2","General Biology II","6","J Pieczynski","BUSH 105","MWF M","10:00","10:50A 2 :00","LECTURE"
+"15592 BIO 121 3","General Biology II","6","S Guerrier","BUSH 105","MWF T","10:00","10:50A 2 :00","LECTURE"
+"15593 BIO 121 4","General Biology II","6","S Guerrier","BUSH 105","MWF R","11:00","11:50A 2 :00","LECTURE"
+"15594 BIO 210 1","Oceanography","4","A Fearing","","TR","11:00","12:15P","LECTURE"
+"15605 BIO 229 1","Microbiology","6","B Santiago-Narvaez","BUSH 368","MWF TR","09:00","09:50A 11:00","LECTURE"
+"15606 BIO 237 1","Vertebrate Zoology","6","B Fokidis","BUSH 101","TR T","11:00","12:15P 2 :00","LECTURE"
+"15607 BIO 244 1","Journal Club","2","B Fokidis","","F","1 :00","2 :15P","LECTURE"
+"15608 BIO 244 2","Journal Club","2","P Rogers","","MW","09:00","09:50A","LECTURE"
+"15609 BIO 246 1","Human Physiology","6","S Kanani","BUSH 101","MW","3 :00","5 :30P","LECTURE"
+"15610 BIO 295 1","Topic: Limnology","2","P Rogers","","MW","1 :00","1 :50P","LECTURE"
+"15611 BIO 308 1","Genetics","6","A Fearing","BUSH 364","MWF M","10:00","10:50A 2 :00","LECTURE"
+"16286 BIO 308 2","Genetics","6","A Fearing","BUSH 364","MWF W","10:00","10:50A 2 :00","LECTURE"
+"15612 BIO 311 1","Plant Physiology","6","P Stephenson","BUSH 364","MWF T","10:00","10:50A 2 :00","LECTURE"
+"15613 BIO 329 1","Microbial Physiology","6","B Santiago-Narvaez","","MWF W","11:00","11:50A 2 :00","LECTURE"
+"15614 BIO 330 1","Fld Botany & FL Ecosytem w/Lab","6","P Stephenson","BUSH 268","MWF R","12:00","12:50P 2 :00","LAB"
+"15615 BIO 341 1","Molecular Biology","6","J Pieczynski","BUSH 364","MWF R","12:00","12:50P 2 :00","LECTURE"
+"16173 BIO 395 1","Tc:Landmrk Discvrs in Cell Bio","2","S Guerrier","","F","1 :00","2 :15P","LECTURE"
+"15616 BIO 440 1","SR Sem: Topics in Biology","4","B Fokidis","","TR","09:30","10:45A","LECTURE"
+"15617 BIO 440 2","SR Sem: Topics in Biology","4","P Rogers","","TR","09:30","10:45A","LECTURE"
+"15639 BUS 230 1","Financial/Managerial Acctng","4","D Corddry","","TR","3 :30","4 :45P","LECTURE"
+"15642 BUS 230 4","Financial/Managerial Acctng","4","D Caban","","MWF","11:00","11:50A","LECTURE"
+"15643 BUS 230 5","Financial/Managerial Acctng","4","R Phillips","","TR","11:00","12:15P","LECTURE"
+"15644 BUS 230 6","Financial/Managerial Acctng","4","R Phillips","","TR","2 :00","3 :15P","LECTURE"
+"15645 BUS 230 7","Financial/Managerial Acctng","4","R Phillips","","TR","3 :30","4 :45P","LECTURE"
+"15689 BUS 233 1","Micro & Macro Economics","4","J Pereira","","MWF","1 :00","1 :50P","LECTURE"
+"15690 BUS 233 2","Micro & Macro Economics","4","J Pereira","","MWF","10:00","10:50A","LECTURE"
+"15691 BUS 233 3","Micro & Macro Economics","4","J Pereira","","MWF","11:00","11:50A","LECTURE"
+"15692 BUS 233 4","Micro & Macro Economics","4","J Shideler","","TR","2 :00","3 :15P","LECTURE"
+"15693 BUS 233 5","Micro & Macro Economics","4","J Shideler","","TR","3 :30","4 :45P","LECTURE"
+"15702 BUS 236 1","Statistics for Business","4","V Ahmed","","TR","08:00","09:15A","LECTURE"
+"15703 BUS 236 2","Statistics for Business","4","V Ahmed","","TR","09:30","10:45A","LECTURE"
+"15704 BUS 236 3","Statistics for Business","4","S Al-Haddad","","MWF","10:00","10:50A","LECTURE"
+"15705 BUS 236 4","Statistics for Business","4","S Al-Haddad","","MWF","11:00","11:50A","LECTURE"
+"15706 BUS 236 5","Statistics for Business","4","F Hassanmirzaei","","TR","2 :00","3 :15P","LECTURE"
+"15707 BUS 236 6","Statistics for Business","4","F Hassanmirzaei","","TR","3 :30","4 :45P","LECTURE"
+"15674 BUS 245 1","Intl Organizational Behavior","4","T Loch","","MW","2 :30","3 :45P","LECTURE"
+"16170 BUS 245 2","Intl Organizational Behavior","4","V Alves","","MWF","08:00","08:50A","LECTURE"
+"15676 BUS 245 3","Intl Organizational Behavior","4","Y Shuumarjav","","MWF","10:00","10:50A","LECTURE"
+"15677 BUS 245 4","Intl Organizational Behavior","4","Y Shuumarjav","","MWF","11:00","11:50A","LECTURE"
+"15678 BUS 245 5","Intl Organizational Behavior","4","Y Shuumarjav","","MWF","12:00","12:50P","LECTURE"
+"15679 BUS 245 6","Intl Organizational Behavior","4","T Loch","","MW","4 :00","5 :15P","LECTURE"
+"16172 BUS 295 1","Tc: Dev Emotional Intelligence","4","T Loch","","MW","1 :00","2 :15P","LECTURE"
+"15626 BUS 319 1","Business Law & Ethics","4","M Whitesides","","MW","1 :00","2 :15P","LECTURE"
+"15660 BUS 321 1","Global Entrepreneurship","4","A Althuis","","MWF","10:00","10:50A","LECTURE"
+"15661 BUS 321 2","Global Entrepreneurship","4","A Althuis","","MWF","09:00","09:50A","LECTURE"
+"15625 BUS 325 1","Business Comm & Negotiation","4","A Hemphill","","TR","09:30","10:45A","LECTURE"
+"15638 BUS 331 1","Financial Statement Analysis","4","T Sheppe","","TR","08:00","09:15A","LECTURE"
+"15636 BUS 332 1","Family Business Financial Mgt","4","D Caban","","MW","1 :00","2 :15P","LECTURE"
+"15637 BUS 334 1","Family Business Planning","4","M Carroll","","MW","2 :30","3 :45P","LECTURE"
+"15687 BUS 348 1","Investments","4","M Sardy","","MW","4 :00","5 :15P","LECTURE"
+"16096 BUS 348 2","Investments","4","M Sardy","","MW","1 :00","2 :15P","LECTURE"
+"15713 BUS 352 1","Customer Experience Management","4","R Phillips","","F","1 :00","3 :30P","LECTURE"
+"15695 BUS 376 1","Personal Selling","4","B Kroll","","TR","2 :00","3 :15P","LECTURE"
+"15696 BUS 376 2","Personal Selling","4","B Kroll","","TR","3 :30","4 :45P","LECTURE"
+"16239 BUS 395 1","Tpc:Business of Water & Energy","4","J Shideler","","TR","11:00","12:15P","LECTURE"
+"15646 BUS 450 1","Global Business Strategy","4","K Kiefer","","TR","09:30","10:45A","LECTURE"
+"15647 BUS 450 2","Global Business Strategy","4","J Lee","","MW","1 :00","2 :15P","LECTURE"
+"15648 BUS 450 3","Global Business Strategy","4","K Kiefer","","TR","11:00","12:15P","LECTURE"
+"15649 BUS 450 4","Global Business Strategy","4","M Carroll","","TR","2 :00","3 :15P","LECTURE"
+"15650 BUS 450 5","Global Business Strategy","4","J Lee","","MW","2 :30","3 :45P","LECTURE"
+"15658 BUS 450 6","Global Business Strategy","4","M Carroll","","TR","3 :30","4 :45P","LECTURE"
+"15659 BUS 450 H1X","Global Business Strategy","4","J Lee","","W","6 :00","8 :30P","LECTURE"
+"15681 INB 200 1","Intro to Intl Business","4","K Buckley","","MWF","08:00","08:50A","LECTURE"
+"15682 INB 200 2","Intro to Intl Business","4","K Buckley","","MWF","09:00","09:50A","LECTURE"
+"15671 INB 337 1","International Marketing Mgmt","4","M Carroll","","MW","1 :00","2 :15P","LECTURE"
+"15672 INB 365 1","International Operations & MIS","4","F Hassanmirzaei","","TR","11:00","12:15P","LECTURE"
+"15673 INB 372 1","Intl Financial Management","4","M Sardy","","MW","2 :30","3 :45P","LECTURE"
+"15683 MGT 101 1","Intro to Resp Business Mgmt","4","M Whitesides","","MWF","09:00","09:50A","LECTURE"
+"15684 MGT 101 2","Intro to Resp Business Mgmt","4","M Whitesides","","MWF","10:00","10:50A","LECTURE"
+"15685 MGT 101 3","Intro to Resp Business Mgmt","4","M Whitesides","","MWF","12:00","12:50P","LECTURE"
+"15698 MGT 312 1","Responsible Bus Leadership","4","V Alves","","MWF","11:00","11:50A","LECTURE"
+"15699 MGT 312 2","Responsible Bus Leadership","4","J Pereira","","MWF","08:00","08:50A","LECTURE"
+"15700 MGT 312 3","Responsible Bus Leadership","4","M Orlowsky","","MW","1 :00","2 :15P","LECTURE"
+"15701 MGT 312 4","Responsible Bus Leadership","4","M Orlowsky","","MW","2 :30","3 :45P","LECTURE"
+"16171 MGT 312 5","Responsible Bus Leadership","4","V Alves","","MWF","10:00","10:50A","LECTURE"
+"15627 MGT 320 1","Entrepreneurial & Corp Finance","4","K Brady","","MW","1 :00","2 :15P","LECTURE"
+"15628 MGT 320 2","Entrepreneurial & Corp Finance","4","R Lewin","","TR","2 :00","3 :15P","LECTURE"
+"15629 MGT 320 3","Entrepreneurial & Corp Finance","4","K Brady","","MW","2 :30","3 :45P","LECTURE"
+"15630 MGT 320 4","Entrepreneurial & Corp Finance","4","R Lewin","","TR","3 :30","4 :45P","LECTURE"
+"15632 MGT 330 1","Entrepreneurial Marketing","4","M Badra","","MW","2 :30","3 :45P","LECTURE"
+"15633 MGT 330 2","Entrepreneurial Marketing","4","M Badra","","MW","1 :00","2 :15P","LECTURE"
+"15634 MGT 330 3","Entrepreneurial Marketing","4","M Badra","","TR","08:00","09:15A","LECTURE"
+"15635 MGT 330 4","Entrepreneurial Marketing","4","M Badra","","TR","09:30","10:45A","LECTURE"
+"15665 MGT 342 1","Human Resource Management","4","A Althuis","","MW","1 :00","2 :15P","LECTURE"
+"15666 MGT 342 2","Human Resource Management","4","A Althuis","","MW","2 :30","3 :45P","LECTURE"
+"15667 MGT 342 3","Human Resource Management","4","M Orlowsky","","MW","4 :00","5 :15P","LECTURE"
+"15708 MGT 350 1","Supply Chain Mgmt & MIS","4","F Hassanmirzaei","","TR","08:00","09:15A","LECTURE"
+"15709 MGT 350 2","Supply Chain Mgmt & MIS","4","M Heileman","","TR","09:30","10:45A","LECTURE"
+"15710 MGT 350 3","Supply Chain Mgmt & MIS","4","M Heileman","","TR","11:00","12:15P","LECTURE"
+"15662 MGT 354 1","High Performance Organizations","4","T Pett","","TR","09:30","10:45A","LECTURE"
+"15663 MGT 354 2","High Performance Organizations","4","T Pett","","TR","11:00","12:15P","LECTURE"
+"16135 MGT 354 3","High Performance Organizations","4","T Pett","","TR","2 :00","3 :15P","LECTURE"
+"16114 CLP 102 1","Making Any Major Marketable","2","J Wensel , T French","KWR HUB","TR","11:00","12:15P","LECTURE"
+"16115 CLP 102 2","Making Any Major Marketable","2","D Metko , S Brown","KWR HUB","TR","2 :00","3 :15P","LECTURE"
+"16142 CLP 102 H1X","Making Any Major Marketable","2","J Wensel","KWR HUB","TR","6 :00","7 :15P","LECTURE"
+"16112 CLP 107 1X","Career Champions Mentor","2","C Morman","","TBA","","","LECTURE"
+"16137 INTN XXX 1","Internship","","","","TBA","","","LECTURE"
+"16207 BCH 244 1","Biochemistry Journal Club","2","M Fuse","","TR","08:00","09:15A","LECTURE"
+"15816 BCH 335 1","Biochemistry","4","K Riley","","MWF","09:00","09:50A","LECTURE"
+"15817 BCH 335L 1","Biochemistry Lab","2","A Hashim","BUSH 368","M","2 :30","5 :30P","LAB"
+"15818 BCH 335L 2","Biochemistry Lab","2","A Hashim","BUSH 368","T","2 :30","5 :30P","LAB"
+"15819 BCH 435 1","Advanced Biochemistry","4","K Riley","","TR","09:30","10:45A","LECTURE"
+"16156 BCH 435 2","Advanced Biochemistry","4","K Riley","","TR","11:00","12:15P","LECTURE"
+"15802 CHM 120 1","Chemistry I","6","M Fuse","BUSH 305","MWF R","08:00","08:50A 2 :00","LECTURE"
+"15803 CHM 120 2","Chemistry I","6","M Fuse","BUSH 305","MWF F","10:00","10:50A 1 :00","LECTURE"
+"15804 CHM 121 1","Chemistry II","6","B Mosby","BUSH 305","MWF W","11:00","11:50A 1 :00","LECTURE"
+"15805 CHM 121 2","Chemistry II","6","E Yook","BUSH 305","MWF T","10:00","10:50A 2 :00","LECTURE"
+"15806 CHM 121 3","Chemistry II","6","P Bernal","BUSH 305","MWF M","11:00","11:50A 2 :30","LECTURE"
+"15807 CHM 220 1","Organic Chemistry I","4","L Habgood","","MWF","10:00","10:50A","LECTURE"
+"15808 CHM 220L 1","Organic Chemistry I Lab","2","L Habgood","BUSH 205","M","1 :00","4 :00P","LAB"
+"15810 CHM 221 1","Organic Chemistry II","4","L Habgood","","MWF","09:00","09:50A","LECTURE"
+"15811 CHM 221L 1","Organic Chemistry II Lab","2","L Habgood","BUSH 205","W","1 :00","4 :00P","LAB"
+"15812 CHM 221L 2","Organic Chemistry II Lab","2","E Yook","BUSH 205","R","2 :00","5 :00P","LAB"
+"15815 CHM 305 1","Physical Chemistry I","6","P Bernal","BUSH 264","MWF W","1 :00","1 :50P 2 :30","LECTURE"
+"15813 CHM 460 1","AdvTpc:Crystlgrphy & Diffractn","2","B Mosby","","TR","11:00","12:15P","LECTURE"
+"16273 CHM 460 2","AdvTpc:Chm Mech Cancer Signal","2","M Fuse","","TR","11:00","12:15P","LECTURE"
+"16242 CLS 104 1","Rome: Identity and Empire","4","R Vander Poppen","REX 1","TR","11:00","12:15P","LECTURE"
+"15984 LAT 102 1","Introductory Latin II","4","S Rubarth","","MWF","12:00","12:50P","LECTURE"
+"16166 LAT 202 1","Intermediate Latin II","4","R Vander Poppen","REX 1","TR","08:00","09:15A","LECTURE"
+"15732 COM 100 1","Intro Communication Studies","4","K Pierre","","MW","2 :30","3 :45P","LECTURE"
+"15734 COM 100 2","Intro Communication Studies","4","P Adu Gyamfi","","MWF","08:00","08:50A","LECTURE"
+"15735 COM 100 3","Intro Communication Studies","4","Y Zhu","","TR","09:30","10:45A","LECTURE"
+"15736 COM 100 4","Intro Communication Studies","4","Y Zhu","","MWF","10:00","10:50A","LECTURE"
+"15738 COM 100 5","Intro Communication Studies","4","T Vierrether","","MW","1 :00","2 :15P","LECTURE"
+"16231 COM 100 6","Intro Communication Studies","4","T Vierrether","","MW","2 :30","3 :45P","LECTURE"
+"15739 COM 210 1","Public Speaking","4","K Pierre","","TR","2 :00","3 :15P","LECTURE"
+"15740 COM 210 2","Public Speaking","4","K Pierre","","TR","3 :30","4 :45P","LECTURE"
+"15741 COM 210 3","Public Speaking","4","R Zhang","","MWF","11:00","11:50A","LECTURE"
+"15742 COM 212 H1X","Persuasion","4","T Vierrether","","MW","7 :30","8 :45P","LECTURE"
+"16097 COM 220 3","Interpersonal Communication","4","P Adu Gyamfi","","MWF","12:00","12:50P","LECTURE"
+"15754 COM 225 1","Legal Communication","4","K Pierre","","MW","4 :00","5 :15P","LECTURE"
+"15755 COM 230 1","Listening","4","A Stone","","MW","1 :00","2 :15P","LECTURE"
+"15757 COM 240 1","Intercultural Communication","4","Y Zhu","","TR","2 :00","3 :15P","LECTURE"
+"15758 COM 240 2","Intercultural Communication","4","H Mesbah","","TR","3 :30","4 :45P","LECTURE"
+"15760 COM 285 1","Research Methods Comm","4","D Painter","OLIN 225","TR","11:00","12:15P","LECTURE"
+"15761 COM 285 2","Research Methods Comm","4","D Painter","","TR","3 :30","4 :45P","LECTURE"
+"15759 COM 285 H1X","Research Methods Comm","4","T Vierrether","","MW","6 :00","7 :15P","LECTURE"
+"15762 COM 295 1","Tpc:Dark Side of Communication","4","Y Zhu","","MWF","11:00","11:50A","LECTURE"
+"15763 COM 302 1","New Media & Public Relations","4","R Zhang","","MWF","10:00","10:50A","LECTURE"
+"15765 COM 313 1","Mass Media & Society","4","H Mesbah","","MW","1 :00","2 :15P","LECTURE"
+"15766 COM 319 1","Leadership & Effective Com","4","J Hammonds","","MWF","08:00","08:50A","LECTURE"
+"15767 COM 330 1","Health Communication","4","P Adu Gyamfi","","MWF","10:00","10:50A","LECTURE"
+"15768 COM 331 H1X","Comm and Social Change","4","R Winter","","R","6 :00","8 :30P","LECTURE"
+"15771 COM 351 H1X","Writing for PR","4","R Winter","","T","6 :00","8 :30P","LECTURE"
+"15772 COM 352 1","Middle East Media","4","H Mesbah","","MW","2 :30","3 :45P","LECTURE"
+"15773 COM 360 1","Destructive Workplace Comm","4","M Garcia","","TR","3 :30","4 :45P","LECTURE"
+"16164 COM 365 1","Social Media Influencers/PR","4","R Zhang","","TR","2 :00","3 :15P","LECTURE"
+"15774 COM 480 1","SR Seminar in Communication","4","M Garcia","","TR","2 :00","3 :15P","LECTURE"
+"15775 COM 480 H1X","SR Seminar in Communication","4","M Garcia","","TR","6 :00","7 :15P","LECTURE"
+"15557 CMS 120 1","Intro to Computer Science","4","D Myers","","MWF","10:00","10:50A","LECTURE"
+"15558 CMS 120L 1","Intro to Computer Sci Lab","2","D Myers","","W","2 :00","5 :00P","LAB"
+"15559 CMS 121 1","Prog & Software Development","4","S Tisha","","TR","11:00","12:15P","LECTURE"
+"16196 CMS 195 1","Topic: AI Coding for Everyone","2","D Myers","","MWF","12:00","12:50P","LECTURE"
+"15560 CMS 230 1","Computer Org & Architecture","4","V Summet","","TR","2 :00","3 :15P","LECTURE"
+"15562 CMS 250 1","Data Structures and Algorithms","4","S Tisha","","MW","1 :00","2 :15P","LECTURE"
+"16169 CMS 295 1","Tc: App Electronics & Embd Sys","4","W Coyle","BUSH 160","MW","1 :00","2 :15P","LECTURE"
+"15564 CMS 375 1","Database Design & Dev","4","S Tisha","","MWF","10:00","10:50A","LECTURE"
+"15565 CMS 430 1","Artificial Intelligence","4","D Myers","","MWF","11:00","11:50A","LECTURE"
+"15566 CMS 484 1","Computer Science Capstone","4","V Summet","","TR","08:00","09:15A","LECTURE"
+"16195 CMS 495 1","Topic: Intro to Cybersecurity","4","V Summet","","TR","3 :30","4 :45P","LECTURE"
+"15461 CMC 110 1","Digital Storytelling","4","S Schoen","OLIN 220","TR","09:30","10:45A","LECTURE"
+"15468 CMC 110 2","Digital Storytelling","4","S Schoen","OLIN 220","TR","11:00","12:15P","LECTURE"
+"15473 CMC 295 1","Tpc: Body, Food & Justice","4","L Tillmann","","TR","08:00","09:15A","LECTURE"
+"15486 CMC 295 2","Tpc: Body, Food & Justice","4","L Tillmann","","TR","09:30","10:45A","LECTURE"
+"15460 CMC 300 1","Critical Frameworks","4","N Richter","","TR","2 :00","3 :15P","LECTURE"
+"15465 CMC 325 1","Incarceration & Inequality","4","L Tillmann","","W","1 :00","3 :30P","LECTURE"
+"15463 CMC 395 1","Topic: Animation in Film","4","N Richter","","T","6 :00","8 :30P","LECTURE"
+"15467 CMC 400 1","Doc Filmmaking Seminar","4","S Schoen D McIntosh","OLIN 220 OLIN 220","F F","12:00","12:50P 1 :00","LECTURE"
+"15533 DTA 250 1","Fund. Data Science & Analytics","4","J Jasser","","MWF","10:00","10:50A","LECTURE"
+"15534 DTA 250 2","Fund. Data Science & Analytics","4","J Jasser","","MWF","11:00","11:50A","LECTURE"
+"15547 DTA 350 1","Adv Visualization & Comm","4","J Jasser","","MW","1 :00","2 :15P","LECTURE"
+"16057 ECO 108 1","Mathematical Mthds for Econ","4","Y Bing","","MWF","1 :00","1 :50P","LECTURE"
+"16059 ECO 121 1","Econ of Contemporary Issues","4","C Abraham","","TR","2 :00","3 :15P","LECTURE"
+"16061 ECO 202 1","Econ in Historical Perspective","4","M Rice","","MW","1 :00","2 :15P","LECTURE"
+"16062 ECO 202 2","Econ in Historical Perspective","4","M Rice","","MW","2 :30","3 :45P","LECTURE"
+"16064 ECO 202 3","Econ in Historical Perspective","4","M Rice","","MW","4 :00","5 :15P","LECTURE"
+"16065 ECO 202 4","Econ in Historical Perspective","4","B Balak","","TR","3 :30","4 :45P","LECTURE"
+"16085 ECO 202 H1X","Econ in Historical Perspective","4","B Balak","","TR","7 :30","8 :45P","LECTURE"
+"16066 ECO 203 1","Prin Micro & Macro Economics","4","C Abraham","","MWF","1 :00","1 :50P","LECTURE"
+"16067 ECO 203 2","Prin Micro & Macro Economics","4","C Abraham","","MWF","10:00","10:50A","LECTURE"
+"16068 ECO 221 1","Statistics for Economics","4","M Vidovic","","TR","2 :00","3 :15P","LECTURE"
+"16069 ECO 221 2","Statistics for Economics","4","E Wolpert","","MW","4 :00","5 :15P","LECTURE"
+"16077 ECO 303 1","Intermediate Microeconomics","4","M Vidovic","","TR","3 :30","4 :45P","LECTURE"
+"16078 ECO 304 1","Intermediate Macroeconomics","4","A Voicu","","MW","2 :00","3 :15P","LECTURE"
+"16182 ECO 304 2","Intermediate Macroeconomics","4","A Voicu","","TR","3 :30","4 :45P","LECTURE"
+"16079 ECO 307 1","International Economics","4","A Voicu","","MW","1 :00","2 :15P","LECTURE"
+"16183 ECO 310 1","International Finance","4","Y Bing","","TR","2 :00","3 :15P","LECTURE"
+"16086 ECO 312 H1X","Alternative Econ Perspectives","4","B Balak","","TR","6 :00","7 :15P","LECTURE"
+"16184 ECO 355 1","Environmental Economics","4","C Abraham","","MW","2 :30","3 :45P","LECTURE"
+"16081 ECO 381 1","Intro to Econometrics","4","M Vidovic","","TR","11:00","12:15P","LECTURE"
+"16082 ECO 395 1","Tpc:Instn'l Eco & Evol Theory","4","M Rice","","TR","3 :30","4 :45P","LECTURE"
+"16083 ECO 404 1","Senior Seminar in Econ","4","P Kozel","","MW","2 :30","3 :45P","LECTURE"
+"16084 ECO 404 2","Senior Seminar in Econ","4","P Kozel","","MW","4 :00","5 :15P","LECTURE"
+"15838 EDU 260 1","American Educational History","4","J Surian , S Hunt-Barron","","W","4 :30","7 :00P","LECTURE"
+"16267 EDU 271 1","Introduction to Education","4","S Hunt-Barron","","MW","2 :30","3 :45P","LECTURE"
+"15865 EDU 272 H1X","Educational Psychology","4","D Quito","","M","4 :30","7 :00P","LECTURE"
+"15840 EDU 280 1","The American Classroom_CE","4","D Quito","","MW","1 :00","2 :15P","LECTURE"
+"16181 EDU 295 1","Topic: Invisible Children","4","J Surian","","TR","11:00","12:15P","LECTURE"
+"15843 EDU 324 1","Curriculum & Eductnl Assesmnt","4","D Quito","","TR","2 :00","3 :15P","LECTURE"
+"15841 EDU 335 H1X","Content Area Read:Secondary","4","S Hunt-Barron","","M","4 :30","7 :00P","LECTURE"
+"15844 EDU 406 H1X","Instr Lrng & Class Mgmt","4","J Sanguiliano Lonski","","T","4 :30","7 :00P","LECTURE"
+"16177 EDU 417 H1X","Instr Strat & Mgt Secondary","4","T Staff","","T","4 :30","7 :00P","LECTURE"
+"16179 EDU 417L H1X","Secondary Ed Field Experience","2","T Staff","","TBA","","","LECTURE"
+"15848 EDU 470 H1X","Classroom Management","4","A Griner","CSS 222","W","4 :30","7 :00P","LECTURE"
+"15852 EDU 490 1X","Student Teaching: Elem","14","J Surian","","MTWRF","08:00","3 :00P","LECTURE"
+"15853 EDU 491 H1X","Student Teaching: Secondary","14","J Manak","","MTWRF","08:00","3 :30P","LECTURE"
+"15855 EED 319 H1X","Integrated Arts Elem School","3","J Surian","CSS 222","R","4 :30","6 :30P","LECTURE"
+"15857 EED 363 H1X","Social Studies for Elem Sch","4","J Sanguiliano Lonski","","R","4 :30","7 :00P","LECTURE"
+"15839 RED 371 1","Diag of Reading Difficulties","4","J Manak","","MW","09:00","10:50A","LECTURE"
+"15861 RED 409 H1X","Different Lit & Content Instr","4","A Griner","","R","4 :30","7 :00P","LECTURE"
+"15863 RED 409L H1X","Reading Field Experience","4","J Sanguiliano Lonski , A Griner","","TBA","","","LECTURE"
+"15510 ENG 190 1","Txt/Contxt: British Romance","4","B Hudson","","TR","3 :30","4 :45P","LECTURE"
+"15512 ENG 201 1","Pre1900: Shakespeare","4","B Boles","","W","4 :00","6 :30P","LECTURE"
+"15513 ENG 201 2","Pre1900: Sex, War, Plague","4","J Mathews , E Russell","BUSH 201","MWF","09:00","09:50A","LECTURE"
+"15514 ENG 221 1","TransNat: The American Abroad","4","M Moise","","MW","2 :30","3 :45P","LECTURE"
+"15515 ENG 232 1","Studies in Film: Queer Cinema","4","B Hudson","","TR","2 :00","3 :15P","LECTURE"
+"15517 ENG 303 1","Pre1900: Oscar Wilde","4","B Hudson","","MW","4 :00","5 :15P","LECTURE"
+"15518 ENG 321 1","TransNat:AsianAmerican Stories","4","M Cheng","","MW","1 :00","2 :15P","LECTURE"
+"15520 ENG 334 1","CntmpMdia:Gd Medicine/Bd Drugs","4","E Russell","","MW","2 :30","3 :45P","LECTURE"
+"15521 ENG 345 1","AmLit: American Drama","4","B Boles","","TR","3 :30","4 :45P","LECTURE"
+"15522 ENG 445 1","AmLit: Sin & Redemption","4","J Jones","","TR","11:00","12:15P","LECTURE"
+"15476 ENGW 140 04","Writing About: Magic Kingdom","4","A Zimmermann","","MWF","10:00","10:50A","LECTURE"
+"15477 ENGW 140 05","Writing About: Magic Kingdom","4","A Zimmermann","","MWF","11:00","11:50A","LECTURE"
+"15478 ENGW 140 06","Writing About: Magic Kingdom","4","A Zimmermann","","MWF","12:00","12:50P","LECTURE"
+"15479 ENGW 140 07","Writing About: Comics","4","F Tran","","MWF","10:00","10:50A","LECTURE"
+"15480 ENGW 140 08","Writing About: Comics","4","F Tran","","MWF","11:00","11:50A","LECTURE"
+"15481 ENGW 140 09","Writing About: Comics","4","F Tran","","MWF","12:00","12:50P","LECTURE"
+"15482 ENGW 140 10","Writing About: Fandoms","4","K Avagliano","","MW","1 :00","2 :15P","LECTURE"
+"15483 ENGW 140 11","Writing About: Fandoms","4","K Avagliano","","MW","2 :30","3 :45P","LECTURE"
+"15485 ENGW 140 12","Writing About: Fandoms","4","K Avagliano","","TR","09:30","10:45A","LECTURE"
+"15487 ENGW 140 13","Writing Abt:BusinessNarratives","4","B Boles","","TR","09:30","10:45A","LECTURE"
+"15488 ENGW 140 14","Writing About: Prestige TV","4","M Moise","","MW","1 :00","2 :15P","LECTURE"
+"15489 ENGW 140 15","Writing About: Prestige TV","4","M Moise","","TR","11:00","12:15P","LECTURE"
+"16199 ENGW 140 16","Writing Abt:The Sunshine State","4","J Mathews","","MWF","11:00","11:50A","LECTURE"
+"15523 ENGW 167 1","Intro to Creative Writing","4","A Zimmermann","","MW","2 :30","3 :45P","LECTURE"
+"15524 ENGW 167 2","Intro to Creative Writing","4","K Avagliano","","TR","11:00","12:15P","LECTURE"
+"15525 ENGW 263 1","WrtFc:Autofiction Bots Bck Off","4","V Brown","","TR","2 :00","3 :15P","LECTURE"
+"15526 ENGW 267 1","Tpc/Tch: Travel Writing","4","M Forsythe","","MWF","10:00","10:50A","LECTURE"
+"15527 ENGW 367 1","Tpc/Tch: Children's Literature","4","M Forsythe","","MWF","11:00","11:50A","LECTURE"
+"15529 ENGW 377 1","Prof Writ: Legal Writing","4","J Mathews","","MW","1 :00","2 :15P","LECTURE"
+"15528 ENGW 380 1","Language Studies","4","M Cheng","","TR","2 :00","3 :15P","LECTURE"
+"15530 ENGW 482 1","Writing for Publication","4","V Brown","","TR","11:00","12:15P","LECTURE"
+"15821 ENV 189 1","Envir Crisis in Cultural Cntxt","4","V Machado","LODGE REEVES","TR","11:00","12:15P","LECTURE"
+"16160 ENV 295 1","Topic: Freshwater Perspectives","4","E Nodine","BEAL 1","TR","11:00","12:15P","LECTURE"
+"16269 ENV 295 2","Topics: Field Ornithology","2","I Biazzo","BEAL 1","MWF","08:00","08:50A","LECTURE"
+"15824 ENV 323 1","Conservation of Biodiversity","4","I Biazzo","BUSH 176","TR","08:00","09:15A","LECTURE"
+"16118 ENV 330 1","Women and the Environment","4","L Poole","BEAL 2","MW","1 :00","2 :15P","LECTURE"
+"15826 ENV 348 1","Sustainable Development","4","B Allen","BEAL 2","TR","3 :30","4 :45P","LECTURE"
+"15827 ENV 350 1","Food Culture and Environment","4","L Lines","BEAL 1","TR","09:30","10:45A","LECTURE"
+"15828 ENV 380 1","American Environmental History","4","L Poole","BEAL 2","TR","11:00","12:15P","LECTURE"
+"15829 ENV 395 1","Tpc: Neotropical Environments","4","L Lines","BEAL 1","MWF","10:00","10:50A","LECTURE"
+"16117 ENV 395 4","Tc:Ecotourism Agr Consrv Carib","4","B Allen","BEAL 2","MWF","11:00","11:50A","LECTURE"
+"15832 ENV 413 1","Sr Sem: Environmental Issues","4","L Lines","BEAL 1","TR","2 :00","3 :15P","LECTURE"
+"15833 ENV 413 2","Sr Sem: Environmental Issues","4","E Nodine","BEAL 2","TR","2 :00","3 :15P","LECTURE"
+"15466 FIL 245 1","Film as Art: Florida Film Fest","4","N Richter","","TBA","","","LECTURE"
+"15464 FIL 395 1","Topics: Animation in Film","4","N Richter","","T","6 :00","8 :30P","LECTURE"
+"15567 GBH 200 1","Intro to Public Health","4","S Brown","","MWF","11:00","11:50A","LECTURE"
+"15458 ARA 102 1","Elementary Arabic II","4","S Alaya Seghair","","MWF","12:00","12:50P","LECTURE"
+"15392 CHN 101 1","Elem Chinese I","4","Z Gu","","MWF","09:00","09:50A","LECTURE"
+"15393 CHN 102 1","Elem Chinese II","4","Z Gu","","MWF","10:00","10:50A","LECTURE"
+"15394 CHN 201 1","Intermediate Chinese I","4","Z Gu","","MWF","11:00","11:50A","LECTURE"
+"15395 CHN 202 1","Intermediate Chinese II","4","Z Gu","","MWF","12:00","12:50P","LECTURE"
+"15449 FRN 101 1","Elementary French I","4","N Gammar","","MWF","10:00","10:50A","LECTURE"
+"15450 FRN 101 2","Elementary French I","4","N Gammar","","MWF","11:00","11:50A","LECTURE"
+"15451 FRN 102 1","Elementary French II","4","S Alaya Seghair","","MWF","10:00","10:50A","LECTURE"
+"15452 FRN 102 2","Elementary French II","4","S Alaya Seghair","","MWF","11:00","11:50A","LECTURE"
+"15453 FRN 201 1","Intermediate French I","4","C Castillo","","MWF","10:00","10:50A","LECTURE"
+"15454 FRN 201 2","Intermediate French I","4","C Castillo","","MWF","11:00","11:50A","LECTURE"
+"15455 FRN 202 1","Intermediate French II","4","N Gammar","","MWF","1 :00","1 :50P","LECTURE"
+"16089 FRN 350 1","Tc: French & Francophone World","4","C Castillo","","MWF","12:00","12:50P","LECTURE"
+"15397 HBR 102 1","Elementary Hebrew II","4","R Shisgal","","TR","3 :30","4 :45P","LECTURE"
+"15412 SPN 101 1","Elementary Spanish I","4","C Gonzalez Martin","","MWF","10:00","10:50A","LECTURE"
+"15413 SPN 101 2","Elementary Spanish I","4","C Gonzalez Martin","","MWF","11:00","11:50A","LECTURE"
+"15414 SPN 101 3","Elementary Spanish I","4","J Fischer","","MWF","12:00","12:50P","LECTURE"
+"15415 SPN 101 4","Elementary Spanish I","4","J Fischer","","MWF","1 :00","1 :50P","LECTURE"
+"15417 SPN 102 2","Elementary Spanish II","4","J Fischer","","MWF","09:00","09:50A","LECTURE"
+"15418 SPN 102 3","Elementary Spanish II","4","J Fischer","","MWF","10:00","10:50A","LECTURE"
+"15419 SPN 102 4","Elementary Spanish II","4","Y Smith","","MWF","10:00","10:50A","LECTURE"
+"15420 SPN 102 5","Elementary Spanish II","4","Y Smith","","MWF","11:00","11:50A","LECTURE"
+"15421 SPN 102 6","Elementary Spanish II","4","C Gonzalez Martin","","MWF","12:00","12:50P","LECTURE"
+"15422 SPN 102 7","Elementary Spanish II","4","J Holguin-Intriago","","MWF","12:00","12:50P","LECTURE"
+"15423 SPN 102 8","Elementary Spanish II","4","J Holguin-Intriago","","MWF","1 :00","1 :50P","LECTURE"
+"15424 SPN 201 01","Intermediate Spanish I","4","Y Smith","","MWF","08:00","08:50A","LECTURE"
+"15425 SPN 201 02","Intermediate Spanish I","4","M Paniagua-Tejo","","MWF","09:00","09:50A","LECTURE"
+"15426 SPN 201 03","Intermediate Spanish I","4","J Holguin-Intriago","","MWF","10:00","10:50A","LECTURE"
+"15427 SPN 201 04","Intermediate Spanish I","4","R Lilienthal","","MWF","10:00","10:50A","LECTURE"
+"15428 SPN 201 05","Intermediate Spanish I","4","R Lilienthal","","MWF","11:00","11:50A","LECTURE"
+"15429 SPN 201 06","Intermediate Spanish I","4","J Holguin-Intriago","","MWF","11:00","11:50A","LECTURE"
+"15430 SPN 201 07","Intermediate Spanish I","4","M Kupetz","","MWF","12:00","12:50P","LECTURE"
+"15431 SPN 201 08","Intermediate Spanish I","4","Y Smith","","MWF","12:00","12:50P","LECTURE"
+"15432 SPN 201 09","Intermediate Spanish I","4","R Lilienthal","","MWF","1 :00","1 :50P","LECTURE"
+"15433 SPN 201 10","Intermediate Spanish I","4","R Lilienthal","","MWF","2 :00","2 :50P","LECTURE"
+"15434 SPN 202 1","Intermediate Spanish II","4","M Paniagua-Tejo","","MWF","10:00","10:50A","LECTURE"
+"15435 SPN 202 2","Intermediate Spanish II","4","M Paniagua-Tejo","","MWF","11:00","11:50A","LECTURE"
+"15436 SPN 291 1","Advanced Spanish Communication","4","M Kupetz","","MWF","10:00","10:50A","LECTURE"
+"15437 SPN 291 2","Advanced Spanish Communication","4","M Kupetz","","MWF","11:00","11:50A","LECTURE"
+"15440 SPN 301 1","Adv Spanish thru Lit & Film_CE","4","C Gonzalez Martin","","MW","2 :30","3 :45P","LECTURE"
+"15443 SPN 303 1","Business Spanish for Non-Nat","4","A Prieto-Calixto","","MW","2 :30","3 :45P","LECTURE"
+"15444 SPN 303 2","Business Spanish for Non-Nat","4","A Prieto-Calixto","","MW","4 :00","5 :15P","LECTURE"
+"15469 SPN 321 1","Peoples/Cultures of Spain","4","A Prieto-Calixto","","MW","1 :00","2 :15P","LECTURE"
+"15446 SPN 337 1","PerformIdentity:Hspnic Theatre","4","P Tome","","TR","11:00","12:15P","LECTURE"
+"16229 SPN 346 1","Fictions of Fear in Latin Amer","4","R Diaz-Zambrana","","TR","2 :00","3 :15P","LECTURE"
+"15445 SPN 348 1","Latin Amer Pop Culture","4","R Diaz-Zambrana","","TR","11:00","12:15P","LECTURE"
+"15448 SPN 497 1","Senior Capstone Seminar","2","R Diaz-Zambrana , A Prieto-Calixto","","F","1 :00","3 :30P","LECTURE"
+"15398 HIS 120 1","DoD: China’s Cultural Rev.","4","K Shi","","MWF","08:00","08:50A","LECTURE"
+"15399 HIS 120 2","DoD: Cuba in the 1950s","4","J Varela Yepes","","MWF","10:00","10:50A","LECTURE"
+"15400 HIS 125 1","History of a City:Ancnt Athens","4","H Ewing","","MW","1 :00","2 :15P","LECTURE"
+"15401 HIS 125 2","History of a City: Cape Town","4","C Strom","CSS 230","MWF","11:00","11:50A","LECTURE"
+"16154 HIS 250 1","Hist Methodology: Latin Amer","4","J Varela Yepes","","MWF","12:00","12:50P","LECTURE"
+"15402 HIS 332 1","Crusades","4","H Ewing","","TR","11:00","12:15P","LECTURE"
+"15403 HIS 338 1","Europe: Revolt, Nation, Empire","4","H Ewing","","TR","2 :00","3 :15P","LECTURE"
+"15405 HIS 395 1","Tpc: Maritime E Asia 1500-1900","4","K Shi","","TR","3 :30","4 :45P","LECTURE"
+"16147 HIS 395 2","Topics: Cape Town","4","C Strom","CSS 230","MWF","11:00","11:50A","LECTURE"
+"15406 HIS 490 1","Senior Capstone","4","C Strom","","F","1 :00","3 :30P","LECTURE"
+"16006 HON 202AH 1","Best Writer in the World","4","V Brown","","TR","09:30","10:45A","LECTURE"
+"15983 HON 202CH 1","Ethical Controversies & Global","4","M McLaren","CSS 134","TR","09:30","10:45A","LECTURE"
+"16088 HON 300AH 1","WritingBooksfor&w/Children_CE","4","M Forsythe","","TR","09:30","10:45A","LECTURE"
+"15952 HON 350S 1","DogScience: HumanAnimalInterac","4","R Yankelevitz","","TR","09:30","10:45A","LECTURE"
+"15778 HON 400 1","Your Last Lecture","4","D Painter","","TR","09:30","10:45A","LECTURE"
+"16232 INT 125 1","Life&Financial Literacy Skills","1","D Pistor","","T","12:20","1 :05P","LECTURE"
+"16234 INT 195 2","Tc:Buildng Resiliency & Wellns","2","C Briscoe","","TR","3 :30","4 :45P","LECTURE"
+"16233 INT 225 1","Adv Life & Financial Literacy","1","D Pistor","","T","1 :10","1 :50P","LECTURE"
+"16143 INT 232 1X","Found Peer Health Education II","2","A Williams","OLIN VAN HOUTEN","T","12:30","1 :45P","LECTURE"
+"16282 INT 295 1","Tc: Acad Upgrade AI & Research","2","R Walton","OLIN","MW","1 :00","2 :15P","LECTURE"
+"16157 LAC 200 1","Latin Amer and Carib Society","4","J Doyle","","TR","2 :00","3 :15P","LECTURE"
+"16158 LAC 395 1","Tpc: Social Mvmnts in Latin Am","4","J Doyle","","MW","1 :00","2 :15P","LECTURE"
+"15571 MAT 103 1","Statistical Reasoning","4","S Jani","","MWF","08:00","08:50A","LECTURE"
+"15572 MAT 103 2","Statistical Reasoning","4","S Jani","","MWF","10:00","10:50A","LECTURE"
+"15576 MAT 107 1","Mathematics Elementary Teachrs","4","S Jani","","MW","1 :00","2 :15P","LECTURE"
+"15578 MAT 108 1","Essential Math","4","S Boyd","","MWF","11:00","11:50A","LECTURE"
+"15579 MAT 109 1","Precalculus Mathematics","4","P Yazdanbakhshghahyazi","","MWF","11:00","11:50A","LECTURE"
+"15580 MAT 111 1","Calculus I","4","S Jani","","MWF","11:00","11:50A","LECTURE"
+"15581 MAT 112 1","Calculus II","4","Z Teymuroglu","","MWF","11:00","11:50A","LECTURE"
+"15582 MAT 140 1","Intro to Discrete Mathematics","4","S Boyd","","MWF","12:00","12:50P","LECTURE"
+"16266 MAT 195 1","Topics: Math in Motion","4","Z Teymuroglu","","MWF","10:00","10:50A","LECTURE"
+"15585 MAT 211 1","Calculus III","4","P Yazdanbakhshghahyazi","","MWF","12:00","12:50P","LECTURE"
+"15586 MAT 230 1","Linear Algebra","4","P Yazdanbakhshghahyazi","","MWF","10:00","10:50A","LECTURE"
+"15587 MAT 340 1","Models/Algorithms Graph Theory","4","M Anderson","","TR","11:00","12:15P","LECTURE"
+"15588 MAT 455 1","Real Analysis","4","M Anderson","","TR","09:30","10:45A","LECTURE"
+"16099 MAT 490 1","Topics: Math for Industry","4","Z Teymuroglu","","F","1 :00","3 :30P","LECTURE"
+"16007 MUS 152 1","Theory II","4","D Crozier","KEENE 101","MWF","10:00","10:50A","LECTURE"
+"16011 MUS 154 1X","Keyboard Harmony II","2","S Kim J Raspolich","KEENE 104 KEENE 104","T R","09:30","10:45A 09:30","LECTURE"
+"16014 MUS 154 2X","Keyboard Harmony II","2","S Kim J Raspolich","KEENE 104 KEENE 104","T R","11:00","12:15P 11:00","LECTURE"
+"16016 MUS 154 H1X","Keyboard Harmony II","2","S Kim J Raspolich","KEENE 104 KEENE 104","T R","2 :00","3 :15P 2 :00","LECTURE"
+"16017 MUS 154 H2X","Keyboard Harmony II","2","S Kim J Raspolich","KEENE 104 KEENE 104","T R","3 :30","4 :45P 3 :30","LECTURE"
+"16020 MUS 227 1X","Song Writing I","4","D Flick","KEENE 101","MWF","1 :00","2 :15P","LECTURE"
+"16021 MUS 252 1","Theory 4","4","D Crozier","KEENE 101","MWF","11:00","11:50A","LECTURE"
+"16023 MUS 301 1X","Recording Practicum","2","C Shelton","KEENE","F","2 :00","4 :30P","LECTURE"
+"16024 MUS 317 1X","Music Technology II","4","C Shelton","KEENE 104","MW","2 :30","3 :45P","LECTURE"
+"16025 MUS 324 1X","German and French Diction","2","C Mohr","KEENE 103","MW","11:00","11:50A","LECTURE"
+"16026 MUS 330 1X","Jazz Vision","4","C Archard","KEENE 103","TR","11:00","12:15P","LECTURE"
+"16028 MUS 339 1X","Health & the Musician","4","C Mohr","KEENE 103","MWF","10:00","10:50A","LECTURE"
+"16027 MUS 340 1X","Methods: Percussion","2","J Katalenic","KEENE 102","M","1 :00","2 :15P","LECTURE"
+"16029 MUS 355 1X","Composition Practicum","2","D Crozier","","TBA","","","LECTURE"
+"16030 MUS 362 1","Music Hist: Classic to Modern","4","M Breckling","KEENE 101","TR","11:00","12:15P","LECTURE"
+"16032 MUS 375 1X","Music Business & Music Mrkting","4","C Archard","KEENE 101","TR","2 :00","3 :15P","LECTURE"
+"16144 MUS 383 1X","String Pedagogy","4","J Roos","KEENE 119","MW","1 :00","2 :15P","LECTURE"
+"16034 MUS 389 1X","Pedagogy: Singing Voice","4","J Grau","KEENE 103","TR","3 :30","4 :45P","LECTURE"
+"16035 MUS 391 1X","Conducting Practicum","2","J Sinclair","","TBA","","","LECTURE"
+"16033 MUS 393 1X","Piano Pedagogy I","4","S Kim","KEENE 101","MW","2 :30","3 :45P","LECTURE"
+"16036 MUS 395 1X","Topic: Jazz Theory","4","C Shelton","KEENE 103","MW","1 :00","2 :15P","LECTURE"
+"16038 MUS 455 1X","Paris Moscow Vienna: 1890-1915","4","D Crozier","KEENE 101","TR","3 :30","4 :45P","LECTURE"
+"16040 MUS 485 1X","Senior Project","4","M Breckling","KEENE 103","TR","2 :00","3 :15P","LECTURE"
+"15951 INT 496 1","Adv Seminar in Neuroscience","2","S St. John","","TR","09:30","10:45A","LECTURE"
+"15985 PHI 103 1","Intro to Philosophy","4","R Putzer","KMC 1","TR","2 :00","3 :15P","LECTURE"
+"15986 PHI 108 1","Ethics","4","L Musgrave","","MW","4 :00","5 :15P","LECTURE"
+"16187 PHI 223 1","Intro to Formal Logic","4","R Putzer","KWR 310","TR","09:30","10:45A","LECTURE"
+"16101 PHI 226 1","Philosophy of Education","4","L Musgrave","","MW","1 :00","2 :15P","LECTURE"
+"15988 PHI 231 1","Hist of Modern Philosophy","4","R Putzer","KMC 1","TR","11:00","12:15P","LECTURE"
+"16238 PHI 250 1","Dreams and Demons","4","M McLaren","CSS 134","TR","11:00","12:15P","LECTURE"
+"16186 PHI 290 1","Medical Ethics","4","T Cook","","MW","1 :00","2 :15P","LECTURE"
+"15993 PHI 312 1","Feminist Theory","4","M McLaren","SULLV HSE","W","6 :00","8 :30P","LECTURE"
+"16100 PHI 395 1","Topics: Jane Addams","4","L Musgrave","","MW","2 :30","3 :45P","LECTURE"
+"16102 PHI 395 2","Topics: Cynics & Stoics","4","S Rubarth","","MW","4 :00","5 :15P","LECTURE"
+"15995 PHI 490 1","Senior Seminar: Jane Addams","4","L Musgrave","","MW","2 :30","3 :45P","LECTURE"
+"15997 REL 113 1","Asian Religions","4","J Liu","","MW","2 :30","3 :45P","LECTURE"
+"16105 REL 195 1","Topics: Sports and Religion","4","T French","","TR","2 :00","3 :15P","LECTURE"
+"16257 REL 195 2","Topics: Magic and Medicine","4","J Liu","","MW","4 :00","5 :15P","LECTURE"
+"15999 REL 217 1","Jewish Life & Thought","4","Y Greenberg","SULLV HSE","TR","11:00","12:15P","LECTURE"
+"16247 REL 295 1","Topics: Daoism: The Basics","4","J Liu","","MW","1 :00","2 :15P","LECTURE"
+"16185 REL 350 1","Religion and Food","4","Y Greenberg","","W","1 :00","3 :30P","LECTURE"
+"16283 REL 395 1","Topics: Sports and Religion","4","T French","","TR","2 :00","3 :15P","LECTURE"
+"16285 REL 395 2","Topics: Magic and Medicine","4","J Liu","","MW","4 :00","5 :15P","LECTURE"
+"15553 PHY 121 1","General Physics II","6","A Cannaday","BUSH 164 BUSH 180","MWF T","10:00","10:50A 2 :00","LECTURE"
+"15548 PHY 131 1","Principles of Physics II","6","W Coyle","BUSH 180 BUSH 180","MWF M","10:00","10:50A 2 :30","LECTURE"
+"15550 PHY 221 1","Math Methods Physical Sci II","4","S Fonseca Douguet","BUSH 180","TR","11:00","12:15P","LECTURE"
+"16168 PHY 295 1","Tc: App Electronics & Embd Sys","4","W Coyle","BUSH 160","MW","1 :00","2 :15P","LECTURE"
+"15552 PHY 300 1","Thermodynamics","4","A Cannaday","BUSH 164","MWF","09:00","09:50A","LECTURE"
+"15551 PHY 451 1","Quantum Mechanics","4","C Fuse","BUSH 164","MWF","11:00","11:50A","LECTURE"
+"15715 POL 100 1","Intro to Comparative Politics","4","T Rahman","","MWF","11:00","11:50A","LECTURE"
+"15716 POL 100 2","Intro to Comparative Politics","4","D Boniface","","MWF","10:00","10:50A","LECTURE"
+"15717 POL 130 1","Intro International Politics","4","M Gunter","","TR","11:00","12:15P","LECTURE"
+"15718 POL 160 1","Intro to American Politics","4","P Rickert","","MWF","12:00","12:50P","LECTURE"
+"15719 POL 160 2","Intro to American Politics","4","J Lin","CSS 232","TR","08:00","09:15A","LECTURE"
+"15720 POL 220 1","Problems in Political Thought","4","J Maskivker","","MWF","12:00","12:50P","LECTURE"
+"15730 POL 240A 1","Quantitative Analysis","4","J Lin","CSS 232","MW","2 :30","3 :45P","LECTURE"
+"15721 POL 302 1","Politics of Global Poverty","4","D Chong","","TR","2 :00","3 :15P","LECTURE"
+"15723 POL 309 1","Global Democratization","4","D Boniface","","MW","1 :00","2 :15P","LECTURE"
+"15724 POL 312 1","Problems of Latin America","4","D Boniface","","MW","4 :00","5 :15P","LECTURE"
+"15726 POL 318 1","Applied Political Ethics","4","J Maskivker","","MWF","10:00","10:50A","LECTURE"
+"16216 POL 332 1","International Human Rights","4","D Chong","","TR","11:00","12:15P","LECTURE"
+"15731 POL 333 1","Sustainable Development Cases","4","M Gunter","","TR","2 :00","3 :15P","LECTURE"
+"15727 POL 343 1","The American Presidency","4","P Rickert","","MWF","10:00","10:50A","LECTURE"
+"15725 POL 395 1","Tpcs Pol Thry: Work & Society","4","J Maskivker","","F","1 :00","3 :30P","LECTURE"
+"16124 POL 453 1","IR Senior Seminar","4","T Rahman","","MW","1 :00","2 :15P","LECTURE"
+"15729 POL 481 1","Sem in American Politics","4","P Rickert","","MW","2 :30","3 :45P","LECTURE"
+"15914 PSY 101 1","Intro to Psychology","4","E Slifkin","","MWF","11:00","11:50A","LECTURE"
+"15915 PSY 101 2","Intro to Psychology","4","L Held","","TR","3 :30","4 :45P","LECTURE"
+"15916 PSY 155 1","Perspectives in Psychology II","4","R Yankelevitz","","MW","2 :30","3 :45P","LECTURE"
+"15917 PSY 155 2","Perspectives in Psychology II","4","J Queen","","MW","2 :30","3 :45P","LECTURE"
+"15918 PSY 155 3","Perspectives in Psychology II","4","S St. John","","MW","2 :30","3 :45P","LECTURE"
+"15954 PSY 225 1","Careers in Psychology","2","L Held","","T","09:30","10:45A","LECTURE"
+"15919 PSY 250 1","Stats & Rsch Meth I w/Lab","4","J Houston","","TR","11:00","12:15P","LAB"
+"15920 PSY 250 2","Stats & Rsch Meth I w/Lab","4","A Davidson","","TR","11:00","12:15P","LAB"
+"15921 PSY 250L 1","Stats & Rsch Meth I Lab","2","J Houston","","TR","2 :00","3 :15P","LAB"
+"15922 PSY 250L 2","Stats & Rsch Meth I Lab","2","A Davidson","","TR","2 :00","3 :15P","LAB"
+"15923 PSY 255 1","Stats & Rsch Meth II w/Lab","4","P Harris","","TR","11:00","12:15P","LAB"
+"15924 PSY 255 2","Stats & Rsch Meth II w/Lab","4","J Queen","","TR","11:00","12:15P","LAB"
+"15925 PSY 255L 1","Stats & Rsch Meth II Lab","2","P Harris","","TR","2 :00","3 :15P","LAB"
+"15926 PSY 255L 2","Stats & Rsch Meth II Lab","2","J Queen","","TR","2 :00","3 :15P","LAB"
+"15927 PSY 309 1","DV: Adolescent Development","4","A Davidson","","TR","08:00","09:15A","LECTURE"
+"15928 PSY 314 1","CN: Sensation-Perception","4","E Slifkin","","MW","1 :00","2 :15P","LECTURE"
+"15929 PSY 314L 1","CN: Sensation-Perception Lab","2","E Slifkin","","MW","2 :30","3 :45P","LAB"
+"16284 PSY 314L 2","CN: Sensation-Perception Lab","2","E Slifkin","","TR","11:00","12:15P","LAB"
+"15930 PSY 319 1","IS: Psychology of Work","4","J Houston","","MW","4 :00","5 :15P","LECTURE"
+"15931 PSY 320 1","IS: Psychotherapy w/Lab","4","A Luchner","","TR","11:00","12:15P","LAB"
+"15932 PSY 320L 1","IS: Psychotherapy Lab","2","A Luchner","","TR","3 :30","4 :45P","LAB"
+"15935 PSY 327 1","BB: Psychoactive Drugs","4","S St. John","","MWF","12:00","12:50P","LECTURE"
+"15936 PSY 328 1","DV:Developmental Psy W/lab_CE","4","L Held","HUME 101","MW","1 :00","2 :15P","LAB"
+"15937 PSY 328L 1","DV:Developmental Psy Lab_CE","2","L Held","HUME 101","W","09:00","10:50A","LAB"
+"15938 PSY 328L 2","DV:Developmental Psy Lab_CE","2","L Held","HUME 101","W","10:00","11:50A","LAB"
+"15912 PSY 330 H1X","Organization Behavior (IC)(IS)","4","N Steigerwald","","R","6 :00","8 :30P","LECTURE"
+"15943 PSY 341 1","BB: Learning w/Lab","4","R Yankelevitz","BUSH 274","TR","2 :00","3 :15P","LAB"
+"15944 PSY 341L 1","BB: Learning Lab","2","R Yankelevitz","BUSH 274","TR","3 :30","4 :45P","LAB"
+"15947 PSY 350 1","Science of Compassion (IS)","4","S Dunn","","MW","4 :00","5 :15P","LECTURE"
+"15911 PSY 350 H1X","Sci. of Compassion (IC/TB)(IS)","4","S Dunn","","MW","6 :00","7 :15P","LECTURE"
+"15948 PSY 395 1","Topics: CN: Law and Psychology","4","E Slifkin","","MWF","10:00","10:50A","LECTURE"
+"16111 PSY 395 1X","Topic: Sports Psych (IC;IS)","4","T Langley","","MW","4 :00","5 :15P","LECTURE"
+"15949 PSY 495 1","Sr Sem:Indiv-Social Psych","4","S Dunn","","MWF","11:00","11:50A","LECTURE"
+"15950 PSY 495 2","Sr Sem:Indiv-Social Psych","4","P Harris","","TR","09:30","10:45A","LECTURE"
+"16203 RCC 100 1","College Crash Course","4","M Perez","","MWF","09:00","09:50A","LECTURE"
+"16202 RCC 200 1","Rollins Transition Seminar","2","K Murphy","","W","09:00","09:50A","LECTURE"
+"16051 SWAG 205 1","Intro Sex, Wmn, Gender Stds","4","J Eisele","","M","1 :00","3 :30P","LECTURE"
+"15595 SE 100 1","Soc Entrepreneur: Lead Change","4","A KatunWilliams","","MWF","10:00","10:50A","LECTURE"
+"15596 SE 100 2","Soc Entrepreneur: Lead Change","4","A KatunWilliams","","MWF","11:00","11:50A","LECTURE"
+"15597 SE 220 1","Global Dev: Challenge/Opportun","4","T Warnecke","","MW","1 :00","2 :15P","LECTURE"
+"15598 SE 295 1","Topic: BusPlan/ImpVentureCreat","4","W Mswaka","","TR","11:00","12:15P","LECTURE"
+"15600 SE 315 1","Ethical Sourcing:People&Planet","4","W Mswaka","","TR","08:00","09:15A","LECTURE"
+"15601 SE 320 1","Strategies for Changemakers","4","A KatunWilliams","","TR","2 :00","3 :15P","LECTURE"
+"15602 SE 333 1","Sales & Negotiations for SE","4","A KatunWilliams","","MW","2 :30","3 :45P","LECTURE"
+"15603 SE 345 1","Financing Soc Entrepreneurship","4","A Samaniego Diaz","","MWF","11:00","11:50A","LECTURE"
+"16151 SE 395 1","Tpc:Branding for Social Impact","4","A Samaniego Diaz","","MWF","12:00","12:50P","LECTURE"
+"15604 SE 440 1","Planning/ Implement for SE","4","W Mswaka","","MW","1 :00","2 :15P","LECTURE"
+"16019 SOC 111 1","Social Problems","4","M Nichter","","MW","2 :30","3 :45P","LECTURE"
+"16039 SOC 111 2","Social Problems","4","M Nichter","","MW","4 :00","5 :15P","LECTURE"
+"16190 SOC 112 1","The Family","4","J Jenoch","","TR","2 :00","3 :15P","LECTURE"
+"16276 SOC 112 2","The Family","4","J Jenoch","","TR","11:00","12:15P","LECTURE"
+"16047 SOC 201 1","The Sociological Perspective","4","S Gonzalez Guittar","","TR","08:00","09:15A","LECTURE"
+"16048 SOC 201 2","The Sociological Perspective","4","S Gonzalez Guittar","","TR","11:00","12:15P","LECTURE"
+"16010 SOC 215 1","Stats & Data Analysis Soc Sci","4","J Jenoch","BUSH 310","W","1 :00","3 :30P","LECTURE"
+"16013 SOC 302 1","Sociological Theory","4","J Eisele","","MWF","10:00","10:50A","LECTURE"
+"16049 SOC 340 1","Sociology of Reproduction","4","S Gonzalez Guittar","","TR","2 :00","3 :15P","LECTURE"
+"16015 SOC 346 1","Sexualities","4","J Eisele","","W","1 :00","3 :30P","LECTURE"
+"16037 SOC 350 1","Class Inequality","4","M Nichter","","TR","3 :30","4 :45P","LECTURE"
+"16191 SOC 395 1","Topic: Medical Sociology","4","J Eisele","","MWF","11:00","11:50A","LECTURE"
+"16192 SOC 395 2","Topic:Slavery, Sex, & Religion","4","D Ponton","","TR","11:00","12:15P","LECTURE"
+"16193 SOC 395 3","Topc:Segregation, Past & Prsnt","4","D Ponton","","M","1 :00","3 :30P","LECTURE"
+"16041 SOC 418 1","Senior Seminar","4","A McClure","","TR","2 :00","3 :15P","LECTURE"
+"15872 DAN 270 1","Ballet II","4","P Kalivas","TIEDTK 105","MW","1 :00","2 :15P","LECTURE"
+"15873 DAN 279 1","Modern II","4","C Loupe","TIEDTK 105","TR","11:00","12:15P","LECTURE"
+"15874 DAN 300 1","Dance Composition","4","C Loupe","TIEDTK 105","TR","2 :00","3 :15P","LECTURE"
+"15875 DAN 370 1","Ballet III","4","P Kalivas","TIEDTK 105","MW","1 :00","2 :15P","LECTURE"
+"15876 DAN 379 1","Modern III","4","C Loupe","","TR","11:00","12:15P","LECTURE"
+"15877 DAN 420 1","Dance Production I","2","R Gerchman","TIEDTK 105","W","4 :00","5 :00P","LECTURE"
+"15878 THE 103 1","Theatre Prod/Technical C","2","L Cushman","ANNIE AUD","MTWRF","7 :00","10:00P","LECTURE"
+"15879 THE 104 1","Theatre Prod/Technical D","2","L Cushman","ANNIE AUD","MTWRF","7 :00","10:00P","LECTURE"
+"15880 THE 111 1","Intro to Technical Theatre","4","R Miller","TIEDTK 101","TR","11:00","12:15P","LECTURE"
+"15881 THE 112 1","Fund of Theatrical Design","4","L Cody-Rapport","TIEDTK 101","MW","1 :00","2 :50P","LECTURE"
+"15882 THE 120 1","Acting I: Fundamentals","4","D Charles","TIEDTK 107","TR","11:00","12:15P","LECTURE"
+"15883 THE 216 1","Design/Tech Studio","4","L Cody-Rapport , B Pilat","TIEDTK 101","MW","11:00","12:50P","LECTURE"
+"15884 THE 220 1","Acting II: Character","4","T Staff","TIEDTK 107","MW","3 :00","4 :50P","LECTURE"
+"15887 THE 238 1","Mainstage Assistant Director","2","T Staff","ANNIE AUD","TBA","","","LECTURE"
+"15885 THE 240 1","Script Analysis","4","E Hill","","MW","2 :00","3 :15P","LECTURE"
+"16145 THE 242 1","Rsrch Meth Dramaturgy/Director","4","E Hill","","MWF","10:00","10:50A","LECTURE"
+"15888 THE 247 1","Mainstage Assistant Dramaturg","2","T Staff","ANNIE AUD","TBA","","","LECTURE"
+"15889 THE 311 1","Second Stage: In Production II","2","L Cushman","TIEDTK 150","MTWRF","7 :00","10:00P","LECTURE"
+"15890 THE 312 1","Second Stage:In Production III","2","L Cushman","TIEDTK 150","MTWRF","7 :00","10:00P","LECTURE"
+"15891 THE 313 1","Mainstage Assistant Design/Tec","2","T Staff","ANNIE AUD","TBA","","","LECTURE"
+"15892 THE 314 1","Mainstage Associate Design/Tec","3","T Staff","ANNIE AUD","TBA","","","LECTURE"
+"15893 THE 315 1","Mainstage Design/Tech","4","","","TBA","","","LECTURE"
+"15886 THE 329 1","Acting for Musical Theatre II","4","M Barnes","TIEDTK 107","MW","1 :00","2 :50P","LECTURE"
+"15894 THE 333 1","Directing I: Fundamentals","4","E Hill","","TR","2 :00","3 :50P","LECTURE"
+"15895 THE 338 1","Mainstage Associate Director","3","T Staff","ANNIE AUD","TBA","","","LECTURE"
+"15896 THE 342 1","History of Theatre II:1750-Pre","4","M DiQuattro","","TR","11:00","12:15P","LECTURE"
+"15898 THE 348 1","Mainstage Associate Dramaturg","3","M DiQuattro","ANNIE AUD","TBA","","","LECTURE"
+"15897 THE 349 1","Hist of Amer Musical Theatre","4","M Barnes","","MWF","11:00","11:50A","LECTURE"
+"15899 THE 378 1","Rollins Improv Players Lab","2","D Charles","TIEDTK 150","F","12:00","1 :50P","LAB"
+"15900 THE 410 1","Design/Tech Theatre Capstone","4","A Crutchfield , B Pilat","","TBA","","","LECTURE"
+"15901 THE 424 1","Theatre Prod: Performance","2","M Barnes","ANNIE AUD","MTWRF","7 :00","10:00P","LECTURE"
+"15902 THE 425 1","Theatre Prod:Performance","2","D Charles","ANNIE AUD","MTWRF","7 :00","10:00P","LECTURE"
+"15903 THE 438 1","Directing Capstone","4","T Staff","","TBA","","","LECTURE"
+"15904 THE 442 1","Mainstage Dramaturg","4","T Staff","ANNIE AUD","TBA","","","LECTURE"
+"16148 RFLA 100A 01","Moving Stories & Conversations","4","R Gerchman","TIEDTK 105","TR","09:30","10:45A","LECTURE"
+"16197 RFLA 100A 02","Classical Myth via Art","4","R Vander Poppen","REX 1","TR","09:30","10:45A","LECTURE"
+"16227 RFLA 100A 03","Inside Jokes:Comedy Thry Prctc","4","E Hill","","TR","09:30","10:45A","LECTURE"
+"16228 RFLA 100A 04","Popular Song in AmericanCultur","4","M Breckling","KEENE 101","TR","09:30","10:45A","LECTURE"
+"15408 RFLA 100C 01","Dictators in Latin America","4","J Varela Yepes","","TR","09:30","10:45A","LECTURE"
+"15409 RFLA 100C 02","Dictators in Latin America","4","J Varela Yepes","","MW","2 :30","3 :45P","LECTURE"
+"15590 RFLA 100C 03","How to Change the World","4","T Warnecke","","MW","2 :30","3 :45P","LECTURE"
+"15591 RFLA 100C 04","Business for Social Impact","4","A Samaniego Diaz","","MWF","09:00","09:50A","LECTURE"
+"16050 RFLA 100C 05","Identities:Conformity&Deviance","4","A McClure","","TR","09:30","10:45A","LECTURE"
+"16221 RFLA 100C 06","Economic History of China","4","K Shi","","TR","09:30","10:45A","LECTURE"
+"16222 RFLA 100C 07","Economic History of China","4","K Shi","","MW","2 :30","3 :45P","LECTURE"
+"16223 RFLA 100C 08","Beyond 23andMe","4","T Mould","","TR","09:30","10:45A","LECTURE"
+"16224 RFLA 100C 09","Global Financial History","4","Y Bing","","TR","09:30","10:45A","LECTURE"
+"16241 RFLA 100C 10","Identities:Conformity&Deviance","4","A McClure","","TR","08:00","09:15A","LECTURE"
+"15462 RFLA 100H 01","Digital Storytelling","4","S Schoen","OLIN 220","TR","09:30","10:45A","LECTURE"
+"15490 RFLA 100H 02","Sex, War, & Plague","4","E Russell , J Mathews","BUSH 202","MWF","09:00","09:50A","LECTURE"
+"15491 RFLA 100H 03","Growing Up Other(wise)","4","F Tran","","MWF","08:00","08:50A","LECTURE"
+"15492 RFLA 100H 04","Studies in Television","4","M Moise","","TR","09:30","10:45A","LECTURE"
+"16235 RFLA 100H 05","Nature Spirituality","4","V Machado","SULLV HSE","TR","09:30","10:45A","LECTURE"
+"16002 RFLA 100H 06","Extremes of Religion","4","T French","KMC 1","TR","09:30","10:45A","LECTURE"
+"16236 RFLA 100H 07","Nature Spirituality","4","V Machado","SULLV HSE","TR","2 :00","3 :15P","LECTURE"
+"16244 RFLA 100H 08","Can You (Still) Laugh?","4","N Gammar","","MWF","09:00","09:50A","LECTURE"
+"15621 RFLA 200A 01","Introduction to Sculpture","4","A Hope","CFAC 101","MW","2 :30","3 :45P","LECTURE"
+"15656 RFLA 200A 02","Graphic Narratives","4","R Simmons","CFAC 107 CFAC 110","TR TR","09:30","10:45A 09:30","LECTURE"
+"15905 RFLA 200A 03","History of Musical Theatre","4","M Barnes","","MWF","11:00","11:50A","LECTURE"
+"16043 RFLA 200A 04","Musical One Hit Wonders","4","C Archard","KEENE 103","TR","09:30","10:45A","LECTURE"
+"16044 RFLA 200A 05","Music Meets Life","4","D Flick","KEENE 103","MWF","09:00","09:50A","LECTURE"
+"16090 RFLA 200A 06","Introduction to Sculpture","4","A Hope","CFAC 101","MW","1 :00","2 :15P","LECTURE"
+"16046 RFLA 200A 07","Oh, The Horror!","4","C Shelton","KEENE 101","MWF","09:00","09:50A","LECTURE"
+"16122 RFLA 200C 01","Americn Political Polarization","4","J Lin","CSS 232","TR","09:30","10:45A","LECTURE"
+"16194 RFLA 200C 02","Life on Film","4","J Jenoch","","TR","09:30","10:45A","LECTURE"
+"15508 RFLA 200C 03","Primates & People","4","S Saiyed","","TR","09:30","10:45A","LECTURE"
+"16056 RFLA 200C 04","Science Fiction and Politics","4","T Rahman","","MWF","09:00","09:50A","LECTURE"
+"15776 RFLA 200C 05","Human Com: Body Language","4","J Hammonds","","TR","08:00","09:15A","LECTURE"
+"15953 RFLA 200C 06","Psychology of Stress","4","A Luchner","","TR","2 :00","3 :15P","LECTURE"
+"15441 RFLA 200H 01","The Latino Journey to the U.S.","4","M Kupetz","","MWF","09:00","09:50A","LECTURE"
+"15442 RFLA 200H 02","Spanish Gastronomy Explosion","4","M Paniagua-Tejo","","TR","09:30","10:45A","LECTURE"
+"16153 RFLA 200H 03","Race, Class, Gender Lat Amer","4","R Diaz-Zambrana","","TR","09:30","10:45A","LECTURE"
+"15475 RFLA 200H 04","Body Liberation, Food Justice","4","L Tillmann","","TR","08:00","09:15A","LECTURE"
+"15484 RFLA 200H 05","Body Liberation, Food Justice","4","L Tillmann","","TR","09:30","10:45A","LECTURE"
+"15495 RFLA 200H 06","Mean Girls in Film & Lit","4","J Jones","","MW","2 :30","3 :45P","LECTURE"
+"16003 RFLA 200H 07","Sci-Fi, Philosophy, and Film","4","S Rubarth","","MW","1 :00","2 :15P","LECTURE"
+"16275 RFLA 200S 01","Astronomy & NASA","6","C Fuse","BUSH 176","TR M","09:30","10:45A 2 :00","LECTURE"
+"15555 RFLA 200S 02","Astronomy & NASA","6","C Fuse","BUSH 176 BUSH 308","TR T","09:30","10:45A 2 :00","LECTURE"
+"16250 RFLA 200S 03","Science&Art: Leonardo DaVinci","6","S Fonseca Douguet","BUSH 180","TR F","2 :00","3 :15P 2 :00","LECTURE"
+"15836 RFLA 200S 04","FL Biodiversity & Enviro Sci","6","I Biazzo","BUSH 164","TR","09:30","10:45A","LECTURE"
+"15554 RFLA 200S 05","Science&Art: Leonardo DaVinci","6","S Fonseca Douguet","BUSH 180","TR W","09:30","10:45A 2 :00","LECTURE"
+"16230 RFLA 300 01","Embodied Resistance: Prf Desgn","4","M DiQuattro , L Cody-Rapport","ASC 109","TR","09:00","10:50A","LECTURE"
+"15496 RFLA 300 02","Good Medicine/Bad Drugs","4","E Russell","","MW","2 :30","3 :45P","LECTURE"
+"16123 RFLA 300 03","Beyond Cultural Relativity","4","G Beaudin","","MW","2 :30","3 :45P","LECTURE"
+"15498 RFLA 300 04","Righting Wrongs","4","M Cheng","","TR","09:30","10:45A","LECTURE"
+"15569 RFLA 300 05","Social Choice Math","4","S Boyd","","MWF","08:00","08:50A","LECTURE"
+"15570 RFLA 300 06","Social Choice Math","4","S Boyd","","MWF","09:00","09:50A","LECTURE"
+"15733 RFLA 300 07","Asian Amercn Identity Thru Rep","4","M Robinson","","TR","09:30","10:45A","LECTURE"
+"15439 RFLA 300 08","Latin Amer. Goes to the Movies","4","P Tome","","TR","09:30","10:45A","LECTURE"
+"15777 RFLA 300 09","Communication Culture & Confct","4","A Stone , M Nelson","","TR","09:30","10:45A","LECTURE"
+"16053 RFLA 300 10","Materials and Society","4","B Mosby","","TR","09:30","10:45A","LECTURE"
+"15837 RFLA 300 11","America's Gifts","4","B Allen","BEAL 2","MW","2 :30","3 :45P","LECTURE"
+"16004 RFLA 300 12","Learn/Teach about Holocaust","4","Y Greenberg , H Zissman","","TR","09:30","10:45A","LECTURE"
+"16288 RFLA 300 13","Critical Disability Studies","4","S Coffman-Rosen","","TR","09:30","10:45A","LECTURE"
