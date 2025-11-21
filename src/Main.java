@@ -1,8 +1,15 @@
+
+import javax.swing.*;
+import java.awt.*;
+
 /**
  * Demo class showing how to use the Course Management
  */
 public class Main {
     public static void main(String[] args) {
+    	//GUI manager
+    	SwingUtilities.invokeLater(()-> new CourseRegistrationGUI().GUIrun());
+    	
         // Create the management system
         CourseManagement cms = new CourseManagement();
         
