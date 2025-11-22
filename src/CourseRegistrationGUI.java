@@ -375,6 +375,11 @@ public class CourseRegistrationGUI extends JFrame{
 			crnField.setText("");
 		});
 		
+		returnToMenu.addActionListener(e ->{
+			setTitle("Course Managment");
+			layout.show(cards, "MENU");
+		});
+		
 		//add things to panel
 		removeCourse.add(crn);
 		removeCourse.add(crnField);
