@@ -150,7 +150,7 @@ public class Course {
         return enrolledStudents.remove(student);
     }
     
-    // Display course roster
+    // Display course roster in system
     public void displayRoster() {
         System.out.println("\n=== Roster for " + name + " (CRN: " + crn + ") ===");
         System.out.println("Professor: " + (professor != null ? professor.getName() : "TBA"));

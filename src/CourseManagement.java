@@ -268,4 +268,53 @@ public class CourseManagement {
     public List<Department> getDepartments() {
         return departments;
     }
+    
+    //Course roster display for GUI
+    public String getRosterDisplay(int crn) {
+        Course course = findCourseByCRN(crn);
+        if (course == null) {
+            return "Course not found with CRN: " + crn;
+        }
+        
+        StringBuilder display = new StringBuilder();
+        display.append("=== Roster for ").append(course.getName())
+               .append(" (CRN: ").append(course.getCrn()).append(") ===\n");
+        display.append("Professor: ")
+               .append(course.getProfessor() != null ? course.getProfessor().getName() : "TBA")
+               .append("\n");
+        display.append("Enrolled Students (").append(course.getEnrolledStudents().size()).append("):\n");
+        
+        if (course.getEnrolledStudents().isEmpty()) {
+            display.append("  No students enrolled.\n");
+        } else {
+            for (Student student : course.getEnrolledStudents()) {
+                display.append("  - ").append(student.toString()).append("\n");
+            }
+        }
+        
+        return display.toString();
+    }
+    
+    //Student Schedule Display for GUI
+    public String getStudentSchdule(int ID) {
+    	//make string builder 
+    	StringBuilder schedule = new StringBuilder();
+    	
+    	//look for student in list
+    	for (Student student : students) {
+            if (student.getId() == ID) {//if found get their schedule
+            	schedule.append("\n=== Schedule for " + student.getName() + " ===");
+                if (student.getEnrolledCourses().isEmpty()) {//if no courses
+                    schedule.append("No courses enrolled.");
+                } else {//if courses
+                    for (Course course : student.getEnrolledCourses()) {
+                        schedule.append(course);
+                    }
+                    return schedule.toString();
+                }
+            }
+        }
+    	schedule.append("\n=== No Student Found with ID" + ID);
+    	return schedule.toString();
+    }
 }

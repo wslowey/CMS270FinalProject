@@ -29,6 +29,10 @@ public class CourseRegistrationGUI extends JFrame{
         JPanel addStuPanel = addStudent();
         JPanel createCoursePanel = CreateCourse();
         JPanel removeCoursePanel = removeCourse();
+        JPanel studentAddCoursePanel = studentAdd();
+        JPanel studentDropCoursePanel = studentDrop();
+        JPanel courseRosterPanel = courseRoster();
+        JPanel studentSchedulePanel = seeSchedule();
 
         // Add them to CardLayout
         cards.add(menuPanel, "MENU");
@@ -37,6 +41,10 @@ public class CourseRegistrationGUI extends JFrame{
         cards.add(addStuPanel,"ADD_STUDENT");
         cards.add(createCoursePanel,"CREATE_COURSE");
         cards.add(removeCoursePanel,"REMOVE_COURSE");
+        cards.add(studentAddCoursePanel,"STUDENT_ADD_COURSE");
+        cards.add(studentDropCoursePanel,"STUDENT_DROP_COURSE");
+        cards.add(courseRosterPanel,"SEE_COURSE_DETAILS");
+        cards.add(studentSchedulePanel,"SEE_STUDENT_SCHEDULE");
 
         add(cards);
         setVisible(true);
@@ -90,16 +98,46 @@ public class CourseRegistrationGUI extends JFrame{
 			setTitle("RemoveCourse");
 			layout.show(cards, "REMOVE_COURSE");
 		});
-		studentAddCourse.addActionListener(e->layout.show(cards, "STUDENT_ADD_COURSE"));
-		studentDropCourse.addActionListener(e->layout.show(cards, "STUDENT_DROP_COURSE"));
-		seeCourseInfo.addActionListener(e->layout.show(cards, "SEE_COURSE_DETAILS"));
-		seeStudentSchedule.addActionListener(e->layout.show(cards, "SEE_STUDENT_SCHEDULE"));
-		changeCourse.addActionListener(e->layout.show(cards, "CHANGE_COURSE_DETAILS"));
-		professorAddCourse.addActionListener(e->layout.show(cards, "PROFESSOR_ADD_COURSE"));
-		professorDropCourse.addActionListener(e->layout.show(cards, "PROFESSOR_DROP_COURSE"));
-		seeStudentList.addActionListener(e->layout.show(cards, "SEE_STUDENT_LIST"));
-		seeProfessorList.addActionListener(e->layout.show(cards, "SEE_PROFESSOR_LIST"));
-		seeCourseList.addActionListener(e->layout.show(cards, "SEE_COURSE_LIST"));
+		studentAddCourse.addActionListener(e->{
+			setTitle("Add Course for Students");
+			layout.show(cards, "STUDENT_ADD_COURSE");
+		});
+		studentDropCourse.addActionListener(e->{
+			setTitle("Drop Course for Students");
+			layout.show(cards, "STUDENT_DROP_COURSE");
+		});
+		seeCourseInfo.addActionListener(e->{
+			setTitle("Full Course Details");
+			layout.show(cards, "SEE_COURSE_DETAILS");
+		});
+		seeStudentSchedule.addActionListener(e->{
+			setTitle("Student Schedule");
+			layout.show(cards, "SEE_STUDENT_SCHEDULE");
+		});
+		changeCourse.addActionListener(e->{
+			setTitle("Change Course Details");
+			layout.show(cards, "CHANGE_COURSE_DETAILS");
+		});
+		professorAddCourse.addActionListener(e->{
+			setTitle("Add Course for Professors");
+			layout.show(cards, "PROFESSOR_ADD_COURSE");
+		});
+		professorDropCourse.addActionListener(e->{
+			setTitle("Drop Course for Professors");
+			layout.show(cards, "PROFESSOR_DROP_COURSE");
+		});
+		seeStudentList.addActionListener(e->{
+			setTitle("Full Student List");
+			layout.show(cards, "SEE_STUDENT_LIST");
+		});
+		seeProfessorList.addActionListener(e->{
+			setTitle("Full Professor List");
+			layout.show(cards, "SEE_PROFESSOR_LIST");
+		});
+		seeCourseList.addActionListener(e->{
+			setTitle("Full Course List");
+			layout.show(cards, "SEE_COURSE_LIST");
+		});
 		
 		exit.addActionListener(e->dispose());
 		
@@ -298,6 +336,7 @@ public class CourseRegistrationGUI extends JFrame{
 			Professor p = rcms.findProfessorById(profID);
 			String deptRef = coursedeptfield.getText();
 			Department d = rcms.findDepartmentByReference(deptRef);
+			
 			rcms.createCourse(courseNameField.getText(), 
 					courseTypeField.getText(), 
 					Integer.parseInt(creditHoursField.getText()), 
@@ -307,7 +346,8 @@ public class CourseRegistrationGUI extends JFrame{
 					d, 
 					buildingField.getText(), 
 					Integer.parseInt(roomField.getText()), 
-					Integer.parseInt(crnField.getText()));
+					Integer.parseInt(crnField.getText())
+					);
 			
 			courseNameField.setText("");
 			courseTypeField.setText("");
@@ -388,5 +428,177 @@ public class CourseRegistrationGUI extends JFrame{
 		
 		return removeCourse;
 	}
-
+	
+	//----ADD COURSE FOR STUDENTS FUNCTIONS-----
+	JPanel studentAdd() {
+		//make panel 
+		JPanel studentAdd = new JPanel(new GridLayout(4,2));
+		
+		//make text field labels
+		JLabel studentID = new JLabel("Student ID Number");
+		JLabel crn = new JLabel("Course Refrence Number");
+		
+		//make text field
+		JTextField IDField = new JTextField();
+		JTextField crnField = new JTextField();
+		
+		//make buttons
+		JButton addCourse = new JButton("Add Course");
+		
+		JButton returnToMenu = new JButton("Return To Menu");
+		
+		//add button functions
+		addCourse.addActionListener(e->{
+			rcms.enrollStudent(Integer.parseInt(IDField.getText()), Integer.parseInt(crnField.getText()));
+			
+			IDField.setText("");
+			crnField.setText("");
+		});
+		
+		returnToMenu.addActionListener(e ->{
+			setTitle("Course Managment");
+			layout.show(cards, "MENU");
+		});
+		
+		//add things to panel
+		
+		studentAdd.add(studentID);
+		studentAdd.add(IDField);
+		studentAdd.add(crn);
+		studentAdd.add(crnField);
+		studentAdd.add(returnToMenu);
+		studentAdd.add(addCourse);
+		
+		return studentAdd;
+	}
+	
+	//----DROP COURSE FOR STUDENDS FUNTIONS----
+	JPanel studentDrop() {
+		//make Panel
+		JPanel studentDrop = new JPanel(new GridLayout(4,2));
+		
+		//make text field labels
+		JLabel studentID = new JLabel("Student ID Number");
+		JLabel crn = new JLabel("Course Refrence Number");
+		
+		//make text fields
+		JTextField IDField = new JTextField();
+		JTextField crnField = new JTextField();
+		
+		//make buttons
+		JButton dropCourse = new JButton("Drop Course");
+		JButton returnToMenu = new JButton("Return To Menu");
+		
+		//add button functionality
+		dropCourse.addActionListener(e->{
+			rcms.dropStudentFromCourse(Integer.parseInt(IDField.getText()), Integer.parseInt(crnField.getText()));
+			
+			IDField.setText("");
+			crnField.setText("");
+		});
+		
+		returnToMenu.addActionListener(e ->{
+			setTitle("Course Managment");
+			layout.show(cards, "MENU");
+		});
+		
+		//add things to panel
+		studentDrop.add(studentID);
+		studentDrop.add(IDField);
+		studentDrop.add(crn);
+		studentDrop.add(crnField);
+		studentDrop.add(returnToMenu);
+		studentDrop.add(dropCourse);
+		
+		return studentDrop;
+	}
+	
+	JPanel courseRoster() {
+		// make panel
+	    JPanel courseRoster = new JPanel(new BorderLayout());
+	    
+	    // make input panel to get crn
+	    JPanel inputPanel = new JPanel(new GridLayout(2, 2));
+	    JLabel crn = new JLabel("Course Reference Number");
+	    JTextField crnField = new JTextField();
+	    
+	    // Text area to display roster
+	    JTextArea rosterDisplay = new JTextArea(15, 50);
+	    rosterDisplay.setEditable(false);
+	    JScrollPane scrollPane = new JScrollPane(rosterDisplay);
+	    
+	    // Buttons
+	    JButton getCourseRoster = new JButton("Show Course Roster");
+	    JButton returnToMenu = new JButton("Return To Menu");
+	    
+	    // Button functionality
+	    getCourseRoster.addActionListener(e -> {
+	        String rosterText = rcms.getRosterDisplay(Integer.parseInt(crnField.getText()));
+	        rosterDisplay.setText(rosterText);
+	        
+	        crnField.setText(""); 
+	    });
+	    
+	    returnToMenu.addActionListener(e -> {
+	        setTitle("Course Management");
+	        layout.show(cards, "MENU");
+	    });
+	    
+	    // Add things to input panel
+	    inputPanel.add(crn);
+	    inputPanel.add(crnField);
+	    inputPanel.add(returnToMenu);
+	    inputPanel.add(getCourseRoster);
+	    
+	    //add things to overall panel
+	    courseRoster.add(inputPanel, BorderLayout.NORTH);
+	    courseRoster.add(scrollPane, BorderLayout.CENTER);
+	    
+	    return courseRoster;
+	}
+	
+	//----SEE STUDENT SCHEDULE FUNCTIONS----
+	JPanel seeSchedule() {
+		// make panel
+	    JPanel studentSchedule = new JPanel(new BorderLayout());
+	    
+	    // make input panel to get crn
+	    JPanel inputPanel = new JPanel(new GridLayout(2, 2));
+	    JLabel ID = new JLabel("Course Reference Number");
+	    JTextField IDField = new JTextField();
+	    
+	    // Text area to display roster
+	    JTextArea scheduleDisplay = new JTextArea(15, 50);
+	    scheduleDisplay.setEditable(false);
+	    JScrollPane scrollPane = new JScrollPane(scheduleDisplay);
+	    
+	    // Buttons
+	    JButton getStudentSchedule = new JButton("Show Student Schedule");
+	    JButton returnToMenu = new JButton("Return To Menu");
+	    
+	    //button functionality
+	    getStudentSchedule.addActionListener(e->{
+	    	String schedule = rcms.getStudentSchdule(Integer.parseInt(IDField.getText()));
+	    	scheduleDisplay.setText(schedule);
+	    	
+	    	IDField.setText("");
+	    });
+	    
+	    returnToMenu.addActionListener(e -> {
+	        setTitle("Course Management");
+	        layout.show(cards, "MENU");
+	    });
+	    
+	    //add things to input panel
+	    inputPanel.add(ID);
+	    inputPanel.add(IDField);
+	    inputPanel.add(returnToMenu);
+	    inputPanel.add(getStudentSchedule);
+	    
+	    //add things to overall panel
+	    studentSchedule.add(inputPanel, BorderLayout.NORTH);
+	    studentSchedule.add(scrollPane, BorderLayout.CENTER);
+	    
+	    return studentSchedule;
+	}
 }
