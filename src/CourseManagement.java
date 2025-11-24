@@ -6,7 +6,7 @@ import java.util.List;
 //
 
 public class CourseManagement {
-    private List<Course> courses;
+    private static List<Course> courses;
     private List<Student> students;
     private List<Professor> professors;
     private List<Department> departments;
@@ -54,7 +54,7 @@ public class CourseManagement {
     }
     
     //change the course time
-    public boolean changeCourseTime(int crn, String newStartTime, String newEndTime) {
+    public static boolean changeCourseTime(int crn, String newStartTime, String newEndTime) {
         Course course = findCourseByCRN(crn);
         if (course != null) {
             course.changeTime(newStartTime, newEndTime);
@@ -76,7 +76,7 @@ public class CourseManagement {
     }
     
     //find a course
-    public Course findCourseByCRN(int crn) {
+    public static Course findCourseByCRN(int crn) {
         for (Course course : courses) {
             if (course.getCrn() == crn) {
                 return course;

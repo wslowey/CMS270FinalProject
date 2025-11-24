@@ -11,6 +11,10 @@ public class CourseRegistrationGUI extends JFrame{
 	static CardLayout layout;
 	static JPanel cards;
 	
+	//card layout for changing course details
+	static CardLayout courseLayout;
+	static JPanel courseCards;
+	
 	//Main running program
     public void GUIrun() {
 
@@ -33,6 +37,7 @@ public class CourseRegistrationGUI extends JFrame{
         JPanel studentDropCoursePanel = studentDrop();
         JPanel courseRosterPanel = courseRoster();
         JPanel studentSchedulePanel = seeSchedule();
+        JPanel changeCourseDetailsPanel = changeCourseDetailsSelection();
 
         // Add them to CardLayout
         cards.add(menuPanel, "MENU");
@@ -45,6 +50,7 @@ public class CourseRegistrationGUI extends JFrame{
         cards.add(studentDropCoursePanel,"STUDENT_DROP_COURSE");
         cards.add(courseRosterPanel,"SEE_COURSE_DETAILS");
         cards.add(studentSchedulePanel,"SEE_STUDENT_SCHEDULE");
+        cards.add(changeCourseDetailsPanel,"CHANGE_COURSE_DETAILS");
 
         add(cards);
         setVisible(true);
@@ -601,4 +607,270 @@ public class CourseRegistrationGUI extends JFrame{
 	    
 	    return studentSchedule;
 	}
+	
+	//----CHANGE COURSE DETAILS FUNCTIONS----
+	JPanel changeCourseDetailsSelection() {
+		//make panel
+		JPanel changeCourseDetails = new JPanel(new BorderLayout());
+
+		//add card layouts
+		courseLayout = new CardLayout();
+		courseCards = new JPanel(courseLayout);
+	    
+	    //make panels for card layout
+		JPanel changeCourseMenuPanel = changeCourseMenu();
+		JPanel changeCourseNamePanel = changeCourseName();
+		JPanel changeCourseTypePanel = changeType();
+		JPanel changeCourseCreditCountPanel = changeCreditCount();
+		JPanel changeTimePanel = changeTime();
+		
+		//add panels to card layout
+		courseCards.add(changeCourseMenuPanel,"COURSE_MENU");
+		courseCards.add(changeCourseNamePanel,"CHANGE_NAME");
+		courseCards.add(changeCourseTypePanel,"CHANGE_TYPE");
+		courseCards.add(changeCourseCreditCountPanel,"CHANGE_CREDIT_COUNT");
+		courseCards.add(changeTimePanel,"CHANGE_TIME");
+
+		//add cards to panel
+		changeCourseDetails.add(courseCards,BorderLayout.CENTER);
+		
+		return changeCourseDetails;
+	}
+	
+	//----CHANGE COURSE DETAILS FUNCTIONS----
+	//--------SUBSECTION: CHANGE COURSE MENU FUNTIONS----
+	JPanel changeCourseMenu() {
+		//make panel
+		JPanel courseMenu = new JPanel(new GridLayout(12,1));
+		//make buttons to access screens
+				JButton changeName = new JButton("Change Course Name");
+				JButton changeType = new JButton("Change Course Type");
+				JButton changeCreditCount = new JButton("Change Course Credit Count");
+				JButton changeTime = new JButton("Change Course Time");
+				JButton changeProf = new JButton("Change Course Professor");
+				JButton changeDept = new JButton("Change Course Department");
+				JButton changeBuilding = new JButton("Change Course Building");
+				JButton changeRoomNum = new JButton("Change Course Room Number");
+				JButton changeCRN = new JButton("Change Course Refrence Number");
+				JButton returnToMenu = new JButton("Return To Menu");
+
+				//button functionality
+				changeName.addActionListener(e->{
+					setTitle("Change Course Name");
+					courseLayout.show(courseCards, "CHANGE_NAME");
+				});
+				changeType.addActionListener(e->{
+					setTitle("Change Course Type");
+					courseLayout.show(courseCards, "CHANGE_TYPE");
+				});
+				changeCreditCount.addActionListener(e->{
+					setTitle("Change Course CreditCount");
+					courseLayout.show(courseCards, "CHANGE_CREDIT_COUNT");
+				});
+				changeTime.addActionListener(e->{
+					setTitle("Change Course Time");
+					courseLayout.show(courseCards, "CHANGE_TIME");
+				});
+				changeProf.addActionListener(e->{
+					setTitle("Change Course Professor");
+					courseLayout.show(courseCards, "CHANGE_PROF");
+				});
+				changeDept.addActionListener(e->{
+					setTitle("Change Course Department");
+					courseLayout.show(courseCards, "CHANGE_DEPT");
+				});
+				changeBuilding.addActionListener(e->{
+					setTitle("Change Course Building");
+					courseLayout.show(courseCards, "CHANGE_BUILDING");
+				});
+				changeRoomNum.addActionListener(e->{
+					setTitle("Change Course Room Number");
+					courseLayout.show(courseCards, "CHANGE_ROOM_NUMBER");
+				});
+				changeCRN.addActionListener(e->{
+					setTitle("Change Course Refrence Number");
+					courseLayout.show(courseCards, "CHANGE_REFRENCE NUMBERs");
+				});
+				returnToMenu.addActionListener(e -> {
+			        setTitle("Course Management");
+			        layout.show(cards, "MENU");
+			    });
+				
+				//make label for panel
+				JLabel changeCourseSelection = new JLabel("What would you like to change about the course?",SwingConstants.CENTER);
+				
+				//add label to panel
+				courseMenu.add(changeCourseSelection,BorderLayout.NORTH);
+				
+				//add buttons to panel
+				courseMenu.add(changeName);
+				courseMenu.add(changeType);
+				courseMenu.add(changeCreditCount);
+				courseMenu.add(changeTime);
+				courseMenu.add(changeProf);
+				courseMenu.add(changeDept);
+				courseMenu.add(changeBuilding);
+				courseMenu.add(changeRoomNum);
+				courseMenu.add(changeCRN);
+				courseMenu.add(returnToMenu);
+				
+				return courseMenu;
+	}
+	
+	//----CHANGE COURSE DETAILS FUNCTIONS----
+	//--------SUBSECTION: CHANGE COURSE NAME FUNCTIONS----
+	JPanel changeCourseName() {
+		//make panel
+		JPanel changeName = new JPanel(new GridLayout(4,2));
+		//make label for text field
+		JLabel crn = new JLabel("Course CRN");
+		JLabel name = new JLabel("New Course Name");
+		//make text field
+		JTextField crnField = new JTextField();
+		JTextField nameField = new JTextField();
+		//make buttons
+		JButton nameChange = new JButton("Change Name");
+		JButton returnToSelection = new JButton("Return to Selection");
+		//button functionality
+		nameChange.addActionListener(e->{
+			Course course = CourseManagement.findCourseByCRN(Integer.parseInt(crnField.getText()));
+			course.setName(nameField.getText());
+			
+			crnField.setText("");
+			nameField.setText("");
+		});
+		returnToSelection.addActionListener(e->{
+			setTitle("Change Course Details");
+			courseLayout.show(courseCards,"COURSE_MENU");
+		});
+		//add things to panel
+		changeName.add(crn);
+		changeName.add(crnField);
+		changeName.add(name);
+		changeName.add(nameField);
+		changeName.add(returnToSelection);
+		changeName.add(nameChange);
+		
+		return changeName;
+	}
+	
+	//----CHANGE COURSE DETAILS FUNCTIONS----
+	//--------SUBSECTION: CHANGE COURSE TYPE FUNCTIONS----
+	JPanel changeType() {
+		//make panel
+		JPanel changeType = new JPanel(new GridLayout(4,2));
+		//make labels for fields
+		JLabel type = new JLabel("New Course Type");
+		JLabel crn = new JLabel("Course Refrence Number");
+		//make text fields
+		JTextField crnField = new JTextField();
+		JTextField typeField = new JTextField();
+		//make buttons
+		JButton typechange = new JButton("Change Course Type");
+		JButton returnToSelection = new JButton("Return to Selection");
+		//button funcitonality
+		typechange.addActionListener(e->{
+			Course course = CourseManagement.findCourseByCRN(Integer.parseInt(crnField.getText()));
+			course.setType(typeField.getText());
+			
+			crnField.setText("");
+			typeField.setText("");
+		});
+		returnToSelection.addActionListener(e->{
+			setTitle("Change Course Details");
+			courseLayout.show(courseCards,"COURSE_MENU");
+		});
+		//add things to panel
+		changeType.add(crn);
+		changeType.add(crnField);
+		changeType.add(type);
+		changeType.add(typeField);
+		changeType.add(returnToSelection);
+		changeType.add(typechange);
+		
+		return changeType;
+	}
+	
+	//----CHANGE COURSE DETAILS FUNCTIONS----
+	//--------SUBSECTION: CHANGE COURSE CREDIT COUNT FUNCTIONS----
+	JPanel changeCreditCount() {
+		//make panel
+		JPanel changeCreditCount = new JPanel(new GridLayout(4,2));
+		//make labels for fields
+		JLabel creditCount = new JLabel("New Course Credit Count");
+		JLabel crn = new JLabel("Course Refrence Number");
+		//make text fields
+		JTextField crnField = new JTextField();
+		JTextField creditCountField = new JTextField();
+		//make buttons
+		JButton creditCountChange = new JButton("Change Course Credit Count");
+		JButton returnToSelection = new JButton("Return to Selection");
+		//button funcitonality
+		creditCountChange.addActionListener(e->{
+			Course course = CourseManagement.findCourseByCRN(Integer.parseInt(crnField.getText()));
+			course.setCreditCount(Integer.parseInt(creditCountField.getText()));
+			
+			crnField.setText("");
+			creditCountField.setText("");
+		});
+		returnToSelection.addActionListener(e->{
+			setTitle("Change Course Details");
+			courseLayout.show(courseCards,"COURSE_MENU");
+		});
+		//add things to panel
+		changeCreditCount.add(crn);
+		changeCreditCount.add(crnField);
+		changeCreditCount.add(creditCount);
+		changeCreditCount.add(creditCountField);
+		changeCreditCount.add(returnToSelection);
+		changeCreditCount.add(creditCountChange);
+		
+		return changeCreditCount;
+	}
+	
+	//----CHANGE COURSE DETAILS FUNCTIONS----
+	//--------SUBSECTION: CHANGE COURSE TIME FUNCTIONS----
+	JPanel changeTime() {
+		//make panel
+		JPanel changeTime = new JPanel(new GridLayout(4,2));
+		//make labels for fields
+		JLabel StartTime = new JLabel("New Course Start Time");
+		JLabel EndTime = new JLabel("New Course End Time");
+		JLabel crn = new JLabel("Course Refrence Number");
+		//make text fields
+		JTextField crnField = new JTextField();
+		JTextField startTimeField = new JTextField();
+		JTextField endTimeField = new JTextField();
+		//make buttons
+		JButton TimeChange = new JButton("Change Course Time");
+		JButton returnToSelection = new JButton("Return to Selection");
+		//button funcitonality
+		TimeChange.addActionListener(e->{
+			CourseManagement.changeCourseTime(
+					Integer.parseInt(crnField.getText()),
+					startTimeField.getText(),
+					endTimeField.getText()
+					);
+			
+			crnField.setText("");
+			startTimeField.setText("");
+			endTimeField.setText("");
+		});
+		returnToSelection.addActionListener(e->{
+			setTitle("Change Course Details");
+			courseLayout.show(courseCards,"COURSE_MENU");
+		});
+		//add things to panel
+		changeTime.add(crn);
+		changeTime.add(crnField);
+		changeTime.add(StartTime);
+		changeTime.add(startTimeField);
+		changeTime.add(EndTime);
+		changeTime.add(endTimeField);
+		changeTime.add(returnToSelection);
+		changeTime.add(TimeChange);
+		
+		return changeTime;
+	}
+	
 }
