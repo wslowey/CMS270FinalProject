@@ -38,6 +38,11 @@ public class CourseRegistrationGUI extends JFrame{
         JPanel courseRosterPanel = courseRoster();
         JPanel studentSchedulePanel = seeSchedule();
         JPanel changeCourseDetailsPanel = changeCourseDetailsSelection();
+        JPanel professorAddCoursePanel = professorAdd();
+        JPanel professorDropCoursePanel = professorDrop();
+        JPanel seeAllStudentsPanel = seeStudents();
+        JPanel seeAllProfessorsPanel = seeProfessors();
+        JPanel seeAllCoursesPanel = seeCourses();
 
         // Add them to CardLayout
         cards.add(menuPanel, "MENU");
@@ -51,6 +56,11 @@ public class CourseRegistrationGUI extends JFrame{
         cards.add(courseRosterPanel,"SEE_COURSE_DETAILS");
         cards.add(studentSchedulePanel,"SEE_STUDENT_SCHEDULE");
         cards.add(changeCourseDetailsPanel,"CHANGE_COURSE_DETAILS");
+        cards.add(professorAddCoursePanel,"PROFESSOR_ADD_COURSE");
+        cards.add(professorDropCoursePanel,"PROFESSOR_DROP_COURSE");
+        cards.add(seeAllStudentsPanel,"SEE_STUDENT_LIST");
+        cards.add(seeAllProfessorsPanel,"SEE_PROFESSOR_LIST");
+        cards.add(seeAllCoursesPanel,"SEE_COURSE_LIST");
 
         add(cards);
         setVisible(true);
@@ -519,6 +529,7 @@ public class CourseRegistrationGUI extends JFrame{
 		return studentDrop;
 	}
 	
+	//----SEE COURSE ROSTER FUNCTIONS----
 	JPanel courseRoster() {
 		// make panel
 	    JPanel courseRoster = new JPanel(new BorderLayout());
@@ -623,6 +634,11 @@ public class CourseRegistrationGUI extends JFrame{
 		JPanel changeCourseTypePanel = changeType();
 		JPanel changeCourseCreditCountPanel = changeCreditCount();
 		JPanel changeTimePanel = changeTime();
+		JPanel changeProfPanel = changeProf();
+		JPanel changeDeptPanel = changeDept();
+		JPanel changeBuildingPanel = changeBuilding();
+		JPanel changeRoomNumPanel = changeRoom();
+		JPanel changeRefNumPanel = changeRefNum();
 		
 		//add panels to card layout
 		courseCards.add(changeCourseMenuPanel,"COURSE_MENU");
@@ -630,6 +646,11 @@ public class CourseRegistrationGUI extends JFrame{
 		courseCards.add(changeCourseTypePanel,"CHANGE_TYPE");
 		courseCards.add(changeCourseCreditCountPanel,"CHANGE_CREDIT_COUNT");
 		courseCards.add(changeTimePanel,"CHANGE_TIME");
+		courseCards.add(changeProfPanel,"CHANGE_PROF");
+		courseCards.add(changeDeptPanel,"CHANGE_DEPT");
+		courseCards.add(changeBuildingPanel,"CHANGE_BUILDING");
+		courseCards.add(changeRoomNumPanel,"CHANGE_ROOM_NUMBER");
+		courseCards.add(changeRefNumPanel,"CHANGE_REFRENCE_NUMBER");
 
 		//add cards to panel
 		changeCourseDetails.add(courseCards,BorderLayout.CENTER);
@@ -689,7 +710,7 @@ public class CourseRegistrationGUI extends JFrame{
 				});
 				changeCRN.addActionListener(e->{
 					setTitle("Change Course Refrence Number");
-					courseLayout.show(courseCards, "CHANGE_REFRENCE NUMBERs");
+					courseLayout.show(courseCards, "CHANGE_REFRENCE_NUMBER");
 				});
 				returnToMenu.addActionListener(e -> {
 			        setTitle("Course Management");
@@ -873,4 +894,376 @@ public class CourseRegistrationGUI extends JFrame{
 		return changeTime;
 	}
 	
+	//----CHANGE COURSE DETAILS FUNCTIONS----
+	//--------SUBSECTION: CHANGE COURSE PROFESSOR FUNCTIONS----
+	JPanel changeProf() {
+		//make panel
+		JPanel changeProf = new JPanel(new GridLayout(4,2));
+		//make labels for fields
+		JLabel profID = new JLabel("New Professor ID Number");
+		JLabel crn = new JLabel("Course Refrence Number");
+		//make text fields
+		JTextField crnField = new JTextField();
+		JTextField profIDField = new JTextField();
+		//make buttons
+		JButton profChange = new JButton("Change Course Professor");
+		JButton returnToSelection = new JButton("Return to Selection");
+		//button funcitonality
+		profChange.addActionListener(e->{
+			CourseManagement.assignProfessorToCourse(
+					Integer.parseInt(profIDField.getText()),
+					Integer.parseInt(crnField.getText())
+					);
+			crnField.setText("");
+			profIDField.setText("");
+		});
+		returnToSelection.addActionListener(e->{
+			setTitle("Change Course Details");
+			courseLayout.show(courseCards,"COURSE_MENU");
+		});
+		//add things to panel
+		changeProf.add(crn);
+		changeProf.add(crnField);
+		changeProf.add(profID);
+		changeProf.add(profIDField);
+		changeProf.add(returnToSelection);
+		changeProf.add(profChange);
+		
+		return changeProf;
+	}
+	//----CHANGE COURSE DETAILS FUNCTIONS----
+	//--------SUBSECTION: CHANGE COURSE DEPARTMENT FUNCTIONS----
+	JPanel changeDept() {
+		//make panel
+		JPanel changeDept = new JPanel(new GridLayout(4,2));
+		//make labels for fields
+		JLabel deptRef = new JLabel("New Department Refrence");
+		JLabel crn = new JLabel("Course Refrence Number");
+		//make text fields
+		JTextField crnField = new JTextField();
+		JTextField deptRefField = new JTextField();
+		//make buttons
+		JButton deptChange = new JButton("Change Course Department");
+		JButton returnToSelection = new JButton("Return to Selection");
+		//button funcitonality
+		deptChange.addActionListener(e->{
+			Course course = CourseManagement.findCourseByCRN(Integer.parseInt(crnField.getText()));
+			Department dept = CourseManagement.findDepartmentByReference(deptRefField.getText());
+			course.setDepartment(dept);
+			crnField.setText("");
+			deptRefField.setText("");
+		});
+		returnToSelection.addActionListener(e->{
+			setTitle("Change Course Details");
+			courseLayout.show(courseCards,"COURSE_MENU");
+		});
+		//add things to panel
+		changeDept.add(crn);
+		changeDept.add(crnField);
+		changeDept.add(deptRef);
+		changeDept.add(deptRefField);
+		changeDept.add(returnToSelection);
+		changeDept.add(deptChange);
+		
+		return changeDept;
+	}
+	//----CHANGE COURSE DETAILS FUNCTIONS----
+	//--------SUBSECTION: CHANGE COURSE BUILDING FUNCTIONS----
+	JPanel changeBuilding() {
+		//make panel
+		JPanel changeBuild = new JPanel(new GridLayout(4,2));
+		//make labels for fields
+		JLabel Building = new JLabel("New Course Building");
+		JLabel crn = new JLabel("Course Refrence Number");
+		//make text fields
+		JTextField crnField = new JTextField();
+		JTextField BuildingField = new JTextField();
+		//make buttons
+		JButton buildChange = new JButton("Change Course Building");
+		JButton returnToSelection = new JButton("Return to Selection");
+		//button funcitonality
+		buildChange.addActionListener(e->{
+			Course course = CourseManagement.findCourseByCRN(Integer.parseInt(crnField.getText()));
+
+			course.setBuilding(BuildingField.getText());
+			crnField.setText("");
+			BuildingField.setText("");
+		});
+		returnToSelection.addActionListener(e->{
+			setTitle("Change Course Details");
+			courseLayout.show(courseCards,"COURSE_MENU");
+		});
+		//add things to panel
+		changeBuild.add(crn);
+		changeBuild.add(crnField);
+		changeBuild.add(Building);
+		changeBuild.add(BuildingField);
+		changeBuild.add(returnToSelection);
+		changeBuild.add(buildChange);
+		
+		return changeBuild;
+	}
+	//----CHANGE COURSE DETAILS FUNCTIONS----
+	//--------SUBSECTION: CHANGE COURSE ROOM NUMBER FUNCTIONS----
+	JPanel changeRoom() {
+		//make panel
+		JPanel changeRoom = new JPanel(new GridLayout(4,2));
+		//make labels for fields
+		JLabel roomNum = new JLabel("New Course Room Number");
+		JLabel crn = new JLabel("Course Refrence Number");
+		//make text fields
+		JTextField crnField = new JTextField();
+		JTextField RoomNumField = new JTextField();
+		//make buttons
+		JButton roomChange = new JButton("Change Course Room Number");
+		JButton returnToSelection = new JButton("Return to Selection");
+		//button funcitonality
+		roomChange.addActionListener(e->{
+			Course course = CourseManagement.findCourseByCRN(Integer.parseInt(crnField.getText()));
+
+			course.setRoomNumber(Integer.parseInt(RoomNumField.getText()));
+			crnField.setText("");
+			RoomNumField.setText("");
+		});
+		returnToSelection.addActionListener(e->{
+			setTitle("Change Course Details");
+			courseLayout.show(courseCards,"COURSE_MENU");
+		});
+		//add things to panel
+		changeRoom.add(crn);
+		changeRoom.add(crnField);
+		changeRoom.add(roomNum);
+		changeRoom.add(RoomNumField);
+		changeRoom.add(returnToSelection);
+		changeRoom.add(roomChange);
+		
+		return changeRoom;
+	}
+	//----CHANGE COURSE DETAILS FUNCTIONS----
+	//--------SUBSECTION: CHANGE COURSE REFRENCE NUMBER FUNCTIONS----
+	JPanel changeRefNum() {
+		//make panel
+		JPanel changeRefNum = new JPanel(new GridLayout(4,2));
+		//make labels for fields
+		JLabel refNum = new JLabel("New Course Refrence Number");
+		JLabel crn = new JLabel("Course Refrence Number");
+		//make text fields
+		JTextField crnField = new JTextField();
+		JTextField refNumField = new JTextField();
+		//make buttons
+		JButton refNumChange = new JButton("Change Course Refrence Number");
+		JButton returnToSelection = new JButton("Return to Selection");
+		//button funcitonality
+		refNumChange.addActionListener(e->{
+			Course course = CourseManagement.findCourseByCRN(Integer.parseInt(crnField.getText()));
+
+			course.setCrn(Integer.parseInt(refNumField.getText()));
+			crnField.setText("");
+			refNumField.setText("");
+		});
+		returnToSelection.addActionListener(e->{
+			setTitle("Change Course Details");
+			courseLayout.show(courseCards,"COURSE_MENU");
+		});
+		//add things to panel
+		changeRefNum.add(crn);
+		changeRefNum.add(crnField);
+		changeRefNum.add(refNum);
+		changeRefNum.add(refNumField);
+		changeRefNum.add(returnToSelection);
+		changeRefNum.add(refNumChange);
+		
+		return changeRefNum;
+	}
+	//----ADD COURSE FOR PROFESSORS FUNCTIONS-----
+	JPanel professorAdd() {
+		//make panel 
+		JPanel professorAdd = new JPanel(new GridLayout(4,2));
+		
+		//make text field labels
+		JLabel profID = new JLabel("Professor ID Number");
+		JLabel crn = new JLabel("Course Refrence Number");
+		
+		//make text field
+		JTextField IDField = new JTextField();
+		JTextField crnField = new JTextField();
+		
+		//make buttons
+		JButton addCourse = new JButton("Add Course");
+		
+		JButton returnToMenu = new JButton("Return To Menu");
+		
+		//add button functions
+		addCourse.addActionListener(e->{
+			Professor prof = rcms.findProfessorById(Integer.parseInt(IDField.getText()));
+			Course course = rcms.findCourseByCRN(Integer.parseInt(crnField.getText()));
+			prof.addCourse(course);
+			
+			IDField.setText("");
+			crnField.setText("");
+		});
+		
+		returnToMenu.addActionListener(e ->{
+			setTitle("Course Managment");
+			layout.show(cards, "MENU");
+		});
+		
+		//add things to panel
+		
+		professorAdd.add(profID);
+		professorAdd.add(IDField);
+		professorAdd.add(crn);
+		professorAdd.add(crnField);
+		professorAdd.add(returnToMenu);
+		professorAdd.add(addCourse);
+		
+		return professorAdd;
+	}
+	
+	//----DROP COURSE FOR PROFESSORS FUNCTIONS-----
+	JPanel professorDrop() {
+		//make panel 
+		JPanel professorDrop = new JPanel(new GridLayout(4,2));
+		
+		//make text field labels
+		JLabel profID = new JLabel("Professor ID Number");
+		JLabel crn = new JLabel("Course Refrence Number");
+		
+		//make text field
+		JTextField IDField = new JTextField();
+		JTextField crnField = new JTextField();
+		
+		//make buttons
+		JButton dropCourse = new JButton("Add Course");
+		
+		JButton returnToMenu = new JButton("Return To Menu");
+		
+		//add button functions
+		dropCourse.addActionListener(e->{
+			Professor prof = rcms.findProfessorById(Integer.parseInt(IDField.getText()));
+			Course course = rcms.findCourseByCRN(Integer.parseInt(crnField.getText()));
+			prof.dropCourse(course);
+			
+			IDField.setText("");
+			crnField.setText("");
+		});
+		
+		returnToMenu.addActionListener(e ->{
+			setTitle("Course Managment");
+			layout.show(cards, "MENU");
+		});
+		
+		//add things to panel
+		
+		professorDrop.add(profID);
+		professorDrop.add(IDField);
+		professorDrop.add(crn);
+		professorDrop.add(crnField);
+		professorDrop.add(returnToMenu);
+		professorDrop.add(dropCourse);
+		
+		return professorDrop;
+	}
+	
+	//----SEE CURRENT STUDENTS FUNCTIONS-----
+	JPanel seeStudents() {
+		//make panel 
+		JPanel seeAllStudents = new JPanel(new BorderLayout());
+		
+		//make label
+		JLabel title = new JLabel("Full Student List",SwingConstants.CENTER);
+		
+		//make text area
+		JTextArea StudentDisplay = new JTextArea();
+		StudentDisplay.setEditable(false);
+		JScrollPane scrollPane = new JScrollPane(StudentDisplay);
+		
+		//make text for display
+		String Students = rcms.displayAllStudentsForGUI();
+		StudentDisplay.setText(Students);
+		
+		//make back button
+		JButton returnToMenu = new JButton("Return To Menu");
+		
+		//add button functions
+		returnToMenu.addActionListener(e ->{
+			setTitle("Course Managment");
+			layout.show(cards, "MENU");
+		});
+		
+		//add things to panel
+		seeAllStudents.add(title,BorderLayout.NORTH);
+		seeAllStudents.add(scrollPane);
+		seeAllStudents.add(returnToMenu,BorderLayout.SOUTH);
+		
+		return seeAllStudents;
+	}
+	
+	//----SEE CURRENT PROFESSORS FUNCTIONS-----
+	JPanel seeProfessors() {
+		//make panel 
+		JPanel seeAllProfessors = new JPanel(new BorderLayout());
+		
+		//make label
+		JLabel title = new JLabel("Full Professor List",SwingConstants.CENTER);
+		
+		//make text area
+		JTextArea ProfessorDisplay = new JTextArea();
+		ProfessorDisplay.setEditable(false);
+		JScrollPane scrollPane = new JScrollPane(ProfessorDisplay);
+		
+		//make text for display
+		String Professors = rcms.displayAllProfessorsForGUI();
+		ProfessorDisplay.setText(Professors);
+		
+		//make back button
+		JButton returnToMenu = new JButton("Return To Menu");
+		
+		//add button functions
+		returnToMenu.addActionListener(e ->{
+			setTitle("Course Managment");
+			layout.show(cards, "MENU");
+		});
+		
+		//add things to panel
+		seeAllProfessors.add(title,BorderLayout.NORTH);
+		seeAllProfessors.add(scrollPane);
+		seeAllProfessors.add(returnToMenu,BorderLayout.SOUTH);
+		
+		return seeAllProfessors;
+	}
+	
+	//----SEE CURRENT COURSES FUNCTIONS-----
+	JPanel seeCourses() {
+		//make panel 
+		JPanel seeAllCourses = new JPanel(new BorderLayout());
+		
+		//make label
+		JLabel title = new JLabel("Full Course List",SwingConstants.CENTER);
+		
+		//make text area
+		JTextArea CourseDisplay = new JTextArea();
+		CourseDisplay.setEditable(false);
+		JScrollPane scrollPane = new JScrollPane(CourseDisplay);
+		
+		//make text for display
+		String Courses = rcms.displayAllCoursesForGUI();
+		CourseDisplay.setText(Courses);
+		
+		//make back button
+		JButton returnToMenu = new JButton("Return To Menu");
+		
+		//add button functions
+		returnToMenu.addActionListener(e ->{
+			setTitle("Course Managment");
+			layout.show(cards, "MENU");
+		});
+		
+		//add things to panel
+		seeAllCourses.add(title,BorderLayout.NORTH);
+		seeAllCourses.add(scrollPane);
+		seeAllCourses.add(returnToMenu,BorderLayout.SOUTH);
+		
+		return seeAllCourses;
+	}
 }

@@ -8,8 +8,8 @@ import java.util.List;
 public class CourseManagement {
     private static List<Course> courses;
     private List<Student> students;
-    private List<Professor> professors;
-    private List<Department> departments;
+    private static List<Professor> professors;
+    private static List<Department> departments;
     
     public CourseManagement() {
         this.courses = new ArrayList<>();
@@ -151,7 +151,7 @@ public class CourseManagement {
     }
     
     // find a professor by ID
-    public Professor findProfessorById(int id) {
+    public static Professor findProfessorById(int id) {
         for (Professor professor : professors) {
             if (professor.getId() == id) {
                 return professor;
@@ -161,7 +161,7 @@ public class CourseManagement {
     }
     
     //assign a professor to a class
-    public boolean assignProfessorToCourse(int professorId, int crn) {
+    public static boolean assignProfessorToCourse(int professorId, int crn) {
         Professor professor = findProfessorById(professorId);
         Course course = findCourseByCRN(crn);
         
@@ -203,7 +203,7 @@ public class CourseManagement {
     }
     
     //find a department
-    public Department findDepartmentByReference(String reference) {
+    public static Department findDepartmentByReference(String reference) {
         for (Department dept : departments) {
             if (dept.getReference().equalsIgnoreCase(reference)) {
                 return dept;
@@ -211,9 +211,7 @@ public class CourseManagement {
         }
         return null;
     }
-  
-   
-    
+
     //display courses
     public void displayAllCourses() {
         System.out.println("\n=== ALL COURSES ===");
@@ -316,5 +314,58 @@ public class CourseManagement {
         }
     	schedule.append("\n=== No Student Found with ID" + ID);
     	return schedule.toString();
+    }
+    
+    //display courses for GUI Display
+    public String displayAllCoursesForGUI() {
+    	//make string builder 
+    	StringBuilder allCourses = new StringBuilder();
+    	
+        allCourses.append("\n=== ALL COURSES ===");
+        if (courses.isEmpty()) {
+            allCourses.append("No courses in the system.");
+            return allCourses.toString();
+        } else {
+            for (Course course : courses) {
+            	allCourses.append(course);
+            }
+        }
+        return allCourses.toString();
+    }
+    
+    //display all the students
+    public String displayAllStudentsForGUI() {
+    	//make string builder 
+    	StringBuilder allStudents = new StringBuilder();
+    	
+        allStudents.append("\n=== ALL STUDENTS ===");
+        if (students.isEmpty()) {
+        	allStudents.append("No students in the system.");
+        	return allStudents.toString();
+        } else {
+            for (Student student : students) {
+            	allStudents.append(student + " - Enrolled in " + 
+                                 student.getEnrolledCourses().size() + " courses");
+            }
+        }
+    	return allStudents.toString();
+    }
+    
+    //display the professors
+    public String displayAllProfessorsForGUI() {
+    	//make string builder 
+    	StringBuilder allProfessors = new StringBuilder();
+    	
+        allProfessors.append("\n=== ALL PROFESSORS ===");
+        if (professors.isEmpty()) {
+        	allProfessors.append("No professors in the system.");
+        	return allProfessors.toString();
+        } else {
+            for (Professor professor : professors) {
+            	allProfessors.append(professor + " - Teaching " + 
+                                 professor.getCourses().size() + " courses");
+            }
+        }
+    	return allProfessors.toString();
     }
 }
