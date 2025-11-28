@@ -6,10 +6,10 @@ import java.util.List;
 //
 
 public class CourseManagement {
-    private static List<Course> courses;
+    private List<Course> courses;
     private List<Student> students;
-    private static List<Professor> professors;
-    private static List<Department> departments;
+    private List<Professor> professors;
+    private List<Department> departments;
     
     public CourseManagement() {
         this.courses = new ArrayList<>();
@@ -23,6 +23,15 @@ public class CourseManagement {
     public Course createCourse(String name, String type, int creditCount, String startTime, 
                                String endTime, Professor professor, Department department, 
                                String building, int roomNumber, int crn) {
+        if (name == null || name.trim().isEmpty()) {
+            System.out.println("Error: Course name cannot be empty.");
+            return null;
+        }
+        if (findCourseByCRN(crn) != null) {
+            System.out.println("Error: Course with CRN " + crn + " already exists.");
+            return null;
+        }
+        
         Course course = new Course(name, type, creditCount, startTime, endTime, 
                                    professor, department, building, roomNumber, crn);
         courses.add(course);
@@ -54,7 +63,13 @@ public class CourseManagement {
     }
     
     //change the course time
-    public static boolean changeCourseTime(int crn, String newStartTime, String newEndTime) {
+    public boolean changeCourseTime(int crn, String newStartTime, String newEndTime) {
+        if (newStartTime == null || newStartTime.trim().isEmpty() || 
+            newEndTime == null || newEndTime.trim().isEmpty()) {
+            System.out.println("Error: Start time and end time cannot be empty.");
+            return false;
+        }
+        
         Course course = findCourseByCRN(crn);
         if (course != null) {
             course.changeTime(newStartTime, newEndTime);
@@ -66,6 +81,11 @@ public class CourseManagement {
     
     //change course location
     public boolean changeCourseLocation(int crn, String newBuilding, int newRoomNumber) {
+        if (newBuilding == null || newBuilding.trim().isEmpty()) {
+            System.out.println("Error: Building name cannot be empty.");
+            return false;
+        }
+        
         Course course = findCourseByCRN(crn);
         if (course != null) {
             course.changeLocation(newBuilding, newRoomNumber);
@@ -76,7 +96,7 @@ public class CourseManagement {
     }
     
     //find a course
-    public static Course findCourseByCRN(int crn) {
+    public Course findCourseByCRN(int crn) {
         for (Course course : courses) {
             if (course.getCrn() == crn) {
                 return course;
@@ -87,6 +107,14 @@ public class CourseManagement {
     
     //add a student
     public void addStudent(Student student) {
+        if (student == null) {
+            System.out.println("Error: Student cannot be null.");
+            return;
+        }
+        if (findStudentById(student.getId()) != null) {
+            System.out.println("Error: Student with ID " + student.getId() + " already exists.");
+            return;
+        }
         students.add(student);
         System.out.println("Student added: " + student.getName());
     }
@@ -146,12 +174,20 @@ public class CourseManagement {
     
     //add a professor
     public void addProfessor(Professor professor) {
+        if (professor == null) {
+            System.out.println("Error: Professor cannot be null.");
+            return;
+        }
+        if (findProfessorById(professor.getId()) != null) {
+            System.out.println("Error: Professor with ID " + professor.getId() + " already exists.");
+            return;
+        }
         professors.add(professor);
         System.out.println("Professor added: " + professor.getName());
     }
     
     // find a professor by ID
-    public static Professor findProfessorById(int id) {
+    public Professor findProfessorById(int id) {
         for (Professor professor : professors) {
             if (professor.getId() == id) {
                 return professor;
@@ -161,7 +197,7 @@ public class CourseManagement {
     }
     
     //assign a professor to a class
-    public static boolean assignProfessorToCourse(int professorId, int crn) {
+    public boolean assignProfessorToCourse(int professorId, int crn) {
         Professor professor = findProfessorById(professorId);
         Course course = findCourseByCRN(crn);
         
@@ -198,12 +234,27 @@ public class CourseManagement {
     
     //add a department
     public void addDepartment(Department department) {
+        if (department == null) {
+            System.out.println("Error: Department cannot be null.");
+            return;
+        }
+        if (department.getReference() == null || department.getReference().trim().isEmpty()) {
+            System.out.println("Error: Department reference cannot be empty.");
+            return;
+        }
+        if (findDepartmentByReference(department.getReference()) != null) {
+            System.out.println("Error: Department with reference " + department.getReference() + " already exists.");
+            return;
+        }
         departments.add(department);
         System.out.println("Department added: " + department.getName());
     }
     
     //find a department
-    public static Department findDepartmentByReference(String reference) {
+    public Department findDepartmentByReference(String reference) {
+        if (reference == null) {
+            return null;
+        }
         for (Department dept : departments) {
             if (dept.getReference().equalsIgnoreCase(reference)) {
                 return dept;
@@ -294,40 +345,37 @@ public class CourseManagement {
     }
     
     //Student Schedule Display for GUI
-    public String getStudentSchdule(int ID) {
-    	//make string builder 
-    	StringBuilder schedule = new StringBuilder();
-    	
-    	//look for student in list
-    	for (Student student : students) {
-            if (student.getId() == ID) {//if found get their schedule
-            	schedule.append("\n=== Schedule for " + student.getName() + " ===");
-                if (student.getEnrolledCourses().isEmpty()) {//if no courses
-                    schedule.append("No courses enrolled.");
-                } else {//if courses
-                    for (Course course : student.getEnrolledCourses()) {
-                        schedule.append(course);
-                    }
-                    return schedule.toString();
-                }
+    public String getStudentSchedule(int ID) {
+        StringBuilder schedule = new StringBuilder();
+        
+        Student student = findStudentById(ID);
+        if (student == null) {
+            schedule.append("\n=== No Student Found with ID: ").append(ID).append(" ===");
+            return schedule.toString();
+        }
+        
+        schedule.append("\n=== Schedule for ").append(student.getName()).append(" ===\n");
+        if (student.getEnrolledCourses().isEmpty()) {
+            schedule.append("No courses enrolled.\n");
+        } else {
+            for (Course course : student.getEnrolledCourses()) {
+                schedule.append(course).append("\n");
             }
         }
-    	schedule.append("\n=== No Student Found with ID" + ID);
-    	return schedule.toString();
+        
+        return schedule.toString();
     }
     
     //display courses for GUI Display
     public String displayAllCoursesForGUI() {
-    	//make string builder 
-    	StringBuilder allCourses = new StringBuilder();
-    	
-        allCourses.append("\n=== ALL COURSES ===");
+        StringBuilder allCourses = new StringBuilder();
+        
+        allCourses.append("\n=== ALL COURSES ===\n");
         if (courses.isEmpty()) {
-            allCourses.append("No courses in the system.");
-            return allCourses.toString();
+            allCourses.append("No courses in the system.\n");
         } else {
             for (Course course : courses) {
-            	allCourses.append(course);
+                allCourses.append(course).append("\n");
             }
         }
         return allCourses.toString();
@@ -335,37 +383,45 @@ public class CourseManagement {
     
     //display all the students
     public String displayAllStudentsForGUI() {
-    	//make string builder 
-    	StringBuilder allStudents = new StringBuilder();
-    	
-        allStudents.append("\n=== ALL STUDENTS ===");
+        StringBuilder allStudents = new StringBuilder();
+        
+        allStudents.append("\n=== ALL STUDENTS ===\n");
         if (students.isEmpty()) {
-        	allStudents.append("No students in the system.");
-        	return allStudents.toString();
+            allStudents.append("No students in the system.\n");
         } else {
             for (Student student : students) {
-            	allStudents.append(student + " - Enrolled in " + 
-                                 student.getEnrolledCourses().size() + " courses");
+                allStudents.append(student).append(" - Enrolled in ")
+                          .append(student.getEnrolledCourses().size()).append(" courses\n");
             }
         }
-    	return allStudents.toString();
+        return allStudents.toString();
     }
     
     //display the professors
     public String displayAllProfessorsForGUI() {
-    	//make string builder 
-    	StringBuilder allProfessors = new StringBuilder();
-    	
-        allProfessors.append("\n=== ALL PROFESSORS ===");
+        StringBuilder allProfessors = new StringBuilder();
+        
+        allProfessors.append("\n=== ALL PROFESSORS ===\n");
         if (professors.isEmpty()) {
-        	allProfessors.append("No professors in the system.");
-        	return allProfessors.toString();
+            allProfessors.append("No professors in the system.\n");
         } else {
             for (Professor professor : professors) {
-            	allProfessors.append(professor + " - Teaching " + 
-                                 professor.getCourses().size() + " courses");
+                allProfessors.append(professor).append(" - Teaching ")
+                            .append(professor.getCourses().size()).append(" courses\n");
             }
         }
-    	return allProfessors.toString();
+        return allProfessors.toString();
+    }
+    
+    // Helper method to safely parse integers
+    public static Integer parseInteger(String value) {
+        if (value == null || value.trim().isEmpty()) {
+            return null;
+        }
+        try {
+            return Integer.parseInt(value.trim());
+        } catch (NumberFormatException e) {
+            return null;
+        }
     }
 }
