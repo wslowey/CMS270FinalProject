@@ -14,16 +14,23 @@ public class CourseRegistrationGUI extends JFrame{
 	static CardLayout courseLayout;
 	static JPanel courseCards;
 	
+	//user role tracking
+	private String userRole = ""; // "ADMIN", "PROFESSOR", "STUDENT"
+	private int userId = 0;
+	
 	//Main running program
     public void GUIrun() {
-        setTitle("Course Management");
+        setTitle("Course Management - Login");
         setSize(900, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         layout = new CardLayout();
         cards = new JPanel(layout);
 
-        // Build all screens
+        // Build login screen first
+        JPanel loginPanel = buildLoginScreen();
+        
+        // Build all other screens
         JPanel menuPanel = buildMainMenu();
         JPanel addDeptPanel = addDepartment();
         JPanel addProfPanel = addProfessor();
@@ -42,6 +49,7 @@ public class CourseRegistrationGUI extends JFrame{
         JPanel seeAllCoursesPanel = seeCourses();
 
         // Add them to CardLayout
+        cards.add(loginPanel, "LOGIN");
         cards.add(menuPanel, "MENU");
         cards.add(addDeptPanel,"ADD_DEPARTMENT");
         cards.add(addProfPanel,"ADD_PROFESSOR");
@@ -60,52 +68,198 @@ public class CourseRegistrationGUI extends JFrame{
         cards.add(seeAllCoursesPanel,"SEE_COURSE_LIST");
 
         add(cards);
+        layout.show(cards, "LOGIN"); // Start with login screen
         setVisible(true);
+    }
+    
+    //----LOGIN SCREEN----
+    JPanel buildLoginScreen() {
+    	JPanel loginPanel = new JPanel(new GridBagLayout());
+    	GridBagConstraints gbc = new GridBagConstraints();
+    	gbc.insets = new Insets(10, 10, 10, 10);
+    	gbc.fill = GridBagConstraints.HORIZONTAL;
+    	
+    	JLabel titleLabel = new JLabel("Rollins College Course Management System", SwingConstants.CENTER);
+    	titleLabel.setFont(new Font("Arial", Font.BOLD, 18));
+    	
+    	JLabel roleLabel = new JLabel("Select Role:");
+    	JComboBox<String> roleCombo = new JComboBox<>(new String[]{"Admin", "Professor", "Student"});
+    	
+    	JLabel idLabel = new JLabel("User ID:");
+    	JTextField idField = new JTextField(15);
+    	
+    	JLabel passwordLabel = new JLabel("Password:");
+    	JPasswordField passwordField = new JPasswordField(15);
+    	
+    	JButton loginButton = new JButton("Login");
+    	JLabel statusLabel = new JLabel("", SwingConstants.CENTER);
+    	
+    	loginButton.addActionListener(e -> {
+    	    try {
+    	        String role = (String) roleCombo.getSelectedItem();
+    	        Integer id = CourseManagement.parseInteger(idField.getText());
+    	        String password = new String(passwordField.getPassword());
+    	        
+    	        if (id == null) {
+    	            statusLabel.setText("Please enter a valid User ID");
+    	            statusLabel.setForeground(Color.RED);
+    	            return;
+    	        }
+    	        
+    	        if (password.trim().isEmpty()) {
+    	            statusLabel.setText("Please enter a password");
+    	            statusLabel.setForeground(Color.RED);
+    	            return;
+    	        }
+    	        
+    	        // Accept any password for simplicity
+    	        userRole = role.toUpperCase();
+    	        userId = id;
+    	        
+    	        // REBUILD THE MENU AFTER LOGIN
+    	        JPanel newMenu = buildMainMenu();
+    	        cards.add(newMenu, "MENU_NEW");
+    	        cards.remove(cards.getComponent(1)); // Remove old menu
+    	        cards.add(newMenu, "MENU", 1); // Add new menu at position 1
+    	        
+    	        setTitle("Course Management - " + role);
+    	        layout.show(cards, "MENU");
+    	        
+    	        // Clear fields
+    	        idField.setText("");
+    	        passwordField.setText("");
+    	        statusLabel.setText("");
+    	        
+    	    } catch (Exception ex) {
+    	        statusLabel.setText("Login error: " + ex.getMessage());
+    	        statusLabel.setForeground(Color.RED);
+    	    }
+    	});
+    	
+    	// Layout components
+    	gbc.gridx = 0; gbc.gridy = 0; gbc.gridwidth = 2;
+    	loginPanel.add(titleLabel, gbc);
+    	
+    	gbc.gridwidth = 1; gbc.gridy = 1;
+    	loginPanel.add(roleLabel, gbc);
+    	gbc.gridx = 1;
+    	loginPanel.add(roleCombo, gbc);
+    	
+    	gbc.gridx = 0; gbc.gridy = 2;
+    	loginPanel.add(idLabel, gbc);
+    	gbc.gridx = 1;
+    	loginPanel.add(idField, gbc);
+    	
+    	gbc.gridx = 0; gbc.gridy = 3;
+    	loginPanel.add(passwordLabel, gbc);
+    	gbc.gridx = 1;
+    	loginPanel.add(passwordField, gbc);
+    	
+    	gbc.gridx = 0; gbc.gridy = 4; gbc.gridwidth = 2;
+    	loginPanel.add(loginButton, gbc);
+    	
+    	gbc.gridy = 5;
+    	loginPanel.add(statusLabel, gbc);
+    	
+    	return loginPanel;
     }
 	
     //----MAIN MENU FUNCTIONS----
 	JPanel buildMainMenu() {
-		JPanel main = new JPanel(new GridLayout(17,1));
-		JLabel title = new JLabel("Welcome to the Rollins College Course Management System", SwingConstants.CENTER);
+		JPanel main = new JPanel(new BorderLayout());
+		JPanel buttonPanel = new JPanel(new GridLayout(0, 1));
 		
+		JLabel title = new JLabel("Welcome to the Rollins College Course Management System", SwingConstants.CENTER);
+		title.setFont(new Font("Arial", Font.BOLD, 14));
+		
+		// Admin buttons (full access)
 		JButton addDepartment = new JButton("Add Department");
 		JButton addProfessor = new JButton("Add Professor");
 		JButton addStudent = new JButton("Add Student");
 		JButton createCourse = new JButton("Create Course");
 		JButton removeCourse = new JButton("Remove Course");
-		JButton studentAddCourse = new JButton("Add Course for Students");
-		JButton studentDropCourse = new JButton("Drop Course for Students");
-		JButton seeCourseInfo = new JButton("Course Roster");
-		JButton seeStudentSchedule = new JButton("Student Schedule");
 		JButton changeCourse = new JButton("Change Course Details");
-		JButton professorAddCourse = new JButton("Add Course for Professors");
-		JButton professorDropCourse = new JButton("Drop Course for Professors");
 		JButton seeStudentList = new JButton("See Current Students");
 		JButton seeProfessorList = new JButton("See Current Professors");
 		JButton seeCourseList = new JButton("See Current Courses");
+		
+		// Professor buttons
+		JButton professorAddCourse = new JButton("Add Course for Professors");
+		JButton professorDropCourse = new JButton("Drop Course for Professors");
+		JButton seeCourseInfo = new JButton("Course Roster");
+		
+		// Student buttons
+		JButton studentAddCourse = new JButton("Add Course for Students");
+		JButton studentDropCourse = new JButton("Drop Course for Students");
+		JButton seeStudentSchedule = new JButton("Student Schedule");
+		
+		JButton logout = new JButton("Logout");
 		JButton exit = new JButton("Exit");
 		
+		// Navigation for admin buttons
 		addDepartment.addActionListener(e->{setTitle("Add Department"); layout.show(cards, "ADD_DEPARTMENT");});
 		addProfessor.addActionListener(e->{setTitle("Add Professor"); layout.show(cards, "ADD_PROFESSOR");});
 		addStudent.addActionListener(e->{setTitle("Add Student"); layout.show(cards, "ADD_STUDENT");});
 		createCourse.addActionListener(e->{setTitle("Create Course"); layout.show(cards, "CREATE_COURSE");});
 		removeCourse.addActionListener(e->{setTitle("Remove Course"); layout.show(cards, "REMOVE_COURSE");});
-		studentAddCourse.addActionListener(e->{setTitle("Add Course for Students"); layout.show(cards, "STUDENT_ADD_COURSE");});
-		studentDropCourse.addActionListener(e->{setTitle("Drop Course for Students"); layout.show(cards, "STUDENT_DROP_COURSE");});
-		seeCourseInfo.addActionListener(e->{setTitle("Full Course Details"); layout.show(cards, "SEE_COURSE_DETAILS");});
-		seeStudentSchedule.addActionListener(e->{setTitle("Student Schedule"); layout.show(cards, "SEE_STUDENT_SCHEDULE");});
 		changeCourse.addActionListener(e->{setTitle("Change Course Details"); layout.show(cards, "CHANGE_COURSE_DETAILS");});
-		professorAddCourse.addActionListener(e->{setTitle("Add Course for Professors"); layout.show(cards, "PROFESSOR_ADD_COURSE");});
-		professorDropCourse.addActionListener(e->{setTitle("Drop Course for Professors"); layout.show(cards, "PROFESSOR_DROP_COURSE");});
 		seeStudentList.addActionListener(e->{setTitle("Full Student List"); layout.show(cards, "SEE_STUDENT_LIST");});
 		seeProfessorList.addActionListener(e->{setTitle("Full Professor List"); layout.show(cards, "SEE_PROFESSOR_LIST");});
 		seeCourseList.addActionListener(e->{setTitle("Full Course List"); layout.show(cards, "SEE_COURSE_LIST");});
+		
+		// Navigation for professor buttons
+		professorAddCourse.addActionListener(e->{setTitle("Add Course for Professors"); layout.show(cards, "PROFESSOR_ADD_COURSE");});
+		professorDropCourse.addActionListener(e->{setTitle("Drop Course for Professors"); layout.show(cards, "PROFESSOR_DROP_COURSE");});
+		seeCourseInfo.addActionListener(e->{setTitle("Full Course Details"); layout.show(cards, "SEE_COURSE_DETAILS");});
+		
+		// Navigation for student buttons
+		studentAddCourse.addActionListener(e->{setTitle("Add Course for Students"); layout.show(cards, "STUDENT_ADD_COURSE");});
+		studentDropCourse.addActionListener(e->{setTitle("Drop Course for Students"); layout.show(cards, "STUDENT_DROP_COURSE");});
+		seeStudentSchedule.addActionListener(e->{setTitle("Student Schedule"); layout.show(cards, "SEE_STUDENT_SCHEDULE");});
+		
+		logout.addActionListener(e -> {
+			userRole = "";
+			userId = 0;
+			setTitle("Course Management - Login");
+			layout.show(cards, "LOGIN");
+		});
 		exit.addActionListener(e->dispose());
 		
-		main.add(title); main.add(addDepartment); main.add(addProfessor); main.add(addStudent);
-		main.add(createCourse); main.add(removeCourse); main.add(studentAddCourse); main.add(studentDropCourse);
-		main.add(seeCourseInfo); main.add(seeStudentSchedule); main.add(changeCourse); main.add(professorAddCourse);
-		main.add(professorDropCourse); main.add(seeStudentList); main.add(seeProfessorList); main.add(seeCourseList); main.add(exit);
+		buttonPanel.add(title);
+		
+		// Add buttons based on role
+		if (userRole.equals("ADMIN")) {
+			buttonPanel.add(addDepartment);
+			buttonPanel.add(addProfessor);
+			buttonPanel.add(addStudent);
+			buttonPanel.add(createCourse);
+			buttonPanel.add(removeCourse);
+			buttonPanel.add(changeCourse);
+			buttonPanel.add(studentAddCourse);
+			buttonPanel.add(studentDropCourse);
+			buttonPanel.add(seeCourseInfo);
+			buttonPanel.add(seeStudentSchedule);
+			buttonPanel.add(professorAddCourse);
+			buttonPanel.add(professorDropCourse);
+			buttonPanel.add(seeStudentList);
+			buttonPanel.add(seeProfessorList);
+			buttonPanel.add(seeCourseList);
+		} else if (userRole.equals("PROFESSOR")) {
+			buttonPanel.add(professorAddCourse);
+			buttonPanel.add(professorDropCourse);
+			buttonPanel.add(seeCourseInfo);
+			buttonPanel.add(seeCourseList);
+		} else if (userRole.equals("STUDENT")) {
+			buttonPanel.add(studentAddCourse);
+			buttonPanel.add(studentDropCourse);
+			buttonPanel.add(seeStudentSchedule);
+			buttonPanel.add(seeCourseList);
+		}
+		
+		buttonPanel.add(logout);
+		buttonPanel.add(exit);
+		
+		main.add(buttonPanel, BorderLayout.CENTER);
 		return main;
 	}
 	
@@ -368,6 +522,12 @@ public class CourseRegistrationGUI extends JFrame{
 		JButton addCourse = new JButton("Add Course");
 		JButton returnToMenu = new JButton("Return To Menu");
 		
+		// Pre-fill student ID if logged in as student
+		if (userRole.equals("STUDENT")) {
+			IDField.setText(String.valueOf(userId));
+			IDField.setEditable(false);
+		}
+		
 		addCourse.addActionListener(e->{
 			try {
 				Integer studentID_val = CourseManagement.parseInteger(IDField.getText());
@@ -382,7 +542,10 @@ public class CourseRegistrationGUI extends JFrame{
 				}
 				if (rcms.enrollStudent(studentID_val, crnNum)) {
 					JOptionPane.showMessageDialog(this, "Student enrolled successfully!", "Success", JOptionPane.INFORMATION_MESSAGE);
-					IDField.setText(""); crnField.setText("");
+					if (!userRole.equals("STUDENT")) {
+						IDField.setText("");
+					}
+					crnField.setText("");
 				} else {
 					JOptionPane.showMessageDialog(this, "Failed to enroll student. Check console for details.", "Error", JOptionPane.WARNING_MESSAGE);
 				}
@@ -407,6 +570,12 @@ public class CourseRegistrationGUI extends JFrame{
 		JButton dropCourse = new JButton("Drop Course");
 		JButton returnToMenu = new JButton("Return To Menu");
 		
+		// Pre-fill student ID if logged in as student
+		if (userRole.equals("STUDENT")) {
+			IDField.setText(String.valueOf(userId));
+			IDField.setEditable(false);
+		}
+		
 		dropCourse.addActionListener(e->{
 			try {
 				Integer studentID_val = CourseManagement.parseInteger(IDField.getText());
@@ -421,7 +590,10 @@ public class CourseRegistrationGUI extends JFrame{
 				}
 				if (rcms.dropStudentFromCourse(studentID_val, crnNum)) {
 					JOptionPane.showMessageDialog(this, "Student dropped from course successfully!", "Success", JOptionPane.INFORMATION_MESSAGE);
-					IDField.setText(""); crnField.setText("");
+					if (!userRole.equals("STUDENT")) {
+						IDField.setText("");
+					}
+					crnField.setText("");
 				} else {
 					JOptionPane.showMessageDialog(this, "Failed to drop student. Check console for details.", "Error", JOptionPane.WARNING_MESSAGE);
 				}
@@ -433,7 +605,8 @@ public class CourseRegistrationGUI extends JFrame{
 		
 		studentDrop.add(studentID); studentDrop.add(IDField); studentDrop.add(crn); studentDrop.add(crnField);
 		studentDrop.add(returnToMenu); studentDrop.add(dropCourse);
-		return studentDrop;
+		return studentDrop
+				;
 	}
 	
 	//----COURSE ROSTER----
@@ -481,6 +654,12 @@ public class CourseRegistrationGUI extends JFrame{
 	    JButton getStudentSchedule = new JButton("Show Student Schedule");
 	    JButton returnToMenu = new JButton("Return To Menu");
 	    
+	    // Pre-fill student ID if logged in as student
+	    if (userRole.equals("STUDENT")) {
+	    	IDField.setText(String.valueOf(userId));
+	    	IDField.setEditable(false);
+	    }
+	    
 	    getStudentSchedule.addActionListener(e->{
 	    	try {
 		    	Integer studentID = CourseManagement.parseInteger(IDField.getText());
@@ -490,7 +669,9 @@ public class CourseRegistrationGUI extends JFrame{
 				}
 		    	String schedule = rcms.getStudentSchedule(studentID);
 		    	scheduleDisplay.setText(schedule);
-		    	IDField.setText("");
+		    	if (!userRole.equals("STUDENT")) {
+		    		IDField.setText("");
+		    	}
 	    	} catch (Exception ex) {
 				JOptionPane.showMessageDialog(this, "Error displaying schedule: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
 			}
@@ -949,7 +1130,13 @@ public class CourseRegistrationGUI extends JFrame{
 		JTextField crnField = new JTextField();
 		JButton addCourse = new JButton("Add Course");
 		JButton returnToMenu = new JButton("Return To Menu");
-		
+
+		// Pre-fill professor ID if logged in as professor
+		if (userRole.equals("PROFESSOR")) {
+			IDField.setText(String.valueOf(userId));
+			IDField.setEditable(false);
+		}
+
 		addCourse.addActionListener(e->{
 			try {
 				Integer profID_val = CourseManagement.parseInteger(IDField.getText());
@@ -977,144 +1164,161 @@ public class CourseRegistrationGUI extends JFrame{
 				} else {
 					JOptionPane.showMessageDialog(this, "Professor is already teaching this course", "Already Assigned", JOptionPane.INFORMATION_MESSAGE);
 				}
-				IDField.setText(""); crnField.setText("");
+				if (!userRole.equals("PROFESSOR")) {
+					IDField.setText("");
+				}
+				crnField.setText("");
 			} catch (Exception ex) {
 				JOptionPane.showMessageDialog(this, "Error adding course to professor: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
 			}
 		});
-		returnToMenu.addActionListener(e ->{setTitle("Course Management"); layout.show(cards, "MENU");});
 		
-		professorAdd.add(profID); professorAdd.add(IDField); professorAdd.add(crn); professorAdd.add(crnField);
-		professorAdd.add(returnToMenu); professorAdd.add(addCourse);
+		returnToMenu.addActionListener(e ->{
+			setTitle("Course Management"); 
+			layout.show(cards, "MENU");
+		});
+		
+		professorAdd.add(profID); 
+		professorAdd.add(IDField); 
+		professorAdd.add(crn); 
+		professorAdd.add(crnField);
+		professorAdd.add(returnToMenu); 
+		professorAdd.add(addCourse);
+		
 		return professorAdd;
 	}
+//----PROFESSOR DROP COURSE----
+JPanel professorDrop() {
+	JPanel professorDrop = new JPanel(new GridLayout(4,2));
+	JLabel profID = new JLabel("Professor ID Number");
+	JLabel crn = new JLabel("Course Reference Number");
+	JTextField IDField = new JTextField();
+	JTextField crnField = new JTextField();
+	JButton dropCourse = new JButton("Drop Course");
+	JButton returnToMenu = new JButton("Return To Menu");
 	
-	//----PROFESSOR DROP COURSE----
-	JPanel professorDrop() {
-		JPanel professorDrop = new JPanel(new GridLayout(4,2));
-		JLabel profID = new JLabel("Professor ID Number");
-		JLabel crn = new JLabel("Course Reference Number");
-		JTextField IDField = new JTextField();
-		JTextField crnField = new JTextField();
-		JButton dropCourse = new JButton("Drop Course");
-		JButton returnToMenu = new JButton("Return To Menu");
-		
-		dropCourse.addActionListener(e->{
-			try {
-				Integer profID_val = CourseManagement.parseInteger(IDField.getText());
-				Integer crnNum = CourseManagement.parseInteger(crnField.getText());
-				if (profID_val == null) {
-					JOptionPane.showMessageDialog(this, "Please enter a valid professor ID", "Invalid Input", JOptionPane.ERROR_MESSAGE);
-					return;
-				}
-				if (crnNum == null) {
-					JOptionPane.showMessageDialog(this, "Please enter a valid CRN", "Invalid Input", JOptionPane.ERROR_MESSAGE);
-					return;
-				}
-				Professor prof = rcms.findProfessorById(profID_val);
-				if (prof == null) {
-					JOptionPane.showMessageDialog(this, "Professor not found with ID: " + profID_val, "Not Found", JOptionPane.WARNING_MESSAGE);
-					return;
-				}
-				Course course = rcms.findCourseByCRN(crnNum);
-				if (course == null) {
-					JOptionPane.showMessageDialog(this, "Course not found with CRN: " + crnNum, "Not Found", JOptionPane.WARNING_MESSAGE);
-					return;
-				}
-				if (prof.dropCourse(course)) {
-					JOptionPane.showMessageDialog(this, "Course dropped from professor successfully!", "Success", JOptionPane.INFORMATION_MESSAGE);
-				} else {
-					JOptionPane.showMessageDialog(this, "Professor is not teaching this course", "Not Assigned", JOptionPane.INFORMATION_MESSAGE);
-				}
-				IDField.setText(""); crnField.setText("");
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(this, "Error dropping course from professor: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-			}
-		});
-		returnToMenu.addActionListener(e ->{setTitle("Course Management"); layout.show(cards, "MENU");});
-		
-		professorDrop.add(profID); professorDrop.add(IDField); professorDrop.add(crn); professorDrop.add(crnField);
-		professorDrop.add(returnToMenu); professorDrop.add(dropCourse);
-		return professorDrop;
+	// Pre-fill professor ID if logged in as professor
+	if (userRole.equals("PROFESSOR")) {
+		IDField.setText(String.valueOf(userId));
+		IDField.setEditable(false);
 	}
 	
-	//----SEE ALL STUDENTS----
-	JPanel seeStudents() {
-		JPanel seeAllStudents = new JPanel(new BorderLayout());
-		JLabel title = new JLabel("Full Student List",SwingConstants.CENTER);
-		JTextArea StudentDisplay = new JTextArea();
-		StudentDisplay.setEditable(false);
-		JScrollPane scrollPane = new JScrollPane(StudentDisplay);
-		JButton refreshButton = new JButton("Refresh List");
-		JButton returnToMenu = new JButton("Return To Menu");
-		JPanel buttonPanel = new JPanel(new GridLayout(1,2));
-		buttonPanel.add(returnToMenu); buttonPanel.add(refreshButton);
-		
-		refreshButton.addActionListener(e -> {
-			String Students = rcms.displayAllStudentsForGUI();
-			StudentDisplay.setText(Students);
-		});
+	dropCourse.addActionListener(e->{
+		try {
+			Integer profID_val = CourseManagement.parseInteger(IDField.getText());
+			Integer crnNum = CourseManagement.parseInteger(crnField.getText());
+			if (profID_val == null) {
+				JOptionPane.showMessageDialog(this, "Please enter a valid professor ID", "Invalid Input", JOptionPane.ERROR_MESSAGE);
+				return;
+			}
+			if (crnNum == null) {
+				JOptionPane.showMessageDialog(this, "Please enter a valid CRN", "Invalid Input", JOptionPane.ERROR_MESSAGE);
+				return;
+			}
+			Professor prof = rcms.findProfessorById(profID_val);
+			if (prof == null) {
+				JOptionPane.showMessageDialog(this, "Professor not found with ID: " + profID_val, "Not Found", JOptionPane.WARNING_MESSAGE);
+				return;
+			}
+			Course course = rcms.findCourseByCRN(crnNum);
+			if (course == null) {
+				JOptionPane.showMessageDialog(this, "Course not found with CRN: " + crnNum, "Not Found", JOptionPane.WARNING_MESSAGE);
+				return;
+			}
+			if (prof.dropCourse(course)) {
+				JOptionPane.showMessageDialog(this, "Course dropped from professor successfully!", "Success", JOptionPane.INFORMATION_MESSAGE);
+			} else {
+				JOptionPane.showMessageDialog(this, "Professor is not teaching this course", "Not Assigned", JOptionPane.INFORMATION_MESSAGE);
+			}
+			if (!userRole.equals("PROFESSOR")) {
+				IDField.setText("");
+			}
+			crnField.setText("");
+		} catch (Exception ex) {
+			JOptionPane.showMessageDialog(this, "Error dropping course from professor: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+		}
+	});
+	returnToMenu.addActionListener(e ->{setTitle("Course Management"); layout.show(cards, "MENU");});
+	
+	professorDrop.add(profID); professorDrop.add(IDField); professorDrop.add(crn); professorDrop.add(crnField);
+	professorDrop.add(returnToMenu); professorDrop.add(dropCourse);
+	return professorDrop;
+}
+
+//----SEE ALL STUDENTS----
+JPanel seeStudents() {
+	JPanel seeAllStudents = new JPanel(new BorderLayout());
+	JLabel title = new JLabel("Full Student List",SwingConstants.CENTER);
+	JTextArea StudentDisplay = new JTextArea();
+	StudentDisplay.setEditable(false);
+	JScrollPane scrollPane = new JScrollPane(StudentDisplay);
+	JButton refreshButton = new JButton("Refresh List");
+	JButton returnToMenu = new JButton("Return To Menu");
+	JPanel buttonPanel = new JPanel(new GridLayout(1,2));
+	buttonPanel.add(returnToMenu); buttonPanel.add(refreshButton);
+	
+	refreshButton.addActionListener(e -> {
 		String Students = rcms.displayAllStudentsForGUI();
 		StudentDisplay.setText(Students);
-		returnToMenu.addActionListener(e ->{setTitle("Course Management"); layout.show(cards, "MENU");});
-		
-		seeAllStudents.add(title,BorderLayout.NORTH); seeAllStudents.add(scrollPane, BorderLayout.CENTER);
-		seeAllStudents.add(buttonPanel,BorderLayout.SOUTH);
-		return seeAllStudents;
-	}
+	});
+	String Students = rcms.displayAllStudentsForGUI();
+	StudentDisplay.setText(Students);
+	returnToMenu.addActionListener(e ->{setTitle("Course Management"); layout.show(cards, "MENU");});
 	
-	//----SEE ALL PROFESSORS----
-	JPanel seeProfessors() {
-		JPanel seeAllProfessors = new JPanel(new BorderLayout());
-		JLabel title = new JLabel("Full Professor List",SwingConstants.CENTER);
-		JTextArea ProfessorDisplay = new JTextArea();
-		ProfessorDisplay.setEditable(false);
-		JScrollPane scrollPane = new JScrollPane(ProfessorDisplay);
-		JButton refreshButton = new JButton("Refresh List");
-		JButton returnToMenu = new JButton("Return To Menu");
-		JPanel buttonPanel = new JPanel(new GridLayout(1,2));
-		buttonPanel.add(returnToMenu); buttonPanel.add(refreshButton);
-		
-		refreshButton.addActionListener(e -> {
-			String Professors = rcms.displayAllProfessorsForGUI();
-			ProfessorDisplay.setText(Professors);
-		});
+	seeAllStudents.add(title,BorderLayout.NORTH); seeAllStudents.add(scrollPane, BorderLayout.CENTER);
+	seeAllStudents.add(buttonPanel,BorderLayout.SOUTH);
+	return seeAllStudents;
+}
+
+//----SEE ALL PROFESSORS----
+JPanel seeProfessors() {
+	JPanel seeAllProfessors = new JPanel(new BorderLayout());
+	JLabel title = new JLabel("Full Professor List",SwingConstants.CENTER);
+	JTextArea ProfessorDisplay = new JTextArea();
+	ProfessorDisplay.setEditable(false);
+	JScrollPane scrollPane = new JScrollPane(ProfessorDisplay);
+	JButton refreshButton = new JButton("Refresh List");
+	JButton returnToMenu = new JButton("Return To Menu");
+	JPanel buttonPanel = new JPanel(new GridLayout(1,2));
+	buttonPanel.add(returnToMenu); buttonPanel.add(refreshButton);
+	
+	refreshButton.addActionListener(e -> {
 		String Professors = rcms.displayAllProfessorsForGUI();
 		ProfessorDisplay.setText(Professors);
-		returnToMenu.addActionListener(e ->{setTitle("Course Management"); layout.show(cards, "MENU");});
-		
-		seeAllProfessors.add(title,BorderLayout.NORTH); seeAllProfessors.add(scrollPane, BorderLayout.CENTER);
-		seeAllProfessors.add(buttonPanel,BorderLayout.SOUTH);
-		return seeAllProfessors;
-	}
+	});
+	String Professors = rcms.displayAllProfessorsForGUI();
+	ProfessorDisplay.setText(Professors);
+	returnToMenu.addActionListener(e ->{setTitle("Course Management"); layout.show(cards, "MENU");});
 	
-	//----SEE ALL COURSES----
-		JPanel seeCourses() {
-			JPanel seeAllCourses = new JPanel(new BorderLayout());
-			JLabel title = new JLabel("Full Course List",SwingConstants.CENTER);
-			JTextArea CourseDisplay = new JTextArea();
-			CourseDisplay.setEditable(false);
-			JScrollPane scrollPane = new JScrollPane(CourseDisplay);
-			JButton refreshButton = new JButton("Refresh List");
-			JButton returnToMenu = new JButton("Return To Menu");
-			JPanel buttonPanel = new JPanel(new GridLayout(1,2));
-			buttonPanel.add(returnToMenu); buttonPanel.add(refreshButton);
-			
-			refreshButton.addActionListener(e -> {
-				String Courses = rcms.displayAllCoursesForGUI();
-				CourseDisplay.setText(Courses);
-			});
-			String Courses = rcms.displayAllCoursesForGUI();
-			CourseDisplay.setText(Courses);
-			returnToMenu.addActionListener(e ->{setTitle("Course Management"); layout.show(cards, "MENU");});
-			
-			seeAllCourses.add(title,BorderLayout.NORTH); 
-			seeAllCourses.add(scrollPane, BorderLayout.CENTER);
-			seeAllCourses.add(buttonPanel,BorderLayout.SOUTH);
-			
-			return seeAllCourses;  // <-- ADD THIS LINE
-		}
+	seeAllProfessors.add(title,BorderLayout.NORTH); seeAllProfessors.add(scrollPane, BorderLayout.CENTER);
+	seeAllProfessors.add(buttonPanel,BorderLayout.SOUTH);
+	return seeAllProfessors;
+}
 
+//----SEE ALL COURSES----
+JPanel seeCourses() {
+	JPanel seeAllCourses = new JPanel(new BorderLayout());
+	JLabel title = new JLabel("Full Course List",SwingConstants.CENTER);
+	JTextArea CourseDisplay = new JTextArea();
+	CourseDisplay.setEditable(false);
+	JScrollPane scrollPane = new JScrollPane(CourseDisplay);
+	JButton refreshButton = new JButton("Refresh List");
+	JButton returnToMenu = new JButton("Return To Menu");
+	JPanel buttonPanel = new JPanel(new GridLayout(1,2));
+	buttonPanel.add(returnToMenu); buttonPanel.add(refreshButton);
+	
+	refreshButton.addActionListener(e -> {
+		String Courses = rcms.displayAllCoursesForGUI();
+		CourseDisplay.setText(Courses);
+	});
+	String Courses = rcms.displayAllCoursesForGUI();
+	CourseDisplay.setText(Courses);
+	returnToMenu.addActionListener(e ->{setTitle("Course Management"); layout.show(cards, "MENU");});
+	
+	seeAllCourses.add(title,BorderLayout.NORTH); seeAllCourses.add(scrollPane, BorderLayout.CENTER);
+	seeAllCourses.add(buttonPanel,BorderLayout.SOUTH);
+	return seeAllCourses;
+}
 
 //----MAIN METHOD----
 public static void main(String[] args) {
@@ -1124,5 +1328,5 @@ public static void main(String[] args) {
 	});
 }
 }
-
-	
+		
+		
