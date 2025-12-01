@@ -34,7 +34,7 @@ public class CourseManagement {
         return null;
     }
     
-    // Simple CSV splitter that respects quotes (matches the format from CatalogToCsv)
+    // Simple CSV splitter that respects quotes
     private String[] splitCsvLine(String line) {
         java.util.List<String> result = new java.util.ArrayList<>();
         StringBuilder sb = new StringBuilder();
