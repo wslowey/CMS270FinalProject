@@ -1,4 +1,3 @@
-  
 import javax.swing.*;
 import java.awt.*;
 
@@ -12,6 +11,7 @@ public class Main {
     	
         // Create the management system
         CourseManagement cms = new CourseManagement();
+        
         
         System.out.println("=== ROLLINS COURSE MANAGEMENT SYSTEM ===\n");
         

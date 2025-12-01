@@ -4,7 +4,16 @@ import java.awt.*;
 public class CourseRegistrationGUI extends JFrame{
 	
 	//create management system
-    private final CourseManagement rcms = new CourseManagement();
+    private final CourseManagement rcms;
+    
+    // Constructor
+    public CourseRegistrationGUI() {
+        this.rcms = new CourseManagement();
+        // Load the Rollins catalog into the system
+        // Make sure rollins_catalog_spring2026.csv is in your project root
+        this.rcms.importCoursesFromCsv("rollins_catalog_spring2026.csv");
+    }
+
     
 	//layout parent
 	static CardLayout layout;

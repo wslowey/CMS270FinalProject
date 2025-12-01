@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 //
 //Includes methods for course, students, professors, and department
@@ -18,6 +21,195 @@ public class CourseManagement {
         this.departments = new ArrayList<>();
     }
     
+    
+    // Find professor by name (to avoid duplicates)
+    public Professor findProfessorByName(String name) {
+        if (name == null) return null;
+        String target = name.trim();
+        for (Professor p : professors) {
+            if (p.getName().equalsIgnoreCase(target)) {
+                return p;
+            }
+        }
+        return null;
+    }
+    
+    // Simple CSV splitter that respects quotes (matches the format from CatalogToCsv)
+    private String[] splitCsvLine(String line) {
+        java.util.List<String> result = new java.util.ArrayList<>();
+        StringBuilder sb = new StringBuilder();
+        boolean inQuotes = false;
+
+        for (int i = 0; i < line.length(); i++) {
+            char c = line.charAt(i);
+            if (c == '\"') {
+                inQuotes = !inQuotes;
+            } else if (c == ',' && !inQuotes) {
+                result.add(sb.toString());
+                sb.setLength(0);
+            } else {
+                sb.append(c);
+            }
+        }
+        result.add(sb.toString());
+
+        // Remove outer quotes
+        for (int i = 0; i < result.size(); i++) {
+            String field = result.get(i).trim();
+            if (field.startsWith("\"") && field.endsWith("\"") && field.length() >= 2) {
+                field = field.substring(1, field.length() - 1);
+            }
+            result.set(i, field);
+        }
+
+        return result.toArray(new String[0]);
+    }
+
+    // First column looks like: "16272 ARH 295 I1"
+    // This extracts CRN = 16272
+    private Integer extractCrnFromCourseField(String courseField) {
+        if (courseField == null) return null;
+        String[] parts = courseField.trim().split("\\s+", 2);
+        if (parts.length == 0) return null;
+        return parseInteger(parts[0]);
+    }
+
+    // From "16272 ARH 295 I1" we want department reference = "ARH"
+    private String extractDeptReferenceFromCourseField(String courseField) {
+        if (courseField == null) return "UNKNOWN";
+        String[] parts = courseField.trim().split("\\s+");
+        if (parts.length >= 2) {
+            return parts[1]; // CRN is [0], dept code is [1]
+        }
+        return "UNKNOWN";
+    }
+    
+    // Import all courses from the CSV created by CatalogToCsv
+    public void importCoursesFromCsv(String filePath) {
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            String line = br.readLine(); // skip header: Course,Title,Credits,...
+
+            while ((line = br.readLine()) != null) {
+                if (line.trim().isEmpty()) continue;
+
+                String[] cols = splitCsvLine(line);
+                if (cols.length < 9) {
+                    System.out.println("Skipping malformed line: " + line);
+                    continue;
+                }
+
+                // Columns from rollins_catalog_spring2026.csv:
+                // 0: "16272 ARH 295 I1"
+                // 1: Title
+                // 2: Credits
+                // 3: Instructor
+                // 4: Location
+                // 5: Days (unused for now)
+                // 6: Start
+                // 7: End
+                // 8: Type
+                String courseField   = cols[0];
+                String title         = cols[1];
+                String creditsStr    = cols[2];
+                String instructorStr = cols[3];
+                String location      = cols[4];
+                String days          = cols[5]; // currently unused
+                String start         = cols[6];
+                String end           = cols[7];
+                String type          = cols[8];
+
+                // CRN
+                Integer crn = extractCrnFromCourseField(courseField);
+                if (crn == null) {
+                    System.out.println("Skipping line with invalid CRN: " + line);
+                    continue;
+                }
+
+                // Skip courses that are already loaded
+                if (findCourseByCRN(crn) != null) {
+                    continue;
+                }
+
+                // Credits
+                Integer credits = parseInteger(creditsStr);
+                if (credits == null) credits = 0;
+
+                // Department
+                String deptRef = extractDeptReferenceFromCourseField(courseField);
+                Department dept = findDepartmentByReference(deptRef);
+                if (dept == null) {
+                    dept = new Department(deptRef + " Department", deptRef);
+                    addDepartment(dept);
+                }
+
+                // Professor
+                Professor prof = null;
+                if (instructorStr != null && !instructorStr.trim().isEmpty()
+                        && !"TBA".equalsIgnoreCase(instructorStr.trim())) {
+
+                    prof = findProfessorByName(instructorStr);
+                    if (prof == null) {
+                        int newProfId = professors.size() + 1; // simple auto-ID
+                        prof = new Professor(instructorStr.trim(), newProfId, dept);
+                        addProfessor(prof);
+                    }
+                }
+
+                // Location: e.g. "CSS 170" or ""
+                String building = "";
+                int roomNumber = 0;
+                if (location != null && !location.trim().isEmpty()) {
+                    String loc = location.trim();
+                    int idx = loc.lastIndexOf(' ');
+                    if (idx > 0) {
+                        building = loc.substring(0, idx).trim();
+                        String roomStr = loc.substring(idx + 1).trim();
+                        Integer roomParsed = parseInteger(roomStr.replaceAll("\\D", ""));
+                        if (roomParsed != null) roomNumber = roomParsed;
+                    } else {
+                        // No space: treat the whole thing as building
+                        building = loc;
+                    }
+                }
+
+                // Create the course and add to list
+                Course c = new Course(
+                        title,       // name (course title)
+                        type,        // type (LECTURE, LAB, etc.)
+                        credits,     // creditCount
+                        start,       // startTime
+                        end,         // endTime
+                        prof,        // professor
+                        dept,        // department
+                        building,    // building
+                        roomNumber,  // roomNumber
+                        crn          // CRN from CSV
+                );
+
+                courses.add(c);
+                if (prof != null) {
+                    prof.addCourse(c);
+                }
+            }
+
+            System.out.println("Finished importing courses from: " + filePath);
+
+        } catch (IOException e) {
+            System.out.println("Error reading CSV file: " + e.getMessage());
+        }
+    }
+
+
+
+    
+
+    // Extract department reference from the course code (e.g. "BUS 101 H1" -> "BUS")
+    private String extractDeptReference(String courseCode) {
+        if (courseCode == null) return "UNKNOWN";
+        String[] parts = courseCode.trim().split("\\s+");
+        return parts.length > 0 ? parts[0] : "UNKNOWN";
+    }
+
    
     //create a course
     public Course createCourse(String name, String type, int creditCount, String startTime, 
